@@ -55,7 +55,7 @@ necessaria questa estensione.
 ## La vulnerabilità: CVE-2014-0160
 
 [Questo](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0160) mi sa
-che è destinato a diventare un CVE famoso come il CVE-2008-0064, la remote code
+che è destinato a diventare un CVE famoso come il CVE-2008-5416, la remote code
 execution in Microsoft SQL Server di qualche anno fa. A mio avviso fa emerge
 subito un primo elemento di attenzione. Il [CVSS](http://nvd.nist.gov/cvss.cfm)
 di questa vulnerabilità è 5 (in una scala di valori in ordine di pericolosità
@@ -252,3 +252,10 @@ Un fantastico elenco di POC per provare la vulnerabilità li trovate qui:
 
 [^1]: attenzione, le richieste sono in Network byte order, quindi se voi volete
 scrivere _aaff_, dovete mettere al secondo byte _ff_ e al terzo byte _aa_.
+
+## Edit
+
+Ho corretto il CVE della remote code execution in SQL Server. Intendevo il CVE
+legato alla [MS09-004](http://support.microsoft.com/kb/959420/it). Grazie a
+Gerardo per avermi ricordato che mi ero ripromesso di controllare... stamattina
+però.
