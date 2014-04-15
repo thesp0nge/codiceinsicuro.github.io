@@ -1,30 +1,59 @@
 ---
 layout: page
 permalink: /about/
-title: About the Theme
-tagline: Minimal Mistakes, a Jekyll Theme
+title: Su questo blog
+tagline: Un blog di ordinaria application security
 tags: [about, Jekyll, theme, responsive]
-modified: 9-9-2013
+modified: 4-10-2014
 comments: true
 image:
-  feature: texture-feature-02.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  feature:
+  credit:
+  creditlink:
 ---
 
-Jekyll is pretty rad and figured releasing a cleaned up version of [my site](http://mademistakes.com)[^1] as a theme for others to hack and build on would be fun. So here be that theme --- I call it **Minimal Mistakes**, a responsive Jekyll theme with large featured images and solid typography. 
+Quando ho aperto [armoredcode.com](http://armoredcode.com)[^1], il mio scopo
+era quello di scrivere di application security.
+Avevo letto da poco un libro, Technical Blogging di A.Cangiano e mi aveva
+inspirato. Da sempre cercavo di creare un punto di interesse attorno ai temi
+della sicurezza applicativa, ancora poco diffusa in Italia e partii dai
+suggerimenti trovati in quel libro.
 
-## Minimal Mistakes is all about:
+Con il tempo, gli impegni, la vita e i [progetti
+collaterali](http://dawn.codesake.com) nel campo sempre ICT security hanno reso
+la scrittura di post di un certo livello, molto più difficile. Non impossibile,
+solo molto difficile.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments --- content first.
-* Large feature images for posts and pages.
-* Author sidebar to pimp your bio, photo[^2], and social media links.
-* Simple and clear permalink structure *(ie: domain.com/category/post-title)*
+Per questo motivo, dato che a me piace scrivere, ho deciso di creare un blog su
+quello che amo fare in italiano. Almeno la parte di scrittura risulterà più
+fluente e più semplice in termini di tempo.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+### Qui non troverai
 
-[^1]: Since open sourcing this theme I have released a couple other Jekyll themes. My website [Made Mistakes](http://mademistakes.com) is currently using a modified version of my [So Simple Theme](http://mmistakes.github.io/so-simple-theme/).
+* seriali di software
+* dettagli su come commettere illeciti informatici
+* warez
+* codici sorgente di exploit
+* 0 day
+* marchette commerciali
 
-[^2]: Fancy avatars provided by [Brandon Mathis](http://brandonmathis.com/projects/fancy-avatars/demo/) under a [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/).
+### Invece potrai
+
+* imparare a scrivere codice sicuro
+* imparare che scrivere codice non è una cosa brutta di cui vergognarsi
+* trovare esempi di safe coding in [ruby](http://ruby-lang.org/en) 
+* trovare esempi di codice per eseguire test (statici o dinamici) sempre in
+  [ruby](http://ruby-lang.org/en) 
+* imparare come mettere in sicurezza un application server
+* imparare il significato di termini come vulnerability assessment, web
+  application penetration test, code review e perché tutte queste cose servono a
+  te e alla tua azienda
+* ...
+
+Codice Insicuro vuole diventare il principale blog italiano sui temi di
+application security.
+
+Per qualsiasi dubbio o perplessità mi trovate via email qui:
+[paolo@armoredcode.com](mailto:paolo@armoredcode.com)
+
+[^1]: sempre un blog di application security, in inglese, aperto il 16 Marzo 2011.

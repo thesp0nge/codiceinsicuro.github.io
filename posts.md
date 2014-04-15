@@ -1,7 +1,7 @@
 ---
 layout: post-index
 permalink: /posts/
-title: All Posts
-tagline: A List of Posts
+title: Tutti i post
+tagline: Tutti i post di codice insicuro
 tags: [blog]
 ---

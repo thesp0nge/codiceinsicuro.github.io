@@ -3,6 +3,7 @@ layout: post
 title: "Sample Link Post"
 description: "Example and code for using link posts."
 tags: [sample post, link post]
+published: false
 link: http://mademistakes.com  
 share: true
 ---

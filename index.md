@@ -1,9 +1,9 @@
 ---
 layout: home
-description: "A responsive Jekyll theme with editorial tendencies by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+description: "Codice Insicuro: croccante fuori, morbido dentro"
+tags: [blog, codiceinsicuro, coming-soon]
 image:
-  feature: texture-feature-01.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  feature:
+  credit:
+  creditlink:
 ---

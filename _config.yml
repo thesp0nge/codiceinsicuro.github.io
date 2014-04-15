@@ -1,19 +1,21 @@
-title:            Site Title
-description:      Describe your website.
+title:            Codice Insicuro
+description:      Un blog di sicurezza applicativa croccante fuori e morbido dentro
+version: 1.0
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
-disqus_shortname: 
+# url:              http://localhost:4000
+url:              http://codiceinsicuro.it
+disqus_shortname: codiceinsicuro
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         bio-photo.jpg
-  bio:            "Describe your self."
-  email:          your@email.com
+  name:           Paolo Perego
+  avatar:         myself.png
+  bio:            "Application Security Specialist, 37enne da Milano, Italy. Padre e marito orgoglioso nonchè atleta di Taekwon-do ITF"
+  email:          paolo@armoredcode.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
+  twitter:        codiceinsicuro
+  facebook:       codiceinsicuro
+  github:         thesp0nge
   stackoverflow: 
   linkedin:       
   instagram:      
@@ -39,20 +41,18 @@ links:
     url: /about/
   - title: Posts
     url: /posts/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
+  - title: Codesake::Dawn
+    url: http://dawn.codesake.com
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/Rome
 future:      true
 pygments:    true
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+permalink:   /blog/:title
 
 kramdown:
   auto_ids: true
@@ -69,4 +69,4 @@ kramdown:
     coderay_css: class
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
