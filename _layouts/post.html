@@ -41,6 +41,11 @@
       {% else %}
         <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
       {% endif %}
+
+      <div><p>{% icon fa-clock-o fa-fw %}<em>Questo post lo leggi in {{ page.content | reading_time }}</em></p></div>
+      <div><p>{% icon fa-tags fa-fw %}<em>{{ page.tags | array_to_sentence_string_it }}</em></p></div>
+
+      <hr />
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
       {{ content }}
@@ -49,7 +54,8 @@
         <div class="article-author-bottom">
           {% include _author-bio.html %}
         </div>
-        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <a href="{{ site.url }}/about" title="About {{ site.owner.name }}">{{ site.owner.name }}</a>.</p>
+        <p class="byline"><strong>{{ page.title }}</strong> è stato pubblicato il <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} e modificato il <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <a href="{{ site.url }}/about" title="About {{ site.owner.name }}">{{ site.owner.name }}</a>.</p>
+        <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='6404635'></div>
       </footer>
     </div><!-- /.article-wrap -->
   {% if site.disqus_shortname and page.comments %}

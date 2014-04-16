@@ -2,22 +2,22 @@ title:            Codice Insicuro
 description:      Un blog di sicurezza applicativa croccante fuori e morbido dentro
 version: 1.0
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-# url:              http://localhost:4000
-url:              http://codiceinsicuro.it
+url:              http://localhost:4000
+# url:              http://codiceinsicuro.it
 disqus_shortname: codiceinsicuro
 
 # Owner/author information
 owner:
   name:           Paolo Perego
   avatar:         myself.png
-  bio:            "Application Security Specialist, 37enne da Milano, Italy. Padre e marito orgoglioso nonchè atleta di Taekwon-do ITF"
+  bio:            "Application Security Specialist, 37enne da Milano, Italia. Padre e marito orgoglioso nonchè atleta di Taekwon-do ITF"
   email:          paolo@armoredcode.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        codiceinsicuro
   facebook:       codiceinsicuro
   github:         thesp0nge
   stackoverflow: 
-  linkedin:       
+  linkedin:       thesp0nge
   instagram:      
   lastfm:         
   tumblr: 
