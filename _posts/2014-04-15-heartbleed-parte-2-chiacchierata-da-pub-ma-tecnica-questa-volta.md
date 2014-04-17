@@ -250,8 +250,7 @@ Potete trovare un'analisi dettagliata e precedente alla mia all'indirizzo:
 Un fantastico elenco di POC per provare la vulnerabilità li trovate qui:
 [http://blog.bugcrowd.com/heartbleed-exploit-yet/](http://blog.bugcrowd.com/heartbleed-exploit-yet/)
 
-[^1]: attenzione, le richieste sono in Network byte order, quindi se voi volete
-scrivere _aaff_, dovete mettere al secondo byte _ff_ e al terzo byte _aa_.
+[^1]: attenzione, le richieste sono in Network byte order, quindi se voi volete scrivere _aaff_, dovete mettere al secondo byte _ff_ e al terzo byte _aa_.
 
 ## Edit
 
