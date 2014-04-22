@@ -50,11 +50,11 @@ task :new_post, :title do |t, args|
     post.puts "category: [#{category}]"
     post.puts "tags: [#{tags}]"
     post.puts "image:"
-    post.puts "  feature: "
-    post.puts "  credit: "
-    post.puts "  creditlink: "
-    post.puts "comments: "
-    post.puts "share: "
+    post.puts "  feature:"
+    post.puts "  credit:"
+    post.puts "  creditlink:"
+    post.puts "comments: true"
+    post.puts "share: true"
     post.puts "---"
   end
 end
@@ -81,10 +81,10 @@ task :new_page, :title do |t, args|
     page.puts "modified: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     page.puts "tags: [#{tags}]"
     page.puts "image:"
-    page.puts "  feature: "
-    page.puts "  credit: "
-    page.puts "  creditlink: "
-    page.puts "share: "
+    page.puts "  feature:"
+    page.puts "  credit:"
+    page.puts "  creditlink:"
+    page.puts "share: true"
     page.puts "---"
   end
 end

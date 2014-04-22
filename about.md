@@ -2,10 +2,11 @@
 layout: page
 permalink: /about/
 title: Su questo blog
-tagline: Un blog di ordinaria application security
+tagline: Un blog di application security morbido fuori e croccante dentro
 tags: [about, Jekyll, theme, responsive]
 modified: 4-10-2014
-comments: true
+comments: false
+share: true
 image:
   feature:
   credit:

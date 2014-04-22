@@ -7,15 +7,17 @@ module ArrayToSentenceStringIt
 
     case array.length
     when 0
-      ""
+      ret= ""
     when 1
-      array[0].to_s
+      ret= array[0].to_s
     when 2
-      "#{array[0]} #{connector} #{array[1]}"
+      ret = "#{array[0]} #{connector} #{array[1]}"
     else
-      "#{array[0...-1].join(', ')}, #{connector} #{array[-1]}" unless array[-1].start_with? 'e'
-      "#{array[0...-1].join(', ')}, #{connector_aux} #{array[-1]}" if array[-1].start_with? 'e'
+      ret = "#{array[0...-1].join(', ')} #{connector} #{array[-1]}" unless array[-1].start_with? 'e'
+      ret = "#{array[0...-1].join(', ')} #{connector_aux} #{array[-1]}" if array[-1].start_with? 'e'
     end
+
+    ret
   end
 end
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Heartbleed - parte 1: la chiacchiera da pub"
-modified: 2014-04-12 22:47:31 +0200
-category: []
+modified: 2014-04-18 07:47:31 +0200
+category: [attackers, heartbleed]
 tags: [heartbleed, cve-2014-0160, vulnerabilità, ssl, openssl, opensource, simple-life, chiacchiere-da-pub]
 image:
   feature: heartbleed.jpg
