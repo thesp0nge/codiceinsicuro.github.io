@@ -84,6 +84,9 @@ maggioranza delle vulnerabilità più gravi lì fuori, è la mancata validazione
 dell'input. In questo caso, un input malformato si aggiunge ad una _leggerezza_
 dello sviluppatore.
 
+Ecco un esempio di programma C che prende il primo parametro passato dalla
+linea di comando e lo stampa su standard output.
+
 {% highlight c%}
 #include <stdio.h>
 #include <string.h>
@@ -102,9 +105,19 @@ int main(int argc, char **argv)
 }
 {% endhighlight %}
 
+Riga 11. Stampiamo il contenuto della variabile p, che contiene una stringa
+presa dalla command line, quindi contiene una stringa sotto il controllo del
+potenziale attaccante, senza dare la direttiva di formattazione, "%s" in questo
+caso.
+
+{% highlight c%}
+  printf(p);
+{% endhighlight %}
 La cosa strana, compilando con gcc questo codice di esempio, è che ci viene
-dato un warning che stiamo usando la printf senza dare una direttiva di
-formattazione.
+dato un warning che stiamo usando la printf in un modo potenzialmente insicuro.
+Attenzione, pur essendo un modo potenzialmente insicuro, è assolutamente
+lecito. A parte il warning, che decidiamo di ignorare, il programma viene
+infatti compilato.
 
 {%highlight text %}
 format_bug.c:11:10: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
