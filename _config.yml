@@ -2,8 +2,8 @@ title:            Codice Insicuro
 description:      Un blog di sicurezza applicativa croccante fuori e morbido dentro
 version: 1.0
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-# url:              http://localhost:4000
-url:              http://codiceinsicuro.it
+url:              http://localhost:4000
+# url:              https://codiceinsicuro.it
 disqus_shortname: codiceinsicuro
 
 # Owner/author information
@@ -16,7 +16,7 @@ owner:
   twitter:        codiceinsicuro
   facebook:       codiceinsicuro
   github:         thesp0nge
-  stackoverflow:  thesp0nge
+  stackoverflow:  
   linkedin:       thesp0nge
   instagram:      
   lastfm:         
@@ -25,11 +25,12 @@ owner:
   foursquare: 
   steam: 
   dribbble: 
+  feedburner: CodiceInsicuro
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:
+  google_plus: PaoloPerego
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics:   UA-50260618-1
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:        
@@ -37,9 +38,9 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
+  - title: Sul blog
     url: /about/
-  - title: Posts
+  - title: I post
     url: /posts/
   - title: Codesake::Dawn
     url: http://dawn.codesake.com

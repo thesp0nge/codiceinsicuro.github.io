@@ -18,6 +18,7 @@ new_page_ext    = "md"  # default new page file extension when using the new_pag
 
 deploy_dir      = "_site"
 source_dir      = "_source"
+draft_dir       = "_drafts"
 
 css_dir         = "#{deploy_dir}/stylesheets"
 sass_dir        = "#{source_dir}/_sass"
@@ -26,6 +27,41 @@ image_dir       = "#{source_dir}/images"
 #############################
 # Create a new Post or Page #
 #############################
+
+namespace :draft do
+
+desc "Create a new draft in #{draft_dir}"
+task :new, :title do |t, args|
+  if args.title
+    title = args.title
+  else
+    title = get_stdin("Enter a title for your post: ")
+  end
+  filename = "#{draft_dir}/#{title.to_url}.#{new_post_ext}"
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+  category = get_stdin("Enter category name to group your post in (leave blank for none): ")
+  tags = get_stdin("Enter tags to classify your post (comma separated): ")
+  puts "Creating new post: #{filename}"
+  open(filename, 'w') do |post|
+    post.puts "---"
+    post.puts "layout: post"
+    post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+    post.puts "modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
+    post.puts "category: [#{category}]"
+    post.puts "tags: [#{tags}]"
+    post.puts "image:"
+    post.puts "  feature:"
+    post.puts "  credit:"
+    post.puts "  creditlink:"
+    post.puts "comments: true"
+    post.puts "share: true"
+    post.puts "---"
+  end
+
+end
+end
 
 # usage rake new_post
 desc "Create a new post in #{posts_dir}"
