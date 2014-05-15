@@ -72,8 +72,7 @@ Per qualsiasi dubbio o perplessità mi trovate via email qui:
 
 ### Qualche dato
 
-{% capture count %}{{ site.posts.size }}{%endcapture%}
-Sono stati scritti {{ count }} posts ad oggi. Il primo è stato scritto il {{ site.posts[2].date | date: "%d/%m/%Y"}} mentre l'ultimo il {{ site.posts[0].date | date: "%d/%m/%Y" }}.
+Sono stati scritti {{ count }} posts ad oggi. Il primo è stato scritto il {{ site.posts.last.date | date: "%d/%m/%Y"}} mentre l'ultimo il {{ site.posts.first.date | date: "%d/%m/%Y" }}.
 
 
 [^1]: sempre un blog di application security, in inglese, aperto il 16 Marzo 2011.
