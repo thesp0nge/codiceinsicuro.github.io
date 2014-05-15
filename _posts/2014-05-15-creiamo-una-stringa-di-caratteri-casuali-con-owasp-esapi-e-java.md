@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creiamo una stringa di caratteri casuali con Owasp ESAPI e Java"
-modified:
+modified: Thu May 15 18:00:28 CEST 2014
 category: [builders, quick howto]
 tags: [owasp, owasp esapi, java, numero casuale, pseudorandom, h4f]
 image:
@@ -17,7 +17,7 @@ casuale. Ad esempio possiamo usarla come password temporanea, come salt per
 offuscare una password, come chiave, ...
 
 Senza inventare un'altra volta la ruota, possiamo usare la libreria [Owasp
-ESAPI **LINK**](#)[^1]. Il progetto Owasp ESAPI nasce con lo scopo di fornire
+ESAPI](https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API)[^1]. Il progetto Owasp ESAPI nasce con lo scopo di fornire
 una serie di API che realizzano controlli di sicurezza. Il codice è opensource
 e viene costantemente rivisto dalla community. Io ero il maintainer di [Owasp
 ESAPI for ruby](https://rubygems.org/gems/owasp-esapi-ruby) anche se è un paio
@@ -26,7 +26,7 @@ giorno non lo faccia.
 
 Per compilare ed eseguire il codice che poi vi mostro, avete bisogno del jar
 file della libreria che potete recuperare partendo dalla pagina del progetto
-sul sito [Owasp **LINK**](#)
+sul sito [Owasp](https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API#tab=Java_EE)
 
 Inoltre avrete bisogno di un file, ESAPI.properties che contiene alcune
 configurazioni per il fine tuning della libreria. Ecco, io me lo sono pescato
@@ -55,7 +55,7 @@ public class CreateRandomString {
 {% endhighlight %}
 
 Compilare ed eseguire il codice è semplice. Io, come sapete, non scrivo codice
-Java dai tempi di [Owasp Orizon **LINK**](#), quindi non ho un ambiente
+Java dai tempi di [Owasp Orizon](https://www.owasp.org/index.php/Category:OWASP_Orizon_Project#tab=Main), quindi non ho un ambiente
 preparato e non ho un $CLASSPATH interessante. Passo il percorso del JAR di
 Owasp Esapi direttamente da linea di comando, ipotizzando si trovi nella stessa
 directory dove avete creato il file CreateRandomString.java.
@@ -79,7 +79,7 @@ $ java -cp esapi-2.1.0.jar:. CreateKeys
 
 ## Off by one
 
-[Owasp ESAPI **LINK**](#) è un bel progettone ed offre agli sviluppatori delle
+[Owasp ESAPI](https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API#tab=Home) è un bel progettone ed offre agli sviluppatori delle
 API che possono essere utilizzate in codice di produzione per aggiungere
 controlli di security. Il codice ha un livello di maturità tale da essere usato
 in portali di grosse dimensioni senza il pericolo che faccia crollare il vostro
@@ -89,10 +89,12 @@ ESAPI è disponibile in molti linguaggi oltre a Java: PHP, Ruby, .NET tra quelli
 più usati per le web application. Sarebbe interessante farne il porting anche
 per Go o qualche framework javascript come NodeJs.
 
-Sicuramente usare un'API come [Owasp ESAPI **LINK**](#) non può che aiutare lo
+Sicuramente usare un'API come [Owasp ESAPI](https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API#tab=Home) non può che aiutare lo
 sviluppatore ad introdurre controlli di security senza dover entrare nel
 dettaglio di quali siano tutti i modi per mitigare un cross site scripting, una
 sql injection o un cross site request forgery.
+
+**EDIT** erano rimasti dei link non valorizzati. Ora sono tutti aggiustati e potete navigare allegri nella Internet.
 
 [^1]: Cos'è Owasp? Owasp è un acronimo per Open Web Application Security
       Project. E' una community che raccoglie specialisti del settore dell'ICT
