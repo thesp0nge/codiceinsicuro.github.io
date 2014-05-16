@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ricordami perché lo faccio: non è un lavoro per tutti"
-modified: 2014-05-16 08:05:18 +0200
+modified:
 category: [meditazione]
 tags: [choosy, meditazione, sangue di giuda, senior, junior, mettersi in gioco, imparare, blog, twitter, antani]
 image:
@@ -31,9 +31,9 @@ comunque ad un triennio di specializzazione nelle varie aree dell'IT.
 Ci sono corsi e professori che ti rimangono dentro a vita e ricordo
 precisamente, anche se potrei far confusione con gli anni, che ci furono 2
 corsi che mi spinsero con forza nelle braccia dell'IT Security: il corso di
-Sistemi Operativi tenuto, magistralmente, dal professor Gianfranco Prini ed il
+Sistemi Operativi tenuto, magistralmente, dal professor [Gianfranco Prini](http://homes.di.unimi.it/~gfp/) ed il
 corso di Architetture degli elaboratori 2 (questo mi pare fosse il primo
-semestre del terzo anno), tenuto dal professor Gian Paolo Rossi.
+semestre del terzo anno), tenuto dal professor [Gian Paolo Rossi](http://nptlab.di.unimi.it/index.php/people/63-gian-paolo-rossi.html).
 
 Ci sono 2 libri che ogni specialista IT nel campo della sicurezza deve tenere
 sul comodino perché **fondamentali**:
@@ -47,7 +47,7 @@ della bibliografia in campo informatico, due materie veramente interessanti,
 gli ampex, il vi (non il vim... il vi) e se quella è la vostra strada, allora
 inizierete a spippolare di raw socket, di buffer overflow e di shellcode.
 
-Poi vennero i corsi di sicurezza vera e propria con il professor Bruschi che
+Poi vennero i corsi di sicurezza vera e propria con il professor [Bruschi](http://www.curriculum.scienzemfn.unimi.it/curriculum.php?h=danilo.bruschi) che
 chiusero il cerchio. Venne la mia tesi che mi portò nel kernel di linux e
 imparai, non solo a scrivere codice C e leggere codice altrui ma a relazionarmi
 con hackers anni luce più bravi di me: buffer e belch tra tutti.
