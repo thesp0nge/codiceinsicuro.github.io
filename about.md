@@ -54,9 +54,9 @@ semplice, ma per farlo sicuro poi ci vuole proprio una bella squadra.
 
 * imparare a scrivere codice sicuro
 * imparare che scrivere codice non è una cosa brutta di cui vergognarsi
-* trovare esempi di safe coding in [ruby](http://ruby-lang.org/en) 
+* trovare esempi di safe coding in [ruby](http://ruby-lang.org/en)
 * trovare esempi di codice per eseguire test (statici o dinamici) sempre in
-  [ruby](http://ruby-lang.org/en) 
+  [ruby](http://ruby-lang.org/en)
 * imparare come mettere in sicurezza un application server
 * imparare il significato di termini come vulnerability assessment, web
   application penetration test, code review e perché tutte queste cose servono a
@@ -65,13 +65,14 @@ semplice, ma per farlo sicuro poi ci vuole proprio una bella squadra.
 
 [Codice Insicuro]({{site.root}}) vuole diventare il principale blog italiano sui temi di
 application security. Per ora è il primo blog italiano di application security
-croccante fuori e borbido dentro.
+croccante fuori e morbido dentro.
 
 Per qualsiasi dubbio o perplessità mi trovate via email qui:
 [paolo@armoredcode.com](mailto:paolo@armoredcode.com)
 
 ### Qualche dato
 
+{% capture count %}{{ site.posts.size }}{%endcapture%}
 Sono stati scritti {{ count }} posts ad oggi. Il primo è stato scritto il {{ site.posts.last.date | date: "%d/%m/%Y"}} mentre l'ultimo il {{ site.posts.first.date | date: "%d/%m/%Y" }}.
 
 

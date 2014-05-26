@@ -18,13 +18,9 @@ Questo blog non ha backdoor piazzate dall'NSA, non sono stato rapito
 ultimamente da agenti in completo nero e occhiali da sole e non uso #sha7 per
 cifrare il mio traffico.
 
-&nbsp;
-
 I post sono scritti usando [vim](http://www.vim.org), formattati con
 [Markdown](http://daringfireball.net/projects/markdown) e trasformati in questa
 chicca di blog da [Jekyll](http://jekyllrb.com).
-
-&nbsp;
 
 {% capture count %}{{ site.posts.size }}{%endcapture%}
 Qui sotto puoi trovare gli ultimi post in ordine di tempo, mentre se vuoi

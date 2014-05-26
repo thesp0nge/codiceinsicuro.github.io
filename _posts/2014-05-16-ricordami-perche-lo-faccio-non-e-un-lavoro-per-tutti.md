@@ -88,7 +88,7 @@ sperimentare tipica di un bambino.
 
 Se io facessi ogni giorno un penetration test nello stesso modo, usassi sempre
 lo stesso tool, usassi sempre gli stessi pattern d'attacco, sarei uno
-specialistà **finito** in partenza.
+specialista **finito** in partenza.
 
 Se io accettassi passivamente che il mio strumento di vulnerability assessment
 o portscan mi dicesse che c'è un IIS con la sua pagina di default su un server

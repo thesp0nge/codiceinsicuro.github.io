@@ -42,8 +42,9 @@
         <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
       {% endif %}
 
-      <div><p>{% icon fa-clock-o fa-fw %}<em>Questo post lo leggi in {{ page.content | reading_time }}</em></p></div>
-      <div><p>{% icon fa-tags fa-fw %}<em>{{ page.tags | array_to_sentence_string_it }}</em></p></div>
+      <div class="meta"><p>{% icon fa-clock-o fa-fw %}<em>Questo post lo leggi in {{ page.content | reading_time }}</em></p></div>
+      <div class="meta"><p>{% icon fa-tag fa-fw %}<em>Scritto nella categoria {{ page.category | array_to_sentence_string_it }}</em></p></div>
+      <div class="meta"><p>{% icon fa-tags fa-fw %}<em>Parla di {{ page.tags | array_to_sentence_string_it }}</em></p></div>
 
       <hr />
     </div><!--/ .headline-wrap -->
