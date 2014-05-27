@@ -1,44 +1,64 @@
-# Minimal Mistakes
+# Codice Insicuro
 
-**[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog.
+## Introduzione
 
-## Minimal Mistakes is all about:
+[Codice Insicuro](https://codiceinsicuro.it) è un blog di application security
+scritto in Italiano e che parla della realtà italiana legata ai temi di
+sicurezza applicativa.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/minimal-mistakes/articles/code-highlighting-post/) to make your code examples look snazzy.
+Spesso quello che si vede in giro è un mare di blog che fanno repost di
+articoli, soprattutto quelli legati ad intrusioni informatiche, senza
+aggiungere un singolo bit di informazione in più. Nessun blog italiano (AFAIK,
+ovviamente) pone il problema della sicurezza applicativa partendo dal codice
+sorgente, fornendo esempi di safe coding.
 
-![screenshot of Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/images/mm-theme-post-600.jpg)
+Da questo punto sono partito quando ho scelto di lasciare la mia prima
+creatura, [armoredcode.com](http://armoredcode.com), per scrivere in Italiano.
 
-## Basic Setup for a new Jekyll site
+Potete seguire [codice insicuro](https://codiceinsicuro.it) anche su
+[twitter](http://twitter.com/codiceinsicuro) o potete iscrivervi alla
+[newsletter](http://eepurl.com/UOpyj) per non perdervi neppure un post.
 
-1. [Install Bundler](http://bundler.io) `gem install bundler` and then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
-2. Fork the [Minimal Mistakes repo](http://github.com/mmistakes/minimal-mistakes/fork).
-3. Clone the repo you just forked and rename it.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
+## Sto lavorando a...
 
-[Demo the Theme](http://mmistakes.github.io/minimal-mistakes)
+Ho pensato che, a parte i post di _meditazione_ o di _chiacchiere da bar_,
+potesse essere una buona idea quello di creare due macro-categorie ben distinte
+di post tecnologici conditi con codice ruby:
 
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't need.
+* pick'n'chic: dove si parla di come usare ruby per attaccare un'applicazione
+* sviluppina: dove si parla di come implementare codice sicuro usando ruby
 
-## More Theme Setup Goodness
+Ho pensato inoltre ad una terza categoria, _l'angolo del libro_ dove farò una
+recensione di libri in campo security/sviluppo che mi sono piaciuti o che ho
+trovato particolarmente interessanti.
 
-To learn more about how customize this theme, include feature images in posts, use the Grunt build scripts, and some other junk, [read up here](http://mmistakes.github.io/minimal-mistakes-theme/theme-setup/).
+**ATTENZIONE** nella categoria dell'angolo del libro, inserirò un link ad
+[amazon](http://www.amazon.it) per il libro oggetto del post contenente un
+codice identificativo. Se, trovando il libro interessante, doveste acquistare
+il libro partendo dal link di questo blog, Amazon corrisponderebbe parte
+dell'acquisto a me. Ho scelto questa via per monetizzare un po' e pagare le
+spese della VPS, sinceramente molto meglio di farcire di adwords qua e là.
 
+### Pick'n'chic: usare ruby in un penetration test applicativo
 
----
+* L'arte del fingerprint di un'applicazione web
+* Robots.txt: il crawling parte da qui
 
-## Questions?
+### Sviluppina: pillole per scrivere codice ruby più sicuro
 
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@mmistakes](http://twitter.com/mmistakes) or [file a GitHub Issue](https://github.com/mmistakes/minimal-mistakes/issues/new). And if you make something cool with this theme feel free to let me know.
+* Scrivere un'API con Grape: introduzione
+* Scrivere un'API con Grape: gestire l'autenticazione
+* Una form di login dalla A alla Login
+* Implementare il password reset
+* Usiamo OAuth per le nostre applicazioni web
+* 
 
----
+### L'angolo del libro
 
-## License
+### Spinaci: storie di hardening
 
-This theme is free and open source software, distributed under the [GNU General Public License](http://mmistakes.github.io/minimal-mistakes/LICENSE) version 2 or later. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer. 
+* Wordpress
+* NGINX
+* Apache
+* Mod Security
+* Puma
