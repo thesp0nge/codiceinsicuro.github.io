@@ -167,53 +167,38 @@ body {
 	background: none;
 }
 
-// Colori custom inizio
-.navigation-wrapper a {
-  color: @sexy-red-light;
-}
-.navigation-wrapper a:visited {
-  color: @sexy-red-light;
-}
-
-.headline-wrap h1 a {
-  color: @sexy-red-light;
-}
-.headline-wrap h1 a:visited {
-  color: @sexy-red-light;
-}
-
-.headline-wrap h1 a:hover {
-  .transition(opacity 0.2s ease-in-out);
-}
+// CUSTOM
 
 div.meta p {
   border-bottom: 0;
   margin-bottom: 0;
-  color: @terra-siena
 }
 
-.article-wrap h2, h3 {
-  color: @sexy-red-light;
-}
+/* nav-vertical-tabs component */
+.nav-tabs-vertical {
+    border-right: 1px solid #ddd;
+    }
 
-div#main article h1 {
-  color: @sexy-red-dark;
-}
+    .nav-tabs-vertical li {
+        margin-right: -1px;
+        }
 
-div#index h1 {
-  color: @sexy-red-dark;
-}
-div#index a, a:visited {
-  color: @sexy-red-light;
-}
+        .nav-tabs-vertical>li.active>a, .nav-tabs-vertical>li.active>a:hover, .nav-tabs-vertical>li.active>a:focus {
+            color: #555;
+                cursor: default;
+                    background-color: #fff;
+                        border: 1px solid #ddd;
+                            border-right-color: transparent;
+                            }
 
-div#index a, a:visited {
-  .transition(opacity 0.2s ease-in-out);
-}
-a.author-social, a.author-social:visited {
-  color: @sexy-red-dark;
-}
-// Colori custom fine
+                            .nav-tabs-vertical>li>a {
+                                line-height: 1.428571429;
+                                    border: 1px solid transparent;
+                                        border-radius: 4px 0 0 4px;
+                                        }
+
+                                        .badge { background: #F2756A; }
+// CUSTOM
 
 .navtoogle i {
 	z-index:-1;

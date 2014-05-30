@@ -1,7 +1,6 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
-
 ## -- Config -- ##
 
 ssh_user       = "thesp0nge@goliath.armoredcode.com"

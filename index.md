@@ -3,8 +3,8 @@ layout: home
 description: "Codice Insicuro: il primo blog italiano di application security croccante fuori, morbido dentro"
 tags: [blog, codiceinsicuro]
 image:
-  feature: headline.jpg
-  credit: Il mio ciliegio in fiore
+  feature: headline_code.png
+  credit: Il codice di codiceinsicuro.it
   creditlink: http://www.flickr.com/photos/thesp0nge/
 ---
 

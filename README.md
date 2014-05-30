@@ -26,7 +26,7 @@ potesse essere una buona idea quello di creare due macro-categorie ben distinte
 di post tecnologici conditi con codice ruby:
 
 * pick'n'chic: dove si parla di come usare ruby per attaccare un'applicazione
-* sviluppina: dove si parla di come implementare codice sicuro usando ruby
+* sicurina: dove si parla di come implementare codice sicuro usando ruby
 
 Ho pensato inoltre ad una terza categoria, _l'angolo del libro_ dove farò una
 recensione di libri in campo security/sviluppo che mi sono piaciuti o che ho
@@ -43,15 +43,27 @@ spese della VPS, sinceramente molto meglio di farcire di adwords qua e là.
 
 * L'arte del fingerprint di un'applicazione web
 * Robots.txt: il crawling parte da qui
+* Ancora crawling con la gemma anemone
+* Alla ricerca del Cross Site Scripting
 
-### Sviluppina: pillole per scrivere codice ruby più sicuro
+### Sicurina: pillole per scrivere codice più sicuro
 
 * Scrivere un'API con Grape: introduzione
 * Scrivere un'API con Grape: gestire l'autenticazione
 * Una form di login dalla A alla Login
 * Implementare il password reset
 * Usiamo OAuth per le nostre applicazioni web
-* 
+* Cross site scripting: come mitigarlo
+* SQL Injection: come mitigarla
+* HTTPS: come gestire la connessione
+* Padrino e syslog un amore difficile: facciamoli andare d'accordo
+
+### Doctor is in: lo sportello dell'awareness
+
+* O come Owasp
+* Cross site scripting: cos'è e perché è rischioso
+* SQL Injection: cos'è è perché è rischiosa
+* Non accettare caramelle dagli sconosciuti: valida il certificato del server
 
 ### L'angolo del libro
 

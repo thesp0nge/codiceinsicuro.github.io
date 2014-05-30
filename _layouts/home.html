@@ -35,8 +35,8 @@
 </div>
 
 <div id="index">
-  {{ content }}
-  <h3><a href="{{ site.url}}/articles/">Gli ultimi 5 post scritti</a></h3>
+  {% comment %} {{ content }} {% endcomment %}
+  {% comment %} <h3><a href="{{ site.url}}/posts/">Gli ultimi 5 post scritti</a></h3> {% endcomment %}
   {% for post in site.posts limit:5 %}
   <article>
     {% if post.link %}
