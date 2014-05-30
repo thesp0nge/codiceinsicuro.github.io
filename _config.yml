@@ -2,8 +2,8 @@ title:            Codice Insicuro
 description:      Il blog italiano di application security croccante fuori e morbido dentro
 version: 1.0
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
-# url:              https://codiceinsicuro.it
+# url:              http://localhost:4000
+url:              https://codiceinsicuro.it
 disqus_shortname: codiceinsicuro
 
 # Owner/author information

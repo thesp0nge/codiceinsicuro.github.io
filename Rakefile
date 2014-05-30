@@ -152,5 +152,4 @@ desc "Generate jekyll site"
 task :generate do
   puts "## Generating Site with Jekyll"
   system "jekyll build"
-  # system "compass compile --css-dir #{css_output_dir} --sass-dir #{sass_dir}"
 end
