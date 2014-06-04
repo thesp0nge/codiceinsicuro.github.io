@@ -1,17 +1,14 @@
-<div class="navigation-wrapper">
-	<div class="site-name">
-		<a href="{{ site.url }}">{{ site.title }}</a>
-	</div><!-- /.site-name -->
-	<div class="top-navigation">
-		<nav role="navigation" id="site-nav" class="nav">
-		    <ul>
-		        {% for link in site.links %}
-				<li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-		        {% endfor %}
-            <li class="pull-right">
-  <a href="{{site.url}}/feed.xml" class="author-social" target="_blank"><i class="icon-feed"></i> Feed RSS</a>
-  </li>
-		    </ul>
-		</nav>
-	</div><!-- /.top-navigation -->
-</div><!-- /.navigation-wrapper -->
+<div class="header">
+  <div class="container">
+    <ul class="menu">
+    {% for link in site.links %}
+      <li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+    {% endfor %}
+      <li><a href="{{site.url}}/feed.xml" target="_blank"><i class="icon-feed"></i> Feed RSS</a></li>
+    </ul>
+    <section class="name">
+      <a href="{{ site.url }}">codice<b>insicuro</b></a>
+      <span>v{{site.version}}</span>
+    </section>
+  </div><!-- /.container -->
+</div><!-- /.header -->

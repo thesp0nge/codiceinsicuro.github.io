@@ -1,9 +1,9 @@
 title:            Codice Insicuro
 description:      Il blog italiano di application security croccante fuori e morbido dentro
-version: 1.0
+version: 1.2
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-# url:              http://localhost:4000
-url:              https://codiceinsicuro.it
+url:              http://localhost:4000
+# url:              https://codiceinsicuro.it
 disqus_shortname: codiceinsicuro
 
 # Owner/author information
@@ -38,9 +38,9 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Sul blog
+  - title: About
     url: /about/
-  - title: I post
+  - title: Archivio
     url: /posts/
   - title: Codesake::Dawn
     url: http://dawn.codesake.com
