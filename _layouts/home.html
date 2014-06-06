@@ -7,14 +7,14 @@
 {% include _head.html %}
 </head>
 
-<body class="home">
+<body id="home">
 
 {% include _browser-upgrade.html %}
 
 {% include _navigation.html %}
 
 <div id="headline">
-  <div class="image-wrap" style="background-image: url(./images/headline_code.png);"></div>
+  <div class="image-wrap" style="background-image: url({{site.root}}/images/headline_code.png);"></div>
   <span class="image-credit">Photo Credit: <a href="http://www.flickr.com/photos/thesp0nge/">Il codice di codiceinsicuro.it</a></span>
 </div><!-- /.headline -->
 
@@ -32,7 +32,7 @@
   {% endfor %}
 </div><!-- /#index -->
 
-<div class="footer-wrap" style="background-image: url(./images/headline_code.png);">
+<div class="footer-wrap" style="background-image: url({{site.root}}/images/headline_code.png);">
   <footer class="container">
     {% include _footer.html %}
   </footer>

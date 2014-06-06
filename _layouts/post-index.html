@@ -7,34 +7,19 @@
 {% include _head.html %}
 </head>
 
-<body class="post-index">
+<body id="post-index">
 
 {% include _browser-upgrade.html %}
 
 {% include _navigation.html %}
 
-{% if page.image.feature %}
-  <div class="image-wrap">
-  <img src=
-    {% if page.image.feature contains 'http://' %}
-      "{{ page.image.feature }}"
-    {% elsif page.image.feature contains 'https://' %}
-      "{{ page.image.feature }}"
-    {% else %}
-      "{{ site.url }}/images/{{ page.image.feature }}"
-    {% endif %}
-  alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-  {% endif %}
-  </div><!-- /.image-wrap -->
-{% endif %}
+<div id="headline">
+  <div class="image-wrap" style="background-image: url({{site.root}}/images/headline_posts_listing.png);"></div>
+  <span class="image-credit">Photo Credit: <a href="http://www.flickr.com/photos/thesp0nge/">Il codice di codiceinsicuro.it</a></span>
+</div><!-- /.headline -->
 
-<div class="article-author-side">
-  {% include _author-bio.html %}
-</div>
 
-<div id="index">
+<div id="index" class="container post-listing">
   <h1>{{ page.title }}</h1>
   {% for post in site.posts %}
   {% unless post.next %}
@@ -46,7 +31,8 @@
         <h3>{{ post.date | date: '%Y' }}</h3>
       {% endif %}
     {% endunless %}
-    <article>
+    <article class="post-listing-item">
+      <time datetime="{{ post.date | date: "%B %d, %Y"}}">{{ post.date | date: "%B %d, %Y"}}</time>
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="icon-link"></i></h2>
       {% else %}
@@ -57,13 +43,12 @@
   {% endfor %}
 </div><!-- /#index -->
 
-<div class="footer-wrap">
-  <footer>
+<div class="footer-wrap" style="background-image: url({{site.root}}/images/headline_posts_listing.png);">
+  <footer class="container">
     {% include _footer.html %}
   </footer>
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
-  
 </body>
 </html>
