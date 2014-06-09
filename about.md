@@ -8,10 +8,12 @@ modified: 4-10-2014
 comments: false
 share: true
 image:
-  feature:
+  feature: about.png
   credit:
   creditlink:
 ---
+
+<div style="background-image:url({{site.root}}/images/myself.png)" class="centered-bio-photo"></div>
 
 Quando ho aperto [armoredcode.com](http://armoredcode.com)[^1], il mio scopo
 era quello di scrivere di application security.

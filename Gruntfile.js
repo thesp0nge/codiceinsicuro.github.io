@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
           compile: true,
-          compress: true
+          compress: true,
         },
         files: {
           'assets/css/main.min.css': [

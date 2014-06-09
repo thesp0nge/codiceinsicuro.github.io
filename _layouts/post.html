@@ -13,28 +13,24 @@
 
 {% include _navigation.html %}
 
+<div id="headline">
 {% if page.image.feature %}
-  <div class="image-wrap">
-  <img src=
     {% if page.image.feature contains 'http://' %}
-      "{{ page.image.feature }}"
+      <div class="post-image-wrap" style="background-image:url({{ page.image.feature }});"></div>
     {% elsif page.image.feature contains 'https://' %}
-      "{{ page.image.feature }}"
+      <div class="post-image-wrap" style="background-image:url({{ page.image.feature }});"></div>
     {% else %}
-      "{{ site.url }}/images/{{ page.image.feature }}"
+      <div class="post-image-wrap" style="background-image:url({{ site.url }}/images/{{ page.image.feature }});"></div>
     {% endif %}
-  alt="{{ page.title }} feature image">
   {% if page.image.credit %}
     <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
   {% endif %}
   </div><!-- /.image-wrap -->
 {% endif %}
+</div><!-- /.headline -->
 
 <div id="main" role="main">
-  <div class="article-author-side">
-    {% include _author-bio.html %}
-  </div>
-  <article>
+  <article class="container">
     <div class="headline-wrap">
       {% if page.link %}
         <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
@@ -55,32 +51,32 @@
         <div class="article-author-bottom">
           {% include _author-bio.html %}
         </div>
-        <p class="byline"><strong>{{ page.title }}</strong> è stato pubblicato il <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} e modificato il <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <a href="{{ site.url }}/about" title="About {{ site.owner.name }}">{{ site.owner.name }}</a>.</p>
+        <p class="byline"><strong>{{ page.title }}</strong> è stato pubblicato il <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} e modificato il <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} </p>
         <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='6404635'></div>
       </footer>
     </div><!-- /.article-wrap -->
+
   {% if site.disqus_shortname and page.comments %}
     <section id="disqus_thread"></section><!-- /#disqus_thread -->
   {% endif %}
   </article>
-</div><!-- /#main -->
-
-<div class="footer-wrap">
   <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
+  <h4>Ti potrebbe anche interessare <small class="pull-right">(<a href="{{ site.url }}/posts/">Guarda tutti i post</a>)</small></h4>
     <ul>
     {% for post in site.related_posts limit:3 %}
       <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
-    <hr />
   </div><!-- /.related-articles -->
-  <footer>
+</div><!-- /#main -->
+
+<div class="footer-wrap" style="background-image: url({{site.url}}/images/{{page.image.feature}})">
+  <footer class="container">
     {% include _footer.html %}
   </footer>
 </div><!-- /.footer-wrap -->
 
-{% include _scripts.html %}	        
+{% include _scripts.html %}
 
 </body>
 </html>
