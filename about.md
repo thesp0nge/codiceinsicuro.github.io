@@ -70,7 +70,7 @@ application security. Per ora è il primo blog italiano di application security
 croccante fuori e morbido dentro.
 
 Per qualsiasi dubbio o perplessità mi trovate via email qui:
-[paolo@armoredcode.com](mailto:paolo@armoredcode.com)
+[paolo@codiceinsicuro.it](mailto:paolo@codiceinsicuro.it)
 
 ### Qualche dato
 
