@@ -12,7 +12,7 @@ comments: true
 share: true
 ---
 
-[Michele Spagnulo](http://miki.it), non lo scopro certo io, è uno che di
+[Michele Spagnuolo](http://miki.it), non lo scopro certo io, è uno che di
 application security ne sa tanto. Neanche una settimana fa se ne esce con
 [questo post](http://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/)
 che mette a nudo un problema di design di JSONP e del suo meccanismo di

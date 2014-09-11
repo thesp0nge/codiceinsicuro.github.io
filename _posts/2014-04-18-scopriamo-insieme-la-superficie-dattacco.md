@@ -2,8 +2,8 @@
 layout: post
 title: "Scopriamo insieme la superficie d'attacco"
 date: 2014-04-22 07:59:20 +0200
-modified: 2014-04-22 07:59:20 +0200
-category: [awareness]
+modified: Wed Aug  6 07:14:04 CEST 2014
+category: [Pick'n'chic]
 tags: [awareness, superficie d'attacco, codice]
 image:
   feature: moon_surface.jpg
