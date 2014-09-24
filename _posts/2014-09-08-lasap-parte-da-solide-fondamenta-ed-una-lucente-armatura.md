@@ -6,7 +6,7 @@ category: [Spinaci]
 tags: [asap, owasp core ruleset, owasp, waf, mod_security, apache, nginx, hardening, linux, unix, patch, security advisories, security management]
 image:
   feature: sith_armor.png
-  credit: <pdragon>
+  credit: pdragon
   creditlink: https://flic.kr/p/6w2N4g
 comments: true
 share: true
@@ -30,7 +30,7 @@ concorrenza per il periodo invernale.
 Nei primi di agosto convoca l'IT, convoca il Marketing ovviamente e qualche
 consulente outsourcer e spiega il suo piano geniale.
 
-> Entro ferragosto deve essere online un portale che permeta agli impianti
+> Entro ferragosto deve essere online un portale che permetta agli impianti
 > sciistici di ordinare il nuovo prodotto.
 
 "Una decina di giorni dovrebbe bastare per fare il sito, che ci vuole? In
