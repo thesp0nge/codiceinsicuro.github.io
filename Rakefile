@@ -45,6 +45,21 @@ task :draft, :title do |t, args|
   create_post(filename, title, category, tags)
 end
 
+desc "Create a new under-attack post ( storie di vulnerabilità ed exploit ) in #{posts_dir}"
+task :under, :title do |t, args|
+  if args.title
+    title = args.title
+  else
+    title = get_stdin("Enter a title for your post: ")
+  end
+  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+  tags = get_stdin("Enter tags to classify your post (comma separated): ")
+  create_post(filename, title, "Under attack", tags)
+end
+
 desc "Create a new sicurina post ( pillole per scrivere codice più sicuro ) in #{posts_dir}"
 task :sicurina, :title do |t, args|
   if args.title
@@ -206,7 +221,8 @@ def create_post(filename, title, category, tags)
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
-    post.puts "modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
+    post.puts "promotion: "
+    post.puts "modified: "
     post.puts "category: [#{category}]"
     post.puts "tags: [#{tags}]"
     post.puts "image:"
@@ -232,19 +248,26 @@ def ask(message, valid_options)
   answer
 end
 
-desc "Deploy website via rsync"
-task :rsync do
-  exclude = ""
-  if File.exists?('./rsync-exclude')
-    exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
+namespace :blog do
+  desc "Deploy website via rsync"
+  task :rsync do
+    exclude = ""
+    if File.exists?('./rsync-exclude')
+      exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
+    end
+    puts "## Deploying website via Rsync"
+    system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{"--delete" unless rsync_delete == false} #{deploy_dir}/ #{ssh_user}:#{document_root}")
   end
-  puts "## Deploying website via Rsync"
-  system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{"--delete" unless rsync_delete == false} #{deploy_dir}/ #{ssh_user}:#{document_root}")
-end
 
-desc "Generate jekyll site"
-task :generate do
-  puts "## Generating Site with Jekyll"
-  system "grunt"
-  system "jekyll build"
+  desc "Generate jekyll site"
+  task :generate do
+    puts "## Generating Site with Jekyll"
+    system "grunt"
+    system "jekyll build"
+  end
+  desc "Refresh jekyll site"
+  task :refresh do
+    puts "## Give Site a refresh"
+    system "jekyll build"
+  end
 end
