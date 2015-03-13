@@ -1,85 +1,90 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-<head>
-{% include _head.html %}
-</head>
+---
+layout: default
+disqus: false
+archive: false
+post_class: post-template
+---
 
-<body class="post">
+<header class="main-header post-head {% if page.image.feature %}" style="background-image: url(/assets/images/{{ page.image.feature }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav {% if page.image.feature %} overlay {% endif %} clearfix">
+        <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
+        <a class="subscribe-button icon-feed" href="http://feeds.feedburn.com/CodiceInsicuro">Subscribe</a>
+        <a style="margin-right: -0.3em;" class="subscribe-button" href='{{ site.baseurl }}about'> About</a>
+    </nav>
+</header>
 
-{% include _browser-upgrade.html %}
+<main class="content" role="main">
 
-{% include _navigation.html %}
+    <article class="post">
 
-<div id="headline">
-{% if page.image.feature %}
-    {% if page.image.feature contains 'http://' %}
-      <div class="post-image-wrap" style="background-image:url({{ page.image.feature }});"></div>
-    {% elsif page.image.feature contains 'https://' %}
-      <div class="post-image-wrap" style="background-image:url({{ page.image.feature }});"></div>
-    {% else %}
-      <div class="post-image-wrap" style="background-image:url({{ site.url }}/images/{{ page.image.feature }});"></div>
-    {% endif %}
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-  {% endif %}
-  </div><!-- /.image-wrap -->
-{% endif %}
-</div><!-- /.headline -->
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+                <p>
+                <em>Questo post lo leggi in {{ page.content | reading_time }}</em>
+                &bull; <em>Parla di {{ page.tags | array_to_sentence_string_it }}</em>
+                </p>
+            </section>
+        </header>
 
-<div id="main" role="main">
-  <article class="container">
-    <div class="headline-wrap">
-      {% if page.link %}
-        <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
-      {% else %}
-        <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
-      {% endif %}
+        <section class="post-content">
+            {{content}}
+        </section>
 
-      <div class="meta"><p>{% icon fa-clock-o fa-fw %}<em>Questo post lo leggi in {{ page.content | reading_time }}</em></p></div>
-      <div class="meta"><p>{% icon fa-tag fa-fw %}<em>Scritto nella categoria {{ page.category | array_to_sentence_string_it }}</em></p></div>
-      <div class="meta"><p>{% icon fa-tags fa-fw %}<em>Parla di {{ page.tags | array_to_sentence_string_it }}</em></p></div>
+        <section class="archive">
 
-      <hr />
-    </div><!--/ .headline-wrap -->
-    <div class="article-wrap">
-      {% assign drop_cap = content|strip_html|truncate:4|remove:'.' %}
-      {% capture drop_cap_html %}<span class="drop-cap">{{ drop_cap }}</span>{% endcapture %}
-      {{ content|replace_first:drop_cap,drop_cap_html }}
-      {% comment %} {{ content }} {% endcomment %}
-      <hr />
-      <footer role="contentinfo">
-        <div class="article-author-bottom">
-          {% include _author-bio.html %}
-        </div>
-        <p class="byline"><strong>{{ page.title }}</strong> è stato pubblicato il <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} e modificato il <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} </p>
-        <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='6404635'></div>
-      </footer>
-    </div><!-- /.article-wrap -->
+          <div>
+            {% if page.image.credit %}
+              <em>Image courtesy by: 
+              {% if page.image.creditlink %}
+                <a href="{{page.image.creditlink}}">{{page.image.credit}}</a>
+            {%else%}
+                {{page.image.credit}}
+            {% endif %}
+            </em>
+          {% endif %}
+          </div>
+        </section>
 
-  {% if site.disqus_shortname and page.comments %}
-    <section id="disqus_thread"></section><!-- /#disqus_thread -->
-  {% endif %}
-  </article>
-  <div class="related-articles">
-  <h4>Ti potrebbe anche interessare <small class="pull-right">(<a href="{{ site.url }}/posts/">Guarda tutti i post</a>)</small></h4>
-    <ul>
-    {% for post in site.related_posts limit:3 %}
-      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
-  </div><!-- /.related-articles -->
-</div><!-- /#main -->
+        {% if page.archive %}
+        <section class="archive">
+            <h5>Archive</h5>
+            <ul>
+                {% for post in site.posts %}
+                    <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}    
+            </ul>
+        </section>
+        {% endif %}
 
-<div class="footer-wrap" style="background-image: url({{site.url}}/images/{{page.image.feature}})">
-  <footer class="container">
-    {% include _footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
+        <footer class="post-footer">
+            <!-- If we want to display author's name and bio -->
+            {% if site.author %}
+                <figure class="author-image">
+                    <a class="img" href="{{ site.baseurl }}" style="background-image: url(/assets/images/profile.png)">
+                    <span class="hidden">{{site.author}}'s Picture</span></a>
+                </figure>
+                <section class="author">
+                    <!-- Author Name -->
+                    <h4>{{ site.author }}</h4>
+                    <!-- Author Bio -->
+                    <p> 
+                    {{ site.bio }}
+                    </p>
+                </section>
+            {% endif %}
 
-{% include _scripts.html %}
+            <!-- Share links section -->
+            {% include share.html %}
 
-</body>
-</html>
+            <!-- Disqus comments -->
+            {% if site.disqus_shortname %}
+                {% include disqus.html %}
+            {% endif %}
+
+        </footer>
+
+    </article>
+
+</main>

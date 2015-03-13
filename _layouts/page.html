@@ -1,53 +1,32 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-<head>
-{% include _head.html %}
-</head>
+---
+layout: default
+post_class: post-template page-template
+---
 
-<body class="page">
+<nav class="main-nav clearfix">
+    <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
+    <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a>
+</nav>
 
-{% include _browser-upgrade.html %}
 
-{% include _navigation.html %}
+<main class="content" role="main">
+    <article class="post">
+        <!-- <header class="post-header">
+            <a id="blog-logo" href="{{site.baseurl}}">
+                {% if site.logo %}
+                    <img src="{{site.logo}}" alt="{{ site.name }}" />
+                {% else %}
+                    <span class="blog-title">{{ site.name }}</span>
+                {%endif%} 
+            </a>
+        </header> -->
 
-<div id="headline">
-{% if page.image.feature %}
-    {% if page.image.feature contains 'http://' %}
-      <div class="image-wrap" style="background-image:url({{ page.image.feature }});"></div>
-    {% elsif page.image.feature contains 'https://' %}
-      <div class="image-wrap" style="background-image:url({{ page.image.feature }});"></div>
-    {% else %}
-      <div class="image-wrap" style="background-image:url({{ site.url }}/images/{{ page.image.feature }});"></div>
-    {% endif %}
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-  {% endif %}
-  </div><!-- /.image-wrap -->
-{% endif %}
-</div><!-- /.headline -->
+        <h1 class="post-title">{{ page.title }}</h1>
 
-<div id="main" role="main" class="container">
-  <article>
-    <h1>{{ page.title }}</h1>
-    <div class="article-wrap">
-      {{ content }}
-    </div><!-- /.article-wrap -->
-    {% if site.disqus_shortname and page.comments %}
-      <section id="disqus_thread"></section><!-- /#disqus_thread -->
-    {% endif %}
-  </article>
-</div><!-- /#index -->
+        <section class="post-content">
+            {{content}}
+        </section>
 
-<div class="footer-wrap" style="background-image: url({{site.url}}/images/{{page.image.feature}})">
-  <footer>
-    {% include _footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
+    </article>
 
-{% include _scripts.html %}
-
-</body>
-</html>
+</main>

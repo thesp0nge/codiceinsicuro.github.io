@@ -1,76 +1,38 @@
-# Codice Insicuro
+# Kasper
 
-## Introduzione
+This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll. 
+Feel free to fork, change, modify and re-use it.
 
-[Codice Insicuro](https://codiceinsicuro.it) è un blog di application security
-scritto in Italiano e che parla della realtà italiana legata ai temi di
-sicurezza applicativa.
+## How to use it
 
-Spesso quello che si vede in giro è un mare di blog che fanno repost di
-articoli, soprattutto quelli legati ad intrusioni informatiche, senza
-aggiungere un singolo bit di informazione in più. Nessun blog italiano (AFAIK,
-ovviamente) pone il problema della sicurezza applicativa partendo dal codice
-sorgente, fornendo esempi di safe coding.
+Simply clone this repository, and then run `jekyll serve` inside the directory.
 
-Da questo punto sono partito quando ho scelto di lasciare la mia prima
-creatura, [armoredcode.com](http://armoredcode.com), per scrivere in Italiano.
+Kasper theme includes:
 
-Potete seguire [codice insicuro](https://codiceinsicuro.it) anche su
-[twitter](http://twitter.com/codiceinsicuro) o potete iscrivervi alla
-[newsletter](http://eepurl.com/UOpyj) per non perdervi neppure un post.
+* Pagination
+* Rss
+* Google Analytics Tracking code
+* Code Syntax Highlight
+* Author's profile with picture
+* Disqus comments
 
-## Sto lavorando a...
+## Screenshots
 
-Ho pensato che, a parte i post di _meditazione_ o di _chiacchiere da bar_,
-potesse essere una buona idea quello di creare due macro-categorie ben distinte
-di post tecnologici conditi con codice ruby:
+![index page](https://raw.github.com/rosario/kasper/master/assets/images/kasper-theme-index.png)
+![post page](https://raw.github.com/rosario/kasper/master/assets/images/kasper-theme-post.png)
 
-* pick'n'chic: dove si parla di come usare ruby per attaccare un'applicazione
-* sicurina: dove si parla di come implementare codice sicuro usando ruby
 
-Ho pensato inoltre ad una terza categoria, _l'angolo del libro_ dove farò una
-recensione di libri in campo security/sviluppo che mi sono piaciuti o che ho
-trovato particolarmente interessanti.
+## Thanks 
+Most of the work has been already done by the Ghost team, I've just ported Casper to Jekyll. 
+I've also added few things specific to Jekyll and some minor style changes.
 
-**ATTENZIONE** nella categoria dell'angolo del libro, inserirò un link ad
-[amazon](http://www.amazon.it) per il libro oggetto del post contenente un
-codice identificativo. Se, trovando il libro interessante, doveste acquistare
-il libro partendo dal link di questo blog, Amazon corrisponderebbe parte
-dell'acquisto a me. Ho scelto questa via per monetizzare un po' e pagare le
-spese della VPS, sinceramente molto meglio di farcire di adwords qua e là.
+## Copyright & License
 
-### Pick'n'chic: usare ruby in un penetration test applicativo
+Copyright (C) 2013 Ghost Foundation - Released under the MIT License.
 
-* L'arte del fingerprint di un'applicazione web
-* Robots.txt: il crawling parte da qui
-* Ancora crawling con la gemma anemone
-* Alla ricerca del Cross Site Scripting
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Sicurina: pillole per scrivere codice più sicuro
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-* Scrivere un'API con Grape: introduzione
-* Scrivere un'API con Grape: gestire l'autenticazione
-* Una form di login dalla A alla Login
-* Implementare il password reset
-* Usiamo OAuth per le nostre applicazioni web
-* Cross site scripting: come mitigarlo
-* SQL Injection: come mitigarla
-* HTTPS: come gestire la connessione
-* Padrino e syslog un amore difficile: facciamoli andare d'accordo
-
-### Doctor is in: lo sportello dell'awareness
-
-* O come Owasp
-* Cross site scripting: cos'è e perché è rischioso
-* SQL Injection: cos'è è perché è rischiosa
-* Non accettare caramelle dagli sconosciuti: valida il certificato del server
-
-### L'angolo del libro
-
-### Spinaci: storie di hardening
-
-* Wordpress
-* NGINX
-* Apache
-* Mod Security
-* Puma
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

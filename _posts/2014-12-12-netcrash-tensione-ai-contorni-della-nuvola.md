@@ -13,8 +13,6 @@ comments: true
 share: true
 ---
 
-## Premessa
-
 **Disclosure**. Il link amazon ad ogni libro che viene recensito qui su
 [codiceinsicuro]({{site.url}}) ha un codice amazon che mi riconosce, se
 decidete di comprare il libro dopo aver cliccato sul link con questo codice,

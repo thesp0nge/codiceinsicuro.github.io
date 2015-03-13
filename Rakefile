@@ -262,12 +262,6 @@ namespace :blog do
   desc "Generate jekyll site"
   task :generate do
     puts "## Generating Site with Jekyll"
-    system "grunt"
-    system "jekyll build"
-  end
-  desc "Refresh jekyll site"
-  task :refresh do
-    puts "## Give Site a refresh"
     system "jekyll build"
   end
 end

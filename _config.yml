@@ -1,80 +1,19 @@
-title:            Codice Insicuro
-description:      Il blog italiano di sicurezza applicativa croccante fuori e morbido dentro
-version: 1.2
-# Your site's domain goes here. Leave localhost server or blank when working locally.
-# url:              http://localhost:4000
-url:              https://codiceinsicuro.it
+name: Codice Insicuro
+description: Il blog italiano di sicurezza applicativa croccante fuori e morbido dentro
+meta_description: Il blog italiano di sicurezza applicativa croccante fuori e morbido dentro
+author: Paolo Perego
+bio: Specialista di Sicurezza Applicativa, 38enne che vive a Milano, Italia. Padre e marito orgoglioso e quando non buco siti, atleta di Taekwon-do ITF
+
+version: '2.0'
 disqus_shortname: codiceinsicuro
-
-# Owner/author information
-owner:
-  name:           Paolo Perego
-  avatar:         myself.png
-  bio:            "Specialista di Sicurezza Applicativa, 38enne che vive a Milano, Italia. Padre e marito orgoglioso e quando non buco siti, atleta di Taekwon-do ITF"
-  email:          paolo@codiceinsicuro.it
-  # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:        codiceinsicuro
-  facebook:       codiceinsicuro
-  github:         thesp0nge
-  stackoverflow:
-  linkedin:       thesp0nge
-  instagram:
-  lastfm:
-  tumblr:
-  pinterest: 
-  foursquare: 
-  steam: 
-  dribbble: 
-  feedburner: CodiceInsicuro
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus: PaoloPerego
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   UA-50260618-1
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:        
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: About
-    url: /about/
-  - title: Archivio
-    url: /posts/
-  - title: Dawnscanner
-    url: http://dawnscanner.org
-    external: true
-  - title: Wordstress
-    url: http://wordstress.org
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Europe/Rome
-future:      true
+markdown: kramdown
 highlighter: pygments
-markdown:    kramdown
-
-buffer:
-  share: true
-  config: buffer.yml
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
+logo: sicuropoli.jpg
+paginate: 15
+baseurl: /
+domain_name: 'https://codiceinsicuro.it'
+google_analytics: 'UA-50260618-1'
 permalink:   /blog/:title
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-  coderay:
-    coderay_line_numbers: true
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+# Details for the RSS feed generator
+url:            'https://codiceinsicuro.it'
