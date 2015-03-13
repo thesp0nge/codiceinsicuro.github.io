@@ -16,11 +16,11 @@ owner:
   twitter:        codiceinsicuro
   facebook:       codiceinsicuro
   github:         thesp0nge
-  stackoverflow:  
+  stackoverflow:
   linkedin:       thesp0nge
-  instagram:      
-  lastfm:         
-  tumblr: 
+  instagram:
+  lastfm:
+  tumblr:
   pinterest: 
   foursquare: 
   steam: 
@@ -42,8 +42,11 @@ links:
     url: /about/
   - title: Archivio
     url: /posts/
-  - title: Codesake::Dawn
-    url: http://dawn.codesake.com
+  - title: Dawnscanner
+    url: http://dawnscanner.org
+    external: true
+  - title: Wordstress
+    url: http://wordstress.org
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

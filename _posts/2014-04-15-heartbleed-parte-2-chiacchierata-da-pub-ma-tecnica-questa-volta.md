@@ -45,8 +45,8 @@ canale cifrato con il server anche in assenza di scambio dei dati. Perché
 questo? Ad esempio per poter assumere che il peer remoto sia sempre _live_
 evitando che un firewall ad esempio decida di chiudere la connessione a causa
 del mancato trasferimento di informazioni. [Questo
-thread]([http://security.stackexchange.com/questions/55215/why-does-tls-need-an-explicit-heartbeat-protocolQuesto
-thread) su Stackexchange.com spiega molto bene il punto sul perché un
+thread](http://security.stackexchange.com/questions/55215/why-does-tls-need-an-explicit-heartbeat-protocol)
+su Stackexchange.com spiega molto bene il punto sul perché un
 meccanismo simile al keepalive sia stato introdotto in un layer applicativo:
 perché SSL non fa alcuna asserzione sul protocollo di livello trasporto
 sottostante e sulla sua implementazione, la sua agnosticità quindi rende

@@ -4,7 +4,8 @@
     {% for link in site.links %}
       <li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
     {% endfor %}
-      <li><a href="{{site.url}}/feed.xml" target="_blank"><i class="icon-feed"></i> Feed RSS</a></li>
+      {% comment %} <li><a href="{{site.url}}/feed.xml" target="_blank"><i class="icon-feed"></i> Feed RSS</a></li> {% endcomment %}
+      <li><a href="http://feeds.feedburner.com/CodiceInsicuro" target="_blank"><i class="icon-feed"></i> Feed RSS</a></li> 
     </ul>
     <section class="name">
       <a href="{{ site.url }}">codice<b>insicuro</b></a>
