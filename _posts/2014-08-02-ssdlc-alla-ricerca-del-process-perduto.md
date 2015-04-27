@@ -44,7 +44,7 @@ toccare i tasti giusti se vuole farsi ascoltare.
 > cambiare radicalmente il modo in cui loro fanno una cosa, perché **voi** la
 > ritenente sbagliata.
 
-![Compilava il tuo Hello World?]({{site.url}}/images/willy_wonka_ssdlc.jpg)
+![Compilava il tuo Hello World?]({{site.url}}/assets/images/willy_wonka_ssdlc.jpg)
 
 Esatto, se voi pensate di andare a sconvolgere un processo che in _qualche
 modo_ funziona, in nome della sicurezza avete completamente sbagliato strada.

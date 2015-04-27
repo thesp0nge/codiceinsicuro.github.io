@@ -3,11 +3,13 @@ layout: default
 post_class: post-template page-template
 ---
 
-<nav class="main-nav clearfix">
-    <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
-    <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a>
-</nav>
-
+<header class="main-header post-head {% if page.image.feature %}" style="background-image: url(/assets/images/{{ page.image.feature }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav {% if page.image.feature %} overlay {% endif %} clearfix">
+        <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
+        <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/CodiceInsicuro">Subscribe</a>
+        <a style="margin-right: -0.3em;" class="subscribe-button" href='{{ site.baseurl }}about'> About</a>
+    </nav>
+</header>
 
 <main class="content" role="main">
     <article class="post">

@@ -8,7 +8,7 @@ post_class: post-template
 <header class="main-header post-head {% if page.image.feature %}" style="background-image: url(/assets/images/{{ page.image.feature }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav {% if page.image.feature %} overlay {% endif %} clearfix">
         <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
-        <a class="subscribe-button icon-feed" href="http://feeds.feedburn.com/CodiceInsicuro">Subscribe</a>
+        <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/CodiceInsicuro">Subscribe</a>
         <a style="margin-right: -0.3em;" class="subscribe-button" href='{{ site.baseurl }}about'> About</a>
     </nav>
 </header>
@@ -79,9 +79,7 @@ post_class: post-template
             {% include share.html %}
 
             <!-- Disqus comments -->
-            {% if site.disqus_shortname %}
-                {% include disqus.html %}
-            {% endif %}
+            {% include disqus.html %}
 
         </footer>
 

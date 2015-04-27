@@ -11,6 +11,7 @@
 #
 
 require 'buff'
+require 'yaml'
 
 class Buffer < Jekyll::Generator
   def generate(site)
@@ -51,6 +52,7 @@ class Buffer < Jekyll::Generator
   end
 
   def buffer(message, site)
+
     access_token = ENV['BUFFER_ACCESS_TOKEN'] || read_access_token(site.config['buffer']['config'])
     fail ArgumentError, 'No Buffer access token!' unless access_token
     client = Buff::Client.new(access_token)

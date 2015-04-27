@@ -2,7 +2,7 @@ name: Codice Insicuro
 description: Il blog italiano di sicurezza applicativa croccante fuori e morbido dentro
 meta_description: Il blog italiano di sicurezza applicativa croccante fuori e morbido dentro
 author: Paolo Perego
-bio: Specialista di Sicurezza Applicativa, 38enne che vive a Milano, Italia. Padre e marito orgoglioso e quando non buco siti, atleta di Taekwon-do ITF
+bio: Specialista di Sicurezza Applicativa, 38enne che vive a Milano, Italia. Padre e marito orgoglioso e quando non buco siti o scrivo codice sicuro, atleta ed istruttore di Taekwon-do ITF
 
 version: '2.0'
 disqus_shortname: codiceinsicuro
@@ -15,5 +15,9 @@ domain_name: 'https://codiceinsicuro.it'
 google_analytics: 'UA-50260618-1'
 permalink:   /blog/:title
 
+buffer:
+  config: buffer.yml
+  share: true
 # Details for the RSS feed generator
 url:            'https://codiceinsicuro.it'
+a url:            'http://localhost:4000'
