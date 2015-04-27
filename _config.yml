@@ -20,4 +20,4 @@ buffer:
   share: true
 # Details for the RSS feed generator
 url:            'https://codiceinsicuro.it'
-a url:            'http://localhost:4000'
+# url:            'http://localhost:4000'
