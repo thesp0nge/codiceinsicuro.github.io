@@ -1,10 +1,10 @@
 name: Codice Insicuro
-description: Il blog italiano di sicurezza applicativa croccante fuori e morbido dentro
-meta_description: Il blog italiano di sicurezza applicativa croccante fuori e morbido dentro
+description: I pirati della sicurezza applicativa
+meta_description: I pirati della sicurezza applicativa
 author: Paolo Perego
-bio: Specialista di Sicurezza Applicativa, 38enne che vive a Milano, Italia. Padre e marito orgoglioso e quando non buco siti o scrivo codice sicuro, atleta ed istruttore di Taekwon-do ITF
+bio: Specialista di Sicurezza Applicativa, 39enne che vive a Milano, Italia. Padre e marito orgoglioso e quando non buco siti o scrivo codice sicuro, atleta ed istruttore di Taekwon-do ITF
 
-version: '2.0'
+version: '2.2'
 disqus_shortname: codiceinsicuro
 markdown: kramdown
 highlighter: pygments
@@ -19,5 +19,5 @@ buffer:
   config: buffer.yml
   share: true
 # Details for the RSS feed generator
-url:            'https://codiceinsicuro.it'
-# url:            'http://localhost:4000'
+# url:            'https://codiceinsicuro.it'
+url:            'http://localhost:4000'
