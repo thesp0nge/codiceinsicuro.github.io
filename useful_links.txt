@@ -1,0 +1,72 @@
+= Useful links
+
+This document was prepared for the talk "Your web application seen from the
+Hell's Kitchen" I gave in November 2015 for Italian Ruby Day
+(http://rubyday.it).
+
+Now is a live "I found it interesting" things list, edited during the years.
+
+There is a "last updated" at the bottom.
+
+
+1. Hacking stories and reports
+
+  * Identity Theft Resource Center Report: http://www.idtheftcenter.org/images/breach/ITRCBreachStatsReportSummary2015.pdf
+  * Ashley Madison data breach: https://en.wikipedia.org/wiki/Ashley_Madison_data_breach
+  * Patreon crowdfounding got hacked: https://patreon.thecthulhu.com/
+  * Various Anonymous attacks in Italy in 2015 (http://urlin.it/131563, http://urlin.it/131564, http://urlin.it/131565)
+  * HackingTeam breach: http://urlin.it/131566
+  * Zone-H.org: http://www.zone-h.org
+
+2. Docs
+  * Owasp Top 10 2013: https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
+
+3. Tools
+  * Metasploitable: https://community.rapid7.com/docs/DOC-1875
+  * Owasp Broken Web Application project: https://code.google.com/p/owaspbwa
+  * Nessus: http://www.tenable.com/products/nessus-vulnerability-scanner
+  * Dawnscanner: http://dawnscanner.org
+  * Brakeman scanner: http://brakemanscanner.org
+  * ZAP proxy: https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project
+  * Google.com, Bing.com
+  * Pull Review: pullreview.com
+  * Owasp Pipeline: https://github.com/OWASP/pipeline
+
+4. Reading pane
+  * https://codiceinsicuro.it (IT)
+  * http://armoredcode.com ( EN - soon to be active again)
+  * Dentro Anonymous. Viaggio nelle legioni dei cyberattivisti (http://www.amazon.it/gp/product/B009H6EJWI/ref=as_li_ss_tl?ie=UTF8&camp=3370&creative=24114&creativeASIN=B009H6EJWI&linkCode=as2&tag=codicinsic-21)
+  * DEEP WEB - La rete oltre Google: Personaggi, storie e luoghi dell'internet profonda (http://www.amazon.it/gp/product/B00L9GLK1M/ref=as_li_ss_tl?ie=UTF8&camp=3370&creative=24114&creativeASIN=B00L9GLK1M&linkCode=as2&tag=codicinsic-21)
+  * Using "Git Clone" to get Pwn3D https://blog.skullsecurity.org/2012/using-git-clone-to-get-pwn3d
+  * Git repository google dork: inurl:.git "intitle:index.of (<-- the missing " is not a typo)
+  * Repository hacking: https://reedphish.wordpress.com/2015/01/03/repository-hacking/
+
+5. Twitter
+  * https://twitter.com/thesp0nge
+  * https://twitter.com/brakeman
+  * https://twitter.com/pullreview
+  * https://twitter.com/srcclr
+  * https://twitter.com/KitPloit
+  * https://twitter.com/SwiftOnSecurity
+  * https://twitter.com/rubytogether
+  * https://twitter.com/evilsocket
+  * https://twitter.com/laparisa
+
+6. Best practices
+  * Automatic security update - Ubuntu: https://help.ubuntu.com/community/AutomaticSecurityUpdates
+  * Security update - RedHat 5: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/5/html/Deployment_Guide/ch-security-updates.html
+  * Security update - RedHat 6: http://linuxaria.com/pills/enabling-automatic-updates-in-centos-6-and-red-hat-6
+  * Security update - RedHat 7: http://linuxaria.com/howto/enabling-automatic-updates-in-centos-7-and-rhel-7
+
+  * Owasp RoR Security Guide: https://www.owasp.org/index.php/Category:OWASP_Ruby_on_Rails_Security_Guide_V2
+  * Ruby Security Reviewer Guide: https://code.google.com/p/ruby-security/wiki/Guide
+  * Official RoR Security Guide: http://guides.rubyonrails.org/security.html
+  * RubyGem security best practices: http://guides.rubygems.org/security/
+  * Install mod_security on nginx: http://www.nginxtips.com/how-to-install-mod_security-on-nginx/
+  * Install mod_security on Apache: https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_security-with-apache-on-debian-ubuntu
+
+7. Misc
+  * Statusify is a web-application status app, written entirely in Ruby - (https://github.com/statusify/statusify)
+  * Dashing is a Sinatra based framework that lets you build beautiful dashboards - (http://dashing.io)
+
+_last update: Thu Jan  7 18:15:43 CET 2016_
