@@ -69,4 +69,10 @@ There is a "last updated" at the bottom.
   * Statusify is a web-application status app, written entirely in Ruby - (https://github.com/statusify/statusify)
   * Dashing is a Sinatra based framework that lets you build beautiful dashboards - (http://dashing.io)
 
-_last update: Thu Jan  7 18:15:43 CET 2016_
+8. Malware and Mac OS X
+  * http://sysdev.me/trusted-bsd-in-osx/
+  * http://reverse.put.as
+  * https://objective-see.com/blog.html
+  * https://www.youtube.com/watch?v=fv4l9yAL2sU
+
+_last update: Mon Feb  1 16:43:02 CET 2016_

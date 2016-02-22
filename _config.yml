@@ -1,10 +1,14 @@
 name: Codice Insicuro
+title: Codice Insicuro, blog di Cyber Security, sviluppo sicuro, code review e altro.
 description: I pirati della sicurezza applicativa
 meta_description: I pirati della sicurezza applicativa
-author: Paolo Perego
-bio: Specialista di Sicurezza Applicativa, 39enne che vive a Milano, Italia. Marito e padre orgoglioso, quando non buco siti o insegno a scrivere codice sicuro, anche atleta di Taekwon-do ITF
+author:
+  name: Paolo Perego
+  email: paolo@codiceinsicuro.it
+  uri: https://plus.google.com/+PaoloPerego
+  bio: Specialista di Sicurezza Applicativa, 39enne vive a Milano, Italia. E' un marito e padre orgoglioso di Daniele e Anna. Quando non buca siti o insegna a scrivere codice sicuro, sviluppa un tool di code review per ruby (<a href="http://dawnscanner.org">dawnscanner</a>), e su twitter lo trovi seguendo <a href="https://twitter.com/thesp0nge">@thesp0nge</a>. E' anche una cintura nera 1 DAN di Taekwon-do ITF.
 
-version: '2.2'
+version: '2.3'
 disqus_shortname: codiceinsicuro
 markdown: kramdown
 highlighter: pygments
@@ -13,11 +17,17 @@ paginate: 15
 baseurl: /
 domain_name: 'https://codiceinsicuro.it'
 google_analytics: 'UA-50260618-1'
-permalink:   /blog/:title
+permalink:   /blog/:title/
 
 buffer:
   config: buffer.yml
   share: false
+
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-gist
 
 # Details for the RSS feed generator
 url:            'https://codiceinsicuro.it'

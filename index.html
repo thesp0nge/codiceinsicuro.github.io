@@ -48,13 +48,13 @@ about: 'about.html'
         <footer class="post-meta">
             {% if site.author %}
                 <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
-                {{ site.author }}
+                {{ site.author.name }}
             {% endif %}
             {% if post.categories.size > 0 %} 
                 {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:"%d-%m-%Y" }}">
-                {{ post.date | date_to_string }}
+                {{ post.date | italian_short_date }}
             </time> 
         </footer>
     </article>

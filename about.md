@@ -4,7 +4,7 @@ permalink: /about/
 title: Su questo blog
 tagline: Un blog di application security morbido fuori e croccante dentro
 tags: [about, Jekyll, theme, responsive]
-modified: 4-10-2014
+modified: 11-02-2016
 comments: false
 share: true
 image:
@@ -21,7 +21,7 @@ della sicurezza applicativa, ancora poco diffusa in Italia e partii dai
 suggerimenti trovati in quel libro.
 
 Con il tempo, gli impegni, la vita e i [progetti
-collaterali](http://dawn.codesake.com) nel campo sempre ICT security hanno reso
+collaterali](http://dawnscanner.org) nel campo sempre ICT security hanno reso
 la scrittura di post di un certo livello, molto più difficile. Non impossibile,
 solo molto difficile.
 

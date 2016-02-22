@@ -56,10 +56,22 @@ mai una posizione, fare sorrisini a destra e a manca.
 Mi stomaca più questo, di un'idea personale forte basata su convinzioni
 personali e sulla quale io, come persona, posso essere d'accordo o meno.
 
-Continua con il tuo ottimo lavoro Elia, al progetto [Opal](#) fai solo del
+Continua con il tuo ottimo lavoro Elia, al progetto [Opal](http://opalrb.org) fai solo del
 bene.
 
 Enjoy it!
+
+**UPDATE**
+
+Elia stesso, mi fa notare che il tweet incriminato sia [ancora disponibile
+qui](https://archive.is/hUepz). [Qui](https://archive.is/YU9Z2) la denuncia, o
+presunta tale, sulla sua opinione sui transessuali.
+[Qui](https://archive.is/WbW0X) si inizia a mischiare opinioni personali e
+sviluppo.
+
+A distanza di 2 mesi continuo a pensare che le opinioni di Elia non c'entri una
+beneamata con la sua capacità di contribuire ad un progetto opensource, né
+tanto meno con la sua professionalità.
 
 [^1]: sui presepi a scuola, la polemica è sterile e denota un'ignoranza
       clamorosa da tutte le parti coinvolte. Cristo è un profeta citato dal Corano,
@@ -72,4 +84,5 @@ Enjoy it!
       portassero i tricolori, le foto del presidente, il materiale didattico, gli
       insegnanti di sostegno. Questo manca alla scuola e manca tutto l'anno, non solo
       a Natale.
+
 [^2]: il profilo è stato rimosso, non posso fare _fact checking_.
