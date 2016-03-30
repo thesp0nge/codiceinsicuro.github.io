@@ -32,7 +32,8 @@ buffer:
 
 include:
   - _pages
-  - _tips
+  # - _rimedi
+  # - _chicchi_di_java
 
 exclude:
   - Capfile
@@ -64,10 +65,36 @@ gems:
   - jekyll-gist
 
 collections:
-  tips:
+  rimedi:
     output: true
     permalink: /:collection/:title/
     title: I rimedi veloci del bucaniere
+  chicchi:
+    output: true
+    permalink: /:collection/:title/
+    title: Il caffè del buongiorno
+
+defaults:
+  - scope:
+      path: _chicchi
+      type: chicchi
+    values:
+      layout: chicchi
+      image:
+        feature: java.jpg
+        credit: Lilian Wong
+        creditlink: https://flic.kr/p/7Ubonh
+
+  - scope:
+      path: _rimedi
+      type: tip
+    values:
+      layout: tip
+
+gist:
+  noscript: false
+
+
 # Details for the RSS feed generator
 url:            'https://codiceinsicuro.it'
 # url:            'http://localhost:4000'

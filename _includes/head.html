@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    {% if page.title %}
+      <title>{{ page.title }} - {{ site.title }}</title>
+    {% else %}
+      <title>{{ site.title }}</title>
+    {% endif %}
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="canonical" href="{{site.url}}{{page.url}}"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+
+    <link rel="author" href={{site.author.uri}} />
+
+    <!-- Open Graph -->
+    {% if page.promotion %}
+      <meta name="description" content="{{ page.promotion}}" />
+    {% else %}
+      <meta name="description" content="{{ site.meta_description}}" />
+    {% endif %}
+    {% if page.tags %}
+      <meta name="keywords" content="{{ page.tags | tags_to_meta }}" />
+    {% else %}
+      <meta name="keywords" content="sicurezza thesp0nge paolo perego blog sviluppo codereview penetration-test owasp" />
+    {% endif %}
+    {% if page.category %}
+      <meta property="og:type" content="article"/>
+    {% else %}
+      <meta property="og:type" content="website"/>
+    {% endif %}
+    {% if page.title %}
+      <meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
+      <meta property="twitter:title" content="{{ page.title }} - {{ site.title }}" />
+    {% else %}
+      <meta property="og:title" content="{{ site.name }} - {{ site.description }}" />
+      <meta property="twitter:title" content="{{ site.name }} - {{ site.description }}" />
+    {% endif %}
+    <meta name="twitter:site" content="@codiceinsicuro">
+    <meta name="twitter:creator" content="@thesp0nge">
+    <meta property="twitter:url" content="{{site.url}}{{page.url}}" />
+    <meta property="og:url" content="{{site.url}}{{page.url}}" />
+    <meta property="og:site_name" content="codiceinsicuro.it">
+    <meta property="og:locale" content="it_IT">
+    {% if page.image %}
+      <meta name="twitter:image" content="{{site.url}}/assets/images/{{page.image.feature}}">
+      <meta name="og:image" content="{{site.url}}/assets/images/{{page.image.feature}}">
+    {% else %}
+      <meta name="twitter:image" content="{{site.url}}/assets/images/logo.jpg">
+      <meta name="og:image" content="{{site.url}}/assets/images/logo.jpg">
+    {% endif %}
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary">
+    <meta property="og:image:width" content="1363">
+    <meta property="og:image:height" content="1363">
+
+
+
+</head>
+
