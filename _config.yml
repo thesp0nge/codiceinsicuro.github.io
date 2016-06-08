@@ -57,6 +57,7 @@ exclude:
 
 gems:
   - jekyll-sitemap
+  - jekyll-twitter-plugin
   - jekyll-assets
   - jekyll/tagging
   - jekyll-tagging-related_posts
