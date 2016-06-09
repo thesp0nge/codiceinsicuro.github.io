@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'jekyll-sitemap'
+gem 'jekyll-twitter-plugin'
 gem 'jekyll-paginate'
 gem 'jekyll-feed'
 gem 'jekyll-gist'

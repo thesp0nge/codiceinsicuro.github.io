@@ -10,5 +10,12 @@ sitemap: false
   {% for post in site.posts limit: page.limit %}
     {% include feed/entry.xml %}
   {% endfor %}
+  {% for post in site.chicchi %}
+    {% include feed/entry.xml %}
+  {% endfor %}
+
+  {% for post in site.rimedi %}
+    {% include feed/entry.xml %}
+  {% endfor %}
 
 </feed>

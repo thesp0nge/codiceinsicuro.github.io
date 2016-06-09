@@ -3,7 +3,7 @@ require "bundler/setup"
 require "stringex"
 ## -- Config -- ##
 
-ssh_user       = "thesp0nge@goliath.armoredcode.com"
+ssh_user       = "thesp0nge@178.62.53.4"#goliath.armoredcode.com"
 ssh_port       = "22"
 document_root  =  "/var/www/codiceinsicuro.it"
 rsync_delete   = true
