@@ -31,6 +31,9 @@ There is a "last updated" at the bottom.
   * Google.com, Bing.com
   * Pull Review: pullreview.com
   * Owasp Pipeline: https://github.com/OWASP/pipeline
+  * QARK - code review for APK: https://github.com/linkedin/qark
+  * Code burner - Security-focused static code analysis for everyone: https://github.com/groupon/codeburner
+
 
 4. Reading pane
   * https://codiceinsicuro.it (IT)
@@ -75,4 +78,4 @@ There is a "last updated" at the bottom.
   * https://objective-see.com/blog.html
   * https://www.youtube.com/watch?v=fv4l9yAL2sU
 
-_last update: Mon Feb  1 16:43:02 CET 2016_
+_last update: Ven 22 Lug 2016 15:55:19 CEST_
