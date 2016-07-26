@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Forum di bittorrent compromesso: credenziali in pericolo"
-promotion: 
+promotion: "Forum di bittorrent compromesso: credenziali in pericolo"
 modified: 
 featured: true
 category: [Under attack, News]
 tags: [bittorrent, forum, credenziali, attacco, troy hunt]
 image:
-  feature:
-  credit:
-  creditlink:
+  feature: torrent.jpg
+  credit: Guglielmo D'Arezzo
+  creditlink: https://flic.kr/p/pyn8rf
 comments: true
 share: true
 ---

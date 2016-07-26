@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /chicchi/
-title: "Chicchi di caffè, maginati in modo sicuro"
+title: "Chicchi di caffè, macinati in modo sicuro"
 image:
   feature: java.jpg
   credit: Lilian Wong

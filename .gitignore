@@ -5,6 +5,7 @@ _site
 .DS_Store
 *.sublime-project
 *.sublime-workspace
+.tweet-cache/
 codekit-config.json
 node_modules
 _asset_bundler_cache

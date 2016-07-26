@@ -663,6 +663,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
+  visibility: hidden;
     margin: 10px 0 10px 0;
     font-size: 5rem;
     letter-spacing: -1px;
@@ -673,7 +674,9 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .page-description {
+  float: right;
     margin: 0;
+    margin-top: 1.25em;
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
