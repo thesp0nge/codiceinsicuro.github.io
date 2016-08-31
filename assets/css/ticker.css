@@ -10,10 +10,9 @@
 	text-align: center;
 	position: relative;
 	overflow: hidden;
-	background-color: rgba(0,0,0,1);
-	color: white;
-	/*background-color: white;
-	color: black;*/
+  padding-top: 1em;
+	/* background-color: rgba(0,0,0,1); */
+	/* color: white; */
 	font-size: 1.1em;
 	margin-bottom: 15px;
 }
@@ -31,7 +30,7 @@
 	height: inherit;
 	width: inherit;
 	display: table-cell;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 	font-weight: bold;
 }
 .ticker-container ul {
@@ -59,7 +58,10 @@
 	top: 0;
 }
 .ticker-container ul div li {
-	padding: 5px 0;
+  text-size: 0.8em;
+  /* padding: 0; */
+  padding-top: 1em;
+  margin: 0 !important;
 }
 .ticker-container ul div li a {
 	color: #EC0B43;
@@ -73,7 +75,7 @@
 	.ticker-container .ticker-caption {
 		height: 100%;
 		width: 150px;
-		background: url('./ticker-caption-bg.png');
+		background: url('/assets/images/ticker-caption-bg.png');
 	}
 	.ticker-container .ticker-caption p {
 		text-align: left;

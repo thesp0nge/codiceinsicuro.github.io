@@ -1,6 +1,6 @@
 _config.yml
 buffer.yml
-*.swp
+*.sw?
 _site
 .DS_Store
 *.sublime-project
