@@ -3,20 +3,11 @@
     <p>Breaking News</p>
   </div>
   <ul>
-    <div>
-      <li><span>Breaking News 1 &ndash; <a href="#">read more</a></span></li>
-    </div>
-    <div>
-      <li><span>Breaking News 2 &ndash; <a href="#">read more</a></span></li>
-    </div>
-    <div>
-      <li><span>Breaking News 3 &ndash; <a href="#">read more</a></span></li>
-    </div>
-    <div>
-      <li><span>Breaking News 4 &ndash; <a href="#">read more</a></span></li>
-    </div>
-    <div>
-      <li><span>Breaking News 5 &ndash; <a href="#">read more</a></span></li>
-    </div>
+    {% assign notizie = site.news | sort: "date" %}
+    {% for n in notizie %}
+      <div>
+        <li><span>{{n.title}} &ndash; <a href="{{n.url}}">read more</a></span></li>
+      </div>
+    {% endfor %}
   </ul>
 </div>
