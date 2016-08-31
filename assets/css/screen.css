@@ -1819,6 +1819,57 @@ body:not(.post-template) .post-title {
 }
 
 
+#scroller li {
+  list-style:none;
+}
+
+#scroller li .title {
+  font-weight:bold;
+}
+
+#scroller li .title:after {
+  content:"»";
+  font-weight:normal;
+  margin:0 3px 0 15px;
+}
+
+#scroller li p {
+  display:inline-block;
+  margin:2px 0 0;
+}
+
+.brnews {
+  max-height:45px;
+  padding:9px 0;
+}
+
+.brnews a {
+  color:#555E6B;
+}
+
+.brnews .entry {
+  display:inline-block;
+}
+
+.brnews h3 {
+  float:left;
+  font-size: 0.75em;
+  line-height:1;
+  margin:0;
+  padding:0.5em 7px 7px;
+  width:115px;
+}
+
+#intr {
+  background:#f7f7f7;
+  border-bottom:1px solid #d4d4d4;
+  border-top:1px solid #d4d4d4;
+  height:41px;
+  padding:0 40px;
+  overflow:hidden;
+}
+
+
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
