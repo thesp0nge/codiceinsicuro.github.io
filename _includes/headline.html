@@ -3,10 +3,10 @@
     <p>Breaking News</p>
   </div>
   <ul>
-    {% assign notizie = site.news | sort: "date" %}
+    {% assign notizie = site.news | sort: "date" | reverse %}
     {% for n in notizie %}
       <div>
-        <li><span>{{n.title}} &ndash; <a href="{{n.url}}">read more</a></span></li>
+        <li><span>{{ n.date | date:"%d-%m-%Y" }} &mdash; {{n.title}} &ndash; <a href="{{n.url}}">read more</a></span></li>
       </div>
     {% endfor %}
   </ul>
