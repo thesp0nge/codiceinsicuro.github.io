@@ -1,10 +1,26 @@
+{% if page.url == "/news/"  %}
 
-{%if page.image.feature %}
   <header class="main-header post-head" style="background-image: url(/assets/images/{{ page.image.feature }})">
       <nav class="main-nav overlay clearfix">
           <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
 
-          <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/CodiceInsicuro">Subscribe</a>
+          <a class="subscribe-button icon-feed" href="{{site.url}}/feed-news.xml">Subscribe</a>
+          {% comment %} <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}cookie-policy'>Cookie Policy</a> {% endcomment %}
+          <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}about'>About</a>
+          <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}contatti'>Contatti</a>
+          <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}rimedi'>Rimedi</a>
+          <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}chicchi'>Chicchi</a>
+          <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}news'>News</a>
+      </nav>
+  </header>
+
+{% else %}
+  {% if page.image.feature %}
+  <header class="main-header post-head" style="background-image: url(/assets/images/{{ page.image.feature }})">
+      <nav class="main-nav overlay clearfix">
+          <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
+
+          <a class="subscribe-button icon-feed" href="{{site.url}}/feed.xml">Subscribe</a>
           {% comment %} <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}cookie-policy'>Cookie Policy</a> {% endcomment %}
           <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}about'>About</a>
           <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}contatti'>Contatti</a>
@@ -18,7 +34,7 @@
       <nav class="main-nav clearfix">
           <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
 
-          <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/CodiceInsicuro">Subscribe</a>
+          <a class="subscribe-button icon-feed" href="{{site.url}}/feed.xml">Subscribe</a>
           {% comment %} <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}cookie-policy'>Cookie Policy</a> {% endcomment %}
           <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}about'>About</a>
           <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}contatti'>Contatti</a>
@@ -27,4 +43,5 @@
           <a style="margin-right: 0.2em;" class="subscribe-button" href='{{ site.baseurl }}news'>News</a>
       </nav>
   </header>
+{%endif%}
 {%endif%}
