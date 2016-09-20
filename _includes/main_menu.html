@@ -1,0 +1,47 @@
+<!-- BEGIN #main-menu -->
+<nav id="main-menu">
+
+  <a href="#dat-menu" class="dat-menu-button"><i class="fa fa-bars"></i>Show Menu</a>
+  <div class="main-menu-placeholder">
+
+    <!-- BEGIN .wrapper -->
+    <div class="wrapper">
+
+      <div class="search-nav right">
+        <form action="#">
+          <input type="text" value="" placeholder="Search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <ul class="load-responsive" rel="Main Menu">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="blog.html" data-ot-css="border-color: orange;"><span>Chicchi</span></a>
+          <ul class="sub-menu">
+            {% assign chicchi = site.chicchi | sort: "order" %}
+            {% for chicco in chicchi %}
+              <li><a href="{{chicco.url}}">{{chicco.title | truncate: 20}}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+         <li><a href="blog.html" data-ot-css="border-color: red;"><span>Rimedi</span></a>
+          <ul class="sub-menu">
+            {% assign rimedi = site.rimedi | sort: "order" %}
+            {% for r in rimedi %}
+              <li><a href="{{r.url}}">{{r.title | truncate: 20}}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+
+
+        <li><a href="{{site.url}}/posts">Tutti i post</a></li>
+        <li><a href="{{site.url}}/contatti">Contatti</a></li>
+      </ul>
+
+      <!-- END .wrapper -->
+    </div>
+
+  </div>
+
+  <!-- END #main-menu -->
+</nav>

@@ -7,9 +7,9 @@ featured: true
 category: [Post]
 tags: [appsec, sviluppatori, penetration test, code review, pipeline]
 image:
-  feature:
-  credit:
-  creditlink:
+  feature: review.jpg
+  credit: Sebastien Wiertz
+  creditlink: https://flic.kr/p/7Xhhmq
 comments: true
 share: true
 ---

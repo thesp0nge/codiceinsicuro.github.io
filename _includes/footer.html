@@ -1,12 +1,133 @@
-<footer class="site-footer clearfix">
-  <section class="copyright">
-    <a href="{{ site.baseurl }}">{{ site.name }}</a> v{{site.version}} &copy; 2014-2016 &bull; All rights reserved.
-  </section>
-  <section class="navi">
-    <a href="{{ site.baseurl }}about"}>About</a> &bull; <a href="{{ site.baseurl }}contatti">Contatti</a> &bull; <a href="{{ site.baseurl }}cookie-policy">Cookie policy</a>
-  </section>
-  <section class="poweredby">Made with Jekyll using 
-    <a href="http://github.com/rosario/kasper">Kasper theme</a>
-  </section>
-</footer>
+<!-- BEGIN #footer -->
+<div id="footer">
+
+  <div id="footer-widgets">
+    <div class="wrapper">
+
+      <div class="paragraph-row">
+        <div class="column12">
+          <!-- BEGIN .widget -->
+          <div class="widget">
+
+            <div class="do-space do-space-bg">
+              <a href="#" target="_blank"><img src="{{site.url}}/assets/images/pob-1.jpg" alt="" /></a>
+              <strong>Sponsored advertisement</strong>
+            </div>
+
+            <!-- END .widget -->
+          </div>
+        </div>
+      </div>
+
+      <div class="paragraph-row">
+
+        <div class="column3">
+          <div class="widget">
+            <div>
+              <p><img src="{{site.url}}/assets/images/logo-bianco.png" data-ot-retina="{{site.url}}/assets/images/footer-logox.png" alt="" /></p>
+              <p>Est ut minim postea necessitatibus.</p>
+              <p>Decore eligendi at nec. Vel ea quem persius eleifend, est ne appetere molestiae, est ut minim postea necessitatibus.</p>
+              <div class="short-icon-text">
+                <i class="fa fa-phone"></i>
+                <span>+39 349 5386207</span>
+              </div>
+              <div class="short-icon-text">
+                <i class="fa fa-location-arrow"></i>
+                <span>Gessate, Italy</span>
+              </div>
+              <div class="short-icon-text">
+                <i class="fa fa-envelope"></i>
+                <span>paolo@codiceinsicuro.it</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column3">
+          <div class="widget">
+            <h3>Popular Articles</h3>
+            <div class="w-article-list w-article-list-small">
+
+              <div class="item">
+                <div class="item-header">
+                  <a href="post.html">
+                    <img src="images/photos/image-1.jpg" alt="" data-ot-retina="">
+                  </a>
+                </div>
+
+                <div class="item-content">
+                  <h4><a href="post.html">Molestie euripidis ut nec an aliquip accumsan</a><a href="post.html#comments" class="post-title-comment"><i class="po po-portus"></i>193</a></h4>
+                  <span class="item-meta">
+                    <a href="blog.html" class="item-meta-i"><i class="po po-clock"></i>21. April 2015</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-header">
+                  <a href="post.html">
+                    <img src="images/photos/image-2.jpg" alt="" data-ot-retina="">
+                  </a>
+                </div>
+
+                <div class="item-content">
+                  <h4><a href="post.html">Usu fuisset periculis ex nam assum melius</a><a href="post.html#comments" class="post-title-comment"><i class="po po-portus"></i>193</a></h4>
+                  <span class="item-meta">
+                    <a href="blog.html" class="item-meta-i"><i class="po po-clock"></i>21. April 2015</a>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+            <a href="blog.html" class="widget-view-more">View more articles</a>
+          </div>
+        </div>
+
+        <div class="column3">
+          <div class="widget">
+            <h3>Popular Categories</h3>
+            <ul class="menu">
+              {% for category in site.categories %}
+                <li><a href="category.html">{{ category | last }}</a> ({{ category | last | size }})</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+
+        <div class="column3">
+          <div class="widget">
+            <h3>Flickr Photo Feed</h3>
+            <div class="w-flickr-feed">
+              <a href="#" class="item"><img src="http://farm8.staticflickr.com/7302/12333892565_fa980bc87f_q.jpg" alt="" /></a>
+              <a href="#" class="item"><img src="http://farm6.staticflickr.com/5521/12334281344_d9b279095f_q.jpg" alt="" /></a>
+              <a href="#" class="item"><img src="http://farm4.staticflickr.com/3798/12333834195_7dcb472dd5_q.jpg" alt="" /></a>
+
+              <a href="#" class="item"><img src="http://farm8.staticflickr.com/7308/12333833705_1e111fd1dd_q.jpg" alt="" /></a>
+              <a href="#" class="item"><img src="http://farm3.staticflickr.com/2852/12333832785_2b173fae28_q.jpg" alt="" /></a>
+              <a href="#" class="item"><img src="http://farm6.staticflickr.com/5548/12334276684_4c4ab0dd86_q.jpg" alt="" /></a>
+            </div>
+            <a href="#" class="widget-view-more">View flickr profile</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="footer-info">
+    <div class="wrapper">
+      <ul class="right">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="photo-gallery.html">Photo Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact-us.html">Contact us</a></li>
+        <li><a href="cookie-policy.html">Cookie policy</a></li>
+      </ul>
+      <p>{{ site.name }} v{{site.version}}<strong>&copy; 2014-2016. All rights reserved.</strong> Crafted with love and care by <a href="mailto:paolo@codiceinsicuro.it">paolo@codiceinsicuro.it</a>.</p>
+    </div>
+  </div>
+
+</div>
 

@@ -1,0 +1,24 @@
+<!-- BEGIN .breaking-news -->
+<div class="breaking-news">
+
+  <!-- BEGIN .wrapper -->
+  <div class="wrapper">
+
+    <strong class="br-title">Breaking</strong>
+
+    <div class="br-article-list">
+      <div class="br-article-list-inner">
+        {% assign notizie = site.news | sort: "date" | reverse %}
+        {% for n in notizie %}
+          <div class="br-article">
+            <a href="{{n.url}}">{{ n.date | date:"%d-%m-%Y" }}: <strong>{{n.title}}</strong></a>
+            <a href="{{n.url}}#disqus_thread" class="post-title-comment disqus-comment-count"><i class="po po-portus" data-disqus-url="{{n.url}}#disqus_thread"  ></i></a>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  <!-- END .wrapper -->
+  </div>
+<!-- END .breaking-news -->
+</div>

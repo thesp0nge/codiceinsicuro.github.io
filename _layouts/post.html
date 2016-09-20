@@ -1,89 +1,249 @@
 ---
-disqus: false
-archive: false
-post_class: post-template
+disqus: true
+archive: true
+layout: default
 ---
 
-{% include head.html %}
-{% include navigation.html %}
+<!-- BEGIN .portus-main-content-panel -->
+<div class="paragraph-row portus-main-content-panel">
+  <div class="column12">
+    <div class="portus-main-content-s-block">
 
-  <main class="content" role="main">
+      <!-- BEGIN .portus-main-content -->
+      <div class="portus-main-content">
+        <div class="theiaStickySidebar">
+          <div class="portus-main-article-block">
+            <h2>{{page.title}}</h2>
 
-      <article class="post">
+            <p class="portus-main-article-intro">{{page.excerpt | strip_html | truncatewords: 150}}</p>
 
-          <header class="post-header">
-              <h1 class="post-title">{{ page.title }}</h1>
-              <section class="post-meta">
-                <p><em>Scritto da <a href="{{ site.author.uri }}">{{ site.author.name }}</a> il <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | italian_date }}</time></em></p>
-                  <p>
-                  <em>Questo post lo leggi in {{ page.content | reading_time }}</em>
-                  &bull; <em>Parla di {{ page.tags | array_to_sentence_string_it }}</em>
-                  </p>
-              </section>
-          </header>
+            <span class="portus-main-article-meta">
+              <a href="{{site.url}}" class="item-meta-i"><i class="po po-head"></i>{{site.author.name}}</a>
+              <a href="{{site.url}}" class="item-meta-i"><i class="po po-clock"></i>{{ page.date | italian_date }}</a>
+              <a href="#comments" class="item-meta-i"><i class="po po-portus"></i>193</a>
+              <span class="item-meta-i"><i class="fa fa-folder"></i><a href="blog.html">Gadgets</a>, <a href="blog.html">News</a></span>
+            </span>
 
-          <section class="post-content">
-              {{content}}
-          </section>
-
-          <section class="archive">
-
-            <div>
-              {% if page.image.credit %}
-                <em>Image courtesy by: 
-                {% if page.image.creditlink %}
-                  <a href="{{page.image.creditlink}}">{{page.image.credit}}</a>
-              {%else%}
-                  {{page.image.credit}}
-              {% endif %}
-              </em>
-            {% endif %}
+            <div class="wp-caption aligncenter">
+              <a href="images/photos/image-43.jpg" class="lightbox-photo" title="Photo by Modestas Urbonas, CC0 License"><img src="images/photos/image-43.jpg" alt="" /></a>
+              <p class="wp-caption-text">Photo by <strong>Modestas Urbonas</strong>, CC0 License</p>
             </div>
-          </section>
 
-          {% if page.archive %}
-          <section class="archive">
-              <h5>Archive</h5>
-              <ul>
-                  {% for post in site.posts %}
-                      <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
-                  {% endfor %}
-              </ul>
-          </section>
-          {% endif %}
+            <p>At harum nobis duo, ut graece eruditi pri. Cu altera alienum maluisset sed, vix corpora reprimique id, ut case dicta sit. Iuvaret accusata delicata vel id. In sea possim adolescens. Te probo aliquid necessitatibus qui, mel altera assueverit ei.</p>
 
-          <footer class="post-footer">
-              <!-- If we want to display author's name and bio -->
-              {% if site.author %}
-                  <figure class="author-image">
-                      <a class="img" href="{{ site.author.uri }}" style="background-image: url(/assets/images/profile.png)">
-                      <span class="hidden">{{site.author.name}}'s Picture</span></a>
-                  </figure>
-                  <section class="author">
-                      <!-- Author Name -->
-                      <h4>{{ site.author.name }}</h4>
-                      <!-- Author Bio -->
-                      <p> 
-                      {{ site.author.bio }}
-                      </p>
-                  </section>
-              {% endif %}
+            <p>Has ea sonet euismod, has id wisi dolor, an mei populo referrentur. Duo id essent aperiri minimum, amet vocent nostrud vel ad. Ut his alienum accusata partiendo, commodo impedit mel ut. Tale vulputate omittantur mei no, recusabo mandamus persecuti sed ea, ad explicari consetetur vim.</p>
 
-              <!-- Share links section -->
-              {% include share.html %}
+            <p>Ius congue albucius philosophia no, duo ei meis illum animal, ius id adhuc quaeque. Sea in liber nihil intellegam, ei viris doctus fuisset pro. Pri vidisse omittam cotidieque no, munere audiam ne vim, ea quando ridens eum. Mei et vocent legimus officiis, in pri magna nonumes consectetuer. Stet nemore eloquentiam et vis, illud possit cum et, sea ad liber paulo fierent.</p>
 
-              <!-- Disqus comments -->
-              {% include disqus.html %}
+            <div class="pos-photo-gallery">
+              <div class="item-list">
+                <a href="photo-gallery-single.html" class="item">
+                  <img src="images/photos/image-57.jpg" alt="" />
+                </a>
+                <a href="photo-gallery-single.html" class="item">
+                  <img src="images/photos/image-58.jpg" alt="" />
+                </a>
+                <a href="photo-gallery-single.html" class="item">
+                  <img src="images/photos/image-59.jpg" alt="" />
+                </a>
+                <a href="photo-gallery-single.html" class="item">
+                  <img src="images/photos/image-60.jpg" alt="" />
+                </a>
+                <a href="photo-gallery-single.html" class="item">
+                  <img src="images/photos/image-61.jpg" alt="" />
+                </a>
+              </div>
+              <a href="photo-gallery-single.html" class="right">View more photos<i class="fa fa-chevron-right"></i></a>
+            </div>
 
-          </footer>
+            <p>Vidit primis ius id, tantas dolore eloquentiam eum cu. Docendi disputando no vel, nam no tempor dignissim consequuntur. Ea sea fabellas adversarium, ne causae eruditi atomorum pri, qui ad eruditi officiis laboramus. Est quaestio elaboraret an. Idque urbanitas ne nam, probo augue labores ea usu.</p>
 
-      </article>
+            <p>Tempor blandit ei eos. Cum in numquam recusabo, vix illud equidem nusquam eu, noster petentium vis ne. Ex aperiam tibique qui, usu ei duis natum. Qui id vitae graeco, ne accusam efficiantur mel. Vix choro quaestio euripidis ea, rebum iuvaret eloquentiam nam ut. Cu eam munere intellegam mediocrem.</p>
 
-  </main>
-  {% include footer.html %}
-  {% include js.html %}
-  {% include ga.html %}
+            <div class="review-post-block">
+              <div class="review-post-block-good">
+                <strong>The Good</strong>
+                <ul>
+                  <li>Mei pertinax mandamus</li>
+                  <li>Percipitur no lorem aperiri</li>
+                  <li>Habemus eum ea te vi</li>
+                  <li>Tamquam iudicabit</li>
+                  <li>Accommodare</li>
+                </ul>
+              </div>
+              <div class="review-post-block-bad">
+                <strong>The Bad</strong>
+                <ul>
+                  <li>Habemus eum ea te vi</li>
+                  <li>Accommodare</li>
+                  <li>Tamquam iudicabit</li>
+                  <li>Tamquam iudicabit</li>
+                </ul>
+              </div>
+              <div class="review-post-block-score">
+                <strong>5.0</strong>
+                <span>Excellent</span>
+              </div>
+            </div>
+
+            <div class="article-main-next-prev">
+              <div class="paragraph-row">
+                <div class="column6">
+                  <a href="#" class="article-nav-previous">
+                    <i class="fa fa-chevron-left"></i>
+                    <span>Previous article</span>
+                    <strong>Has ut quando laoreet et lucilius menandri usu duo ea errem urbanitas</strong>
+                  </a>
+                </div>
+                <div class="column6">
+                  <a href="#" class="article-nav-next">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Next article</span>
+                    <strong>Amet iudico tincidunt at sea ut euismod antiopam interesset eos</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portus-post-author">
+              <div class="portus-post-author-avatar">
+                <a href="#"><img src="images/no-avatar-100x100.jpg" alt="" /></a>
+              </div>
+              <div class="portus-post-author-content">
+                <h3><a href="#">Orange Themes</a></h3>
+                <p>Omnium salutandi scribentur qui ne, quis honestatis an nam. Vix possim definitionem eu, id eum causae tacimates. Est et aliquam invidunt, id esse alterum intellegebat eos. Has ad aliquid facilisi temporibus.</p>
+                <div class="item-meta">
+                  <a href="#"><i class="fa fa-reply"></i>View all articles</a>
+                  <a href="#"><i class="fa fa-envelope"></i>Contact me</a>
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+
+<!-- BEGIN .portus-content-block -->
+<div class="portus-content-block">
+  <div class="portus-content-title">
+    <h2>3 Comments</h2>
+    <a href="#respond" class="right set-this-dotted">Write a comment</a>
+  </div>
+  <div class="comment-list">
+    <ol id="comments">
+      <li class="comment">
+        <div class="comment-block">
+          <a href="#" class="image-avatar">
+            <img src="images/photos/avatar-4.jpg" alt="" title="" />
+          </a>
+          <div class="comment-text">
+            <span class="time-stamp right">14 April 2015</span>
+            <strong class="user-nick"><a href="#">Charley Leroy</a></strong>
+            <div class="shortcode-content">
+              <p>Est purto aliquip id, cu est verear vituperata, no etiam ponderum pro. Omnium perpetua ea duo, et mel quas debet. Te has mucius everti repudiare, pri singulis sententiae at. Sanctus senserit vix an. Qui feugiat consectetuer eu, fugit saperet docendi vis id.</p>
+            </div>
+            <a class="reply-button read-more-button" href="#">Reply this comment<i class="fa fa-mail-forward"></i></a>
+          </div>
+        </div>
+        <ul class="children">
+          <li class="comment">
+            <div class="comment-block">
+              <a href="#" class="image-avatar">
+                <img src="images/photos/avatar-5.jpg" alt="" title="" />
+              </a>
+              <div class="comment-text">
+                <span class="time-stamp right">14 April 2015</span>
+                <strong class="user-nick"><a href="#">Orange-Themes</a><span class="user-label">Author</span></strong>
+                <div class="shortcode-content">
+                  <p>Est purto aliquip id, cu est verear vituperata, no etiam ponderum pro. Omnium perpetua ea duo, et mel quas debet. Te has mucius everti repudiare, pri singulis sententiae at. Sanctus senserit vix an. Qui feugiat consectetuer eu, fugit saperet docendi vis id.</p>
+                </div>
+                <a class="reply-button read-more-button" href="#">Reply this comment<i class="fa fa-mail-forward"></i></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="comment">
+        <div class="comment-block">
+          <a href="#" class="image-avatar">
+            <img src="images/photos/avatar-6.jpg" alt="" title="" />
+          </a>
+          <div class="comment-text">
+            <span class="time-stamp right">14 April 2015</span>
+            <strong class="user-nick"><a href="#">Orange-Themes</a><span class="user-label">Author</span></strong>
+            <div class="shortcode-content">
+              <p>An diam graece vituperatoribus per, posse definiebas no eam. Autem deleniti delicatissimi eam in. Mea gubergren democritum efficiendi ea, veniam tamquam quo cu. Malorum fabulas nusquam cu qui, cu per sonet congue delicata. Inani omnium iisque sit ea.</p>
+            </div>
+            <a class="reply-button read-more-button" href="#">Reply this comment<i class="fa fa-mail-forward"></i></a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+<!-- END .portus-content-block -->
+</div>
+
+<!-- BEGIN .portus-content-block -->
+<div class="portus-content-block">
+  <div class="portus-content-title">
+    <h2>Write a Comment</h2>
+    <a href="#comments" class="right set-this-dotted">view all comments</a>
+  </div>
+  <div class="comment-form">
+    <div id="respond" class="comment-respond">
+
+      <form action="#" class="comment-form">
+        <div class="comment-info">
+          <strong>Your data will be safe!</strong>
+          <span>Your e-mail address will not be published. Also other data will not be shared with third person.</span>
+        </div>
+        <div class="alert-message alert-green">
+          <strong>Success! This a success message</strong>
+        </div>
+        <div class="alert-message alert-red">
+          <strong>Error! This an error message</strong>
+        </div>
+        <div class="alert-message">
+          <strong>Warning! This a warning message</strong>
+        </div>
+        <div class="contact-form-content">
+          <p class="contact-form-user">
+            <label class="label-input">
+              <span>Nickname<i class="required">*</i></span>
+              <input type="text" placeholder="Nickname" name="nickname" value="">
+            </label>
+          </p>
+          <p class="contact-form-email">
+            <label class="label-input">
+              <span>E-mail<i class="required">*</i></span>
+              <input type="email" placeholder="E-mail" name="email" value="">
+            </label>
+          </p>
+          <p class="contact-form-website">
+            <label class="label-input">
+              <span>Web address</span>
+              <input type="text" placeholder="ex. www.orange-tehemes.com" name="www" value="">
+            </label>
+          </p>
+          <p class="contact-form-comment">
+            <label class="label-input">
+              <span>Comment text<i class="required">*</i></span>
+              <textarea name="comment" placeholder="Comment text"></textarea>
+            </label>
+          </p>
+          <p class="form-submit">
+            <input name="submit" type="submit" id="submit" class="submit button" value="Post a Comment">
+          </p>
+        </div>
+      </form>
+
+    </div>
+  </div>
+<!-- END .portus-content-block -->
+</div>
+
+</div>
+<!-- END .portus-main-content -->
+</div>
 
 
-  </body>
-</html>
