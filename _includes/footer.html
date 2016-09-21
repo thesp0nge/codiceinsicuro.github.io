@@ -48,38 +48,39 @@
             <h3>Popular Articles</h3>
             <div class="w-article-list w-article-list-small">
 
-              <div class="item">
+                            <div class="item">
                 <div class="item-header">
-                  <a href="post.html">
-                    <img src="images/photos/image-1.jpg" alt="" data-ot-retina="">
+                  <a href="{{site,url}}/blog/le-cose-che-uno-sviluppatore-deve-sapere-su-penetration-test-e-code-review/">
+                    <img src="{{site.url}}/assets/images/review.jpg" alt="" data-ot-retina="">
                   </a>
                 </div>
 
                 <div class="item-content">
-                  <h4><a href="post.html">Molestie euripidis ut nec an aliquip accumsan</a><a href="post.html#comments" class="post-title-comment"><i class="po po-portus"></i>193</a></h4>
+                  <h4><a href="{{site,url}}/blog/le-cose-che-uno-sviluppatore-deve-sapere-su-penetration-test-e-code-review/">Le cose che uno sviluppatore deve sapere su penetration test e code review</a><a href="{{site,url}}/blog/le-cose-che-uno-sviluppatore-deve-sapere-su-penetration-test-e-code-review/#disqus_thread" class="post-title-comment"><i class="po po-portus" data-disqus-url="{{site,url}}/blog/le-cose-che-uno-sviluppatore-deve-sapere-su-penetration-test-e-code-review/#disqus_thread"></i></a></h4>
                   <span class="item-meta">
-                    <a href="blog.html" class="item-meta-i"><i class="po po-clock"></i>21. April 2015</a>
+                    <a href="{{site,url}}/blog/le-cose-che-uno-sviluppatore-deve-sapere-su-penetration-test-e-code-review/" class="item-meta-i"><i class="po po-clock"></i>24 agosto 2016</a>
                   </span>
                 </div>
               </div>
 
               <div class="item">
                 <div class="item-header">
-                  <a href="post.html">
-                    <img src="images/photos/image-2.jpg" alt="" data-ot-retina="">
+                  <a href="{{site.url}}/blog/dal-file-apk-al-codice-sorgente-in-poche-semplici-mosse/">
+                    <img src="{{site.url}}/assets/images/android.jpg" alt="" data-ot-retina="">
                   </a>
                 </div>
 
                 <div class="item-content">
-                  <h4><a href="post.html">Usu fuisset periculis ex nam assum melius</a><a href="post.html#comments" class="post-title-comment"><i class="po po-portus"></i>193</a></h4>
+                  <h4><a href="{{site.url}}/blog/dal-file-apk-al-codice-sorgente-in-poche-semplici-mosse/">Dal file APK al codice sorgente in poche semplici mosse</a><a href="{{site.url}}/blog/dal-file-apk-al-codice-sorgente-in-poche-semplici-mosse/#disqus_thread" class="post-title-comment"><i class="po po-portus" data-disqus-url={{site.url}}/blog/dal-file-apk-al-codice-sorgente-in-poche-semplici-mosse/#disqus_thread"></i></a></h4>
                   <span class="item-meta">
-                    <a href="blog.html" class="item-meta-i"><i class="po po-clock"></i>21. April 2015</a>
+                    <a href="{{site.url}}/blog/dal-file-apk-al-codice-sorgente-in-poche-semplici-mosse/" class="item-meta-i"><i class="po po-clock"></i>25 maggio 2015</a>
                   </span>
                 </div>
               </div>
+
 
             </div>
-            <a href="blog.html" class="widget-view-more">View more articles</a>
+            <a href="posts.html" class="widget-view-more">Tutti i post</a>
           </div>
         </div>
 
@@ -87,9 +88,6 @@
           <div class="widget">
             <h3>Popular Categories</h3>
             <ul class="menu">
-              {% for category in site.categories %}
-                <li><a href="category.html">{{ category | last }}</a> ({{ category | last | size }})</li>
-              {% endfor %}
             </ul>
           </div>
         </div>
@@ -119,11 +117,12 @@
     <div class="wrapper">
       <ul class="right">
         <li><a href="index.html">Homepage</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="photo-gallery.html">Photo Gallery</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact-us.html">Contact us</a></li>
-        <li><a href="cookie-policy.html">Cookie policy</a></li>
+        <li><a href='{{ site.baseurl }}news'>News</a></li>
+        <li><a href='{{ site.baseurl }}rimedi'>Rimedi</a></li>
+        <li><a href='{{ site.baseurl }}chicchi'>Chicchi</a></li>
+        <li><a href='{{ site.baseurl }}about'>About</a></li>
+        <li><a href='{{ site.baseurl }}contatti'>Contatti</a></li>
+        <li><a href='{{ site.baseurl }}cookie-policy'>Cookie Policy</a></li>
       </ul>
       <p>{{ site.name }} v{{site.version}}<strong>&copy; 2014-2016. All rights reserved.</strong> Crafted with love and care by <a href="mailto:paolo@codiceinsicuro.it">paolo@codiceinsicuro.it</a>.</p>
     </div>
