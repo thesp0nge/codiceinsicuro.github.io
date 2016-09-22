@@ -15,8 +15,8 @@
       </div>
 
       <ul class="load-responsive" rel="Main Menu">
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="blog.html" data-ot-css="border-color: orange;"><span>Chicchi</span></a>
+        <li><a href="{{site.url}}">Homepage</a></li>
+        <li><a href="{{site.url}}/chicchi" data-ot-css="border-color: orange;"><span>Chicchi</span></a>
           <ul class="sub-menu">
             {% assign chicchi = site.chicchi | sort: "order" %}
             {% for chicco in chicchi %}
@@ -24,7 +24,7 @@
             {% endfor %}
           </ul>
         </li>
-         <li><a href="blog.html" data-ot-css="border-color: red;"><span>Rimedi</span></a>
+        <li><a href="{{site.url}}/rimedi" data-ot-css="border-color: red;"><span>Rimedi</span></a>
           <ul class="sub-menu">
             {% assign rimedi = site.rimedi | sort: "order" %}
             {% for r in rimedi %}
