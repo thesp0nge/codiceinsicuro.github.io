@@ -22,7 +22,7 @@ archive: false
 
               <span class="portus-main-article-meta">
                 <a href="{{site.url}}" class="item-meta-i"><i class="po po-head"></i>{{site.author.name}}</a>
-                <a href="{{site.url}}" class="item-meta-i"><i class="po po-clock"></i>{{ page.date | italian_date }}</a>
+                <a href="{{site.url}}" class="item-meta-i"><i class="po po-clock"></i>{{ page.date | date: "%d/%m/%Y" }}</a>
                 <a href="#comments" class="item-meta-i"><i class="po po-portus"></i>193</a>
                 <span class="item-meta-i"><i class="fa fa-folder"></i><a href="blog.html">Gadgets</a>, <a href="blog.html">News</a></span>
               </span>
@@ -37,7 +37,6 @@ archive: false
               {% include prev_next_post.html %}
 
             </div>
-
             <!-- BEGIN .portus-content-block -->
             <div class="portus-content-block">
               {% include disqus.html %}

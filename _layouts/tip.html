@@ -13,7 +13,7 @@ archive: false
       <div class="portus-main-content-s-block">
 
         <!-- BEGIN .portus-main-content -->
-        <div class="portus-main-content">
+        <div class="portus-main-content portus-main-content-s-3">
           <div class="theiaStickySidebar">
             <div class="portus-main-article-block">
               <h2>{{page.title}}</h2>
@@ -34,165 +34,52 @@ archive: false
 
               {{content}}
 
-              <div class="article-main-next-prev">
-                <div class="paragraph-row">
-                  <div class="column6">
-                    <a href="#" class="article-nav-previous">
-                      <i class="fa fa-chevron-left"></i>
-                      <span>Previous article</span>
-                      <strong>Has ut quando laoreet et lucilius menandri usu duo ea errem urbanitas</strong>
-                    </a>
-                  </div>
-                  <div class="column6">
-                    <a href="#" class="article-nav-next">
-                      <i class="fa fa-chevron-right"></i>
-                      <span>Next article</span>
-                      <strong>Amet iudico tincidunt at sea ut euismod antiopam interesset eos</strong>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="portus-post-author">
-                <div class="portus-post-author-avatar">
-                  <a href="#"><img src="images/no-avatar-100x100.jpg" alt="" /></a>
-                </div>
-                <div class="portus-post-author-content">
-                  <h3><a href="#">Orange Themes</a></h3>
-                  <p>Omnium salutandi scribentur qui ne, quis honestatis an nam. Vix possim definitionem eu, id eum causae tacimates. Est et aliquam invidunt, id esse alterum intellegebat eos. Has ad aliquid facilisi temporibus.</p>
-                  <div class="item-meta">
-                    <a href="#"><i class="fa fa-reply"></i>View all articles</a>
-                    <a href="#"><i class="fa fa-envelope"></i>Contact me</a>
-                  </div>
-                </div>
-              </div>
-
-
+              {% include prev_next_post.html %}
 
             </div>
-
             <!-- BEGIN .portus-content-block -->
             <div class="portus-content-block">
-              <div class="portus-content-title">
-                <h2>3 Comments</h2>
-                <a href="#respond" class="right set-this-dotted">Write a comment</a>
-              </div>
-              <div class="comment-list">
-                <ol id="comments">
-                  <li class="comment">
-                    <div class="comment-block">
-                      <a href="#" class="image-avatar">
-                        <img src="images/photos/avatar-4.jpg" alt="" title="" />
-                      </a>
-                      <div class="comment-text">
-                        <span class="time-stamp right">14 April 2015</span>
-                        <strong class="user-nick"><a href="#">Charley Leroy</a></strong>
-                        <div class="shortcode-content">
-                          <p>Est purto aliquip id, cu est verear vituperata, no etiam ponderum pro. Omnium perpetua ea duo, et mel quas debet. Te has mucius everti repudiare, pri singulis sententiae at. Sanctus senserit vix an. Qui feugiat consectetuer eu, fugit saperet docendi vis id.</p>
-                        </div>
-                        <a class="reply-button read-more-button" href="#">Reply this comment<i class="fa fa-mail-forward"></i></a>
-                      </div>
-                    </div>
-                    <ul class="children">
-                      <li class="comment">
-                        <div class="comment-block">
-                          <a href="#" class="image-avatar">
-                            <img src="images/photos/avatar-5.jpg" alt="" title="" />
-                          </a>
-                          <div class="comment-text">
-                            <span class="time-stamp right">14 April 2015</span>
-                            <strong class="user-nick"><a href="#">Orange-Themes</a><span class="user-label">Author</span></strong>
-                            <div class="shortcode-content">
-                              <p>Est purto aliquip id, cu est verear vituperata, no etiam ponderum pro. Omnium perpetua ea duo, et mel quas debet. Te has mucius everti repudiare, pri singulis sententiae at. Sanctus senserit vix an. Qui feugiat consectetuer eu, fugit saperet docendi vis id.</p>
-                            </div>
-                            <a class="reply-button read-more-button" href="#">Reply this comment<i class="fa fa-mail-forward"></i></a>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="comment">
-                    <div class="comment-block">
-                      <a href="#" class="image-avatar">
-                        <img src="images/photos/avatar-6.jpg" alt="" title="" />
-                      </a>
-                      <div class="comment-text">
-                        <span class="time-stamp right">14 April 2015</span>
-                        <strong class="user-nick"><a href="#">Orange-Themes</a><span class="user-label">Author</span></strong>
-                        <div class="shortcode-content">
-                          <p>An diam graece vituperatoribus per, posse definiebas no eam. Autem deleniti delicatissimi eam in. Mea gubergren democritum efficiendi ea, veniam tamquam quo cu. Malorum fabulas nusquam cu qui, cu per sonet congue delicata. Inani omnium iisque sit ea.</p>
-                        </div>
-                        <a class="reply-button read-more-button" href="#">Reply this comment<i class="fa fa-mail-forward"></i></a>
-                      </div>
-                    </div>
-                  </li>
-                </ol>
-              </div>
-              <!-- END .portus-content-block -->
-            </div>
-
-            <!-- BEGIN .portus-content-block -->
-            <div class="portus-content-block">
-              <div class="portus-content-title">
-                <h2>Write a Comment</h2>
-                <a href="#comments" class="right set-this-dotted">view all comments</a>
-              </div>
-              <div class="comment-form">
-                <div id="respond" class="comment-respond">
-
-                  <form action="#" class="comment-form">
-                    <div class="comment-info">
-                      <strong>Your data will be safe!</strong>
-                      <span>Your e-mail address will not be published. Also other data will not be shared with third person.</span>
-                    </div>
-                    <div class="alert-message alert-green">
-                      <strong>Success! This a success message</strong>
-                    </div>
-                    <div class="alert-message alert-red">
-                      <strong>Error! This an error message</strong>
-                    </div>
-                    <div class="alert-message">
-                      <strong>Warning! This a warning message</strong>
-                    </div>
-                    <div class="contact-form-content">
-                      <p class="contact-form-user">
-                      <label class="label-input">
-                        <span>Nickname<i class="required">*</i></span>
-                        <input type="text" placeholder="Nickname" name="nickname" value="">
-                      </label>
-                      </p>
-                      <p class="contact-form-email">
-                      <label class="label-input">
-                        <span>E-mail<i class="required">*</i></span>
-                        <input type="email" placeholder="E-mail" name="email" value="">
-                      </label>
-                      </p>
-                      <p class="contact-form-website">
-                      <label class="label-input">
-                        <span>Web address</span>
-                        <input type="text" placeholder="ex. www.orange-tehemes.com" name="www" value="">
-                      </label>
-                      </p>
-                      <p class="contact-form-comment">
-                      <label class="label-input">
-                        <span>Comment text<i class="required">*</i></span>
-                        <textarea name="comment" placeholder="Comment text"></textarea>
-                      </label>
-                      </p>
-                      <p class="form-submit">
-                      <input name="submit" type="submit" id="submit" class="submit button" value="Post a Comment">
-                      </p>
-                    </div>
-                  </form>
-
-                </div>
-              </div>
+              {% include disqus.html %}
               <!-- END .portus-content-block -->
             </div>
 
           </div>
           <!-- END .portus-main-content -->
         </div>
+        <aside class="sidebar portus-sidebar-small">
+          <div class="theiaStickySidebar">
+
+            <!-- BEGIN .widget -->
+            <div class="widget">
+
+              <h3>Popular</h3>
+              <div class="w-article-list-num">
+                {% assign featured_posts = (site.posts|where:"featured","true") %}
+
+                {% for post in featured_posts limit:5 %}
+                  <div class="item">
+                    <span class="item-num">{{forloop.index}}</span>
+                    <div class="item-content">
+                      <div class="item-categories">
+                        <a href="#" data-ot-css="color: #f3d826;">{{post.category}}</a>
+                      </div>
+                      <h4><a href="{{post.url}}">{{post.title}}</a><a href="{{post.url}}.html#disqus_thread" class="post-title-comment"><i class="po po-portus" data-disqus-url="{{post.url}}"></i></a></h4>
+                      <div class="item-meta">
+                        <a href="{{post.url}}"><i class="po po-clock"></i>{{ post.date | italian_short_date }}</a>
+                      </div>
+                      <p>{{ post.excerpt | strip_html | truncatewords: 30}}</p>
+                    </div>
+                  </div>
+                {%endfor%}
+
+              </div>
+
+            <!-- END .widget -->
+            </div>
+
+          </div>
+        </aside>
+
       </div>
     </div>
     <!-- ENd .portus-main-content-panel -->

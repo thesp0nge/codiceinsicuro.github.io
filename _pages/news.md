@@ -12,6 +12,6 @@ image:
 
 <ul>
 {% for n in notizie %}
-  <li><a href="{{n.url}}">{{n.title}}</a></li>
+  <li><a href="{{n.url}}">{{n.date | date: "%d/%m/%Y"}}: {{n.title}}</a></li>
 {% endfor %}
 </ul>
