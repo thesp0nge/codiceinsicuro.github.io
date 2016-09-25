@@ -2,19 +2,9 @@
 layout: page
 permalink: /contatti/
 title: "Contatti"
-modified: 2015-06-24 08:01
-tags: []
-image:
-  feature:
-  credit:
-  creditlink:
+modified: 2016-09-22 17:16
 share: true
 ---
-
-<figure class="contact-author-image">
-  <a class="img" href="{{ site.baseurl }}" style="background-image: url(/assets/images/profile.png)">
-  <span class="hidden">{{site.author}}'s Picture</span></a>
-</figure>
 
 Ciao, se sei arrivato qui è perché in qualche modo vuoi metterti in contatto
 con [me](mailto:paolo@codiceinsicuro.it). **Fantastico**.

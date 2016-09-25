@@ -12,7 +12,7 @@
         {% for n in notizie %}
           <div class="br-article">
             <a href="{{n.url}}">{{ n.date | date:"%d-%m-%Y" }}: <strong>{{n.title}}</strong></a>
-            <a href="{{n.url}}#disqus_thread" class="post-title-comment disqus-comment-count"><i class="po po-portus" data-disqus-url="{{n.url}}#disqus_thread"  ></i></a>
+            <a href="{{n.url}}#disqus_thread" class="post-title-comment"><i class="po po-portus disqus-comment-count" data-disqus-url="{{n.url}}"></i></a>
           </div>
         {% endfor %}
 

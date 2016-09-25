@@ -21,10 +21,14 @@ archive: false
               <p class="portus-main-article-intro">{{page.excerpt | strip_html | truncatewords: 150}}</p>
 
               <span class="portus-main-article-meta">
-                <a href="{{site.url}}" class="item-meta-i"><i class="po po-head"></i>{{site.author.name}}</a>
-                <a href="{{site.url}}" class="item-meta-i"><i class="po po-clock"></i>{{ page.date | italian_date }}</a>
-                <a href="#comments" class="item-meta-i"><i class="po po-portus"></i>193</a>
-                <span class="item-meta-i"><i class="fa fa-folder"></i><a href="blog.html">Gadgets</a>, <a href="blog.html">News</a></span>
+                <a href="{{page.url}}" class="item-meta-i"><i class="po po-head"></i>{{site.author.name}}</a>
+                <a href="{{page.url}}" class="item-meta-i"><i class="po po-clock"></i>{{ page.date | italian_date }}</a>
+                <a href="{{page.url}}/#disqus_thread" class="item-meta-i"><i class="po po-portus disqus-comment-count" data-disqus-url="{{page.url}}"></i></a>
+                <span class="item-meta-i"><i class="fa fa-folder"></i>
+                  {% for t in page.tags %}
+                    <a href="{{page.url}}">{{t}}</a>
+                  {%endfor%}
+                </span>
               </span>
 
               <div class="wp-caption aligncenter">

@@ -34,7 +34,7 @@ about: 'about.html'
                     <div class="item-content">
                       <h3><a href="{{post.url}}">{{post.title}}</a></h3>
                       <div class="item-meta">
-                        <a href="blog.html" class="item-meta-i"><i class="po po-head"></i>{{site.author.name}}</a>
+                        <a href="{{post.url}}" class="item-meta-i"><i class="po po-head"></i>{{site.author.name}}</a>
                         <span class="item-meta-i"><i class="po po-clock"></i>{{ post.date | italian_short_date }}</span>
                         <a href="{{post.url}}#disqus_thread" class="item-meta-i"><i class="po po-portus disqus-comment-count" data-disqus-url="{{post.url}}"></i></a>
                       </div>
