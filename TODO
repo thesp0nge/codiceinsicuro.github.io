@@ -1,3 +1,24 @@
 * create a collection with a template for book reviews
-* fix social in header_wrapper_logo_social
+* create a collection with a template for talk
+* Add social counter (if possible) in header_wrapper_logo_social
+* Add weather in top_menu
+* Add two other columns to footer
+
+
+     {% comment %} <li><a href="{{site.url}}/chicchi" data-ot-css="border-color: orange;"><span>Chicchi</span></a> {% endcomment %}
+        {% comment %}   <ul class="sub-menu"> {% endcomment %}
+        {% comment %}     {% assign chicchi = site.chicchi | sort: "order" %} {% endcomment %}
+        {% comment %}     {% for chicco in chicchi %} {% endcomment %}
+        {% comment %}       <li><a href="{{chicco.url}}">{{chicco.title | truncate: 20}}</a></li> {% endcomment %}
+        {% comment %}     {% endfor %} {% endcomment %}
+        {% comment %}   </ul> {% endcomment %}
+        {% comment %} </li> {% endcomment %}
+        {% comment %} <li><a href="{{site.url}}/rimedi" data-ot-css="border-color: red;"><span>Rimedi</span></a> {% endcomment %}
+        {% comment %}   <ul class="sub-menu"> {% endcomment %}
+        {% comment %}     {% assign rimedi = site.rimedi | sort: "order" %} {% endcomment %}
+        {% comment %}     {% for r in rimedi %} {% endcomment %}
+        {% comment %}       <li><a href="{{r.url}}">{{r.title | truncate: 20}}</a></li> {% endcomment %}
+        {% comment %}     {% endfor %} {% endcomment %}
+        {% comment %}   </ul> {% endcomment %}
+        {% comment %} </li> {% endcomment %}
 

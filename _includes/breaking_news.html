@@ -11,13 +11,15 @@
         {% assign notizie = site.news | sort: "date" | reverse %}
         {% for n in notizie %}
           <div class="br-article">
-            <a href="{{n.url}}">{{ n.date | date:"%d-%m-%Y" }}: <strong>{{n.title}}</strong></a>
-            <a href="{{n.url}}#disqus_thread" class="post-title-comment"><i class="po po-portus disqus-comment-count" data-disqus-url="{{n.url}}"></i></a>
+            <a href="{{site.url}}{{n.url}}">{{ n.date | date:"%d-%m-%Y" }}: <strong>{{n.title}}</strong></a>
+            <a href="url}}{{n.url}}#disqus_thread" class="post-title-comment"><i class="po po-portus disqus-comment-count" data-disqus-url="{{n.url}}"></i></a>
           </div>
         {% endfor %}
 
       </div>
+
     </div>
+
   <!-- END .wrapper -->
   </div>
 <!-- END .breaking-news -->
