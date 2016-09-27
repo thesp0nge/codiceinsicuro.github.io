@@ -1,12 +1,132 @@
-<footer class="site-footer clearfix">
-  <section class="copyright">
-    <a href="{{ site.baseurl }}">{{ site.name }}</a> v{{site.version}} &copy; 2014-2016 &bull; All rights reserved.
-  </section>
-  <section class="navi">
-    <a href="{{ site.baseurl }}about"}>About</a> &bull; <a href="{{ site.baseurl }}contatti">Contatti</a> &bull; <a href="{{ site.baseurl }}cookie-policy">Cookie policy</a>
-  </section>
-  <section class="poweredby">Made with Jekyll using 
-    <a href="http://github.com/rosario/kasper">Kasper theme</a>
-  </section>
-</footer>
+<!-- BEGIN #footer -->
+<div id="footer">
+
+  <div id="footer-widgets">
+    <div class="wrapper">
+
+      <div class="paragraph-row">
+        <div class="column12">
+          <!-- BEGIN .widget -->
+          <div class="widget">
+
+            <div class="do-space do-space-bg">
+              <a href="#" target="_blank"><img src="{{site.url}}/assets/images/advertise_banner.png" alt="" /></a>
+              <strong>Sponsored advertisement</strong>
+            </div>
+
+            <!-- END .widget -->
+          </div>
+        </div>
+      </div>
+
+      <div class="paragraph-row">
+
+        <div class="column3">
+          <div class="widget">
+            <div>
+              <p><img src="{{site.url}}/assets/images/logo-bianco.png" data-ot-retina="{{site.url}}/assets/images/footer-logox.png" alt="" /></p>
+              <p>{{site.description}}</p>
+              <p>Il progetto Codice Insicuro nasce per parlare di sicurezza applicativa trattando temi reali, raccontando i problemi e le riflessioni di ogni giorno.</p>
+              {% comment %} <div class="short-icon-text"> {% endcomment %}
+              {% comment %}   <i class="fa fa-phone"></i> {% endcomment %}
+              {% comment %}   <span>+39 349 5386207</span> {% endcomment %}
+              {% comment %} </div> {% endcomment %}
+              <div class="short-icon-text">
+                <i class="fa fa-location-arrow"></i>
+                <span>Gessate, Italy</span>
+              </div>
+              <div class="short-icon-text">
+                <i class="fa fa-envelope"></i>
+                <span><a style="color:white;" href="mailto: paolo@codiceinsicuro.it">paolo@codiceinsicuro.it</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column3">
+          <div class="widget">
+            <h3>Post popolari</h3>
+            <div class="w-article-list w-article-list-small">
+
+                            <div class="item">
+                <div class="item-header">
+                  <a href="{{site,url}}/blog/le-cose-che-uno-sviluppatore-deve-sapere-su-penetration-test-e-code-review/">
+                    <img src="{{site.url}}/assets/images/review.jpg" alt="" data-ot-retina="">
+                  </a>
+                </div>
+
+                <div class="item-content">
+                  <h4><a href="{{site,url}}/blog/le-cose-che-uno-sviluppatore-deve-sapere-su-penetration-test-e-code-review/">Le cose che uno sviluppatore deve sapere su penetration test e code review</a><a href="{{site,url}}/blog/le-cose-che-uno-sviluppatore-deve-sapere-su-penetration-test-e-code-review/#disqus_thread" class="post-title-comment"><i class="po po-portus" data-disqus-url="{{site,url}}/blog/le-cose-che-uno-sviluppatore-deve-sapere-su-penetration-test-e-code-review/#disqus_thread"></i></a></h4>
+                  <span class="item-meta">
+                    <a href="{{site,url}}/blog/le-cose-che-uno-sviluppatore-deve-sapere-su-penetration-test-e-code-review/" class="item-meta-i"><i class="po po-clock"></i>24 agosto 2016</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-header">
+                  <a href="{{site.url}}/blog/dal-file-apk-al-codice-sorgente-in-poche-semplici-mosse/">
+                    <img src="{{site.url}}/assets/images/android.jpg" alt="" data-ot-retina="">
+                  </a>
+                </div>
+
+                <div class="item-content">
+                  <h4><a href="{{site.url}}/blog/dal-file-apk-al-codice-sorgente-in-poche-semplici-mosse/">Dal file APK al codice sorgente in poche semplici mosse</a><a href="{{site.url}}/blog/dal-file-apk-al-codice-sorgente-in-poche-semplici-mosse/#disqus_thread" class="post-title-comment"><i class="po po-portus" data-disqus-url={{site.url}}/blog/dal-file-apk-al-codice-sorgente-in-poche-semplici-mosse/#disqus_thread"></i></a></h4>
+                  <span class="item-meta">
+                    <a href="{{site.url}}/blog/dal-file-apk-al-codice-sorgente-in-poche-semplici-mosse/" class="item-meta-i"><i class="po po-clock"></i>25 maggio 2015</a>
+                  </span>
+                </div>
+              </div>
+
+
+            </div>
+            <a href="{{site.url}}/posts/" class="widget-view-more">Tutti i post</a>
+          </div>
+        </div>
+
+        {% comment %} <div class="column3"> {% endcomment %}
+        {% comment %}   <div class="widget"> {% endcomment %}
+        {% comment %}     <h3>Popular Categories</h3> {% endcomment %}
+        {% comment %}     <ul class="menu"> {% endcomment %}
+        {% comment %}     </ul> {% endcomment %}
+        {% comment %}   </div> {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+
+        {% comment %} <div class="column3"> {% endcomment %}
+        {% comment %}   <div class="widget"> {% endcomment %}
+        {% comment %}     <h3>Flickr Photo Feed</h3> {% endcomment %}
+        {% comment %}     <div class="w-flickr-feed"> {% endcomment %}
+        {% comment %}       <a href="#" class="item"><img src="http://farm8.staticflickr.com/7302/12333892565_fa980bc87f_q.jpg" alt="" /></a> {% endcomment %}
+        {% comment %}       <a href="#" class="item"><img src="http://farm6.staticflickr.com/5521/12334281344_d9b279095f_q.jpg" alt="" /></a> {% endcomment %}
+        {% comment %}       <a href="#" class="item"><img src="http://farm4.staticflickr.com/3798/12333834195_7dcb472dd5_q.jpg" alt="" /></a> {% endcomment %}
+
+        {% comment %}       <a href="#" class="item"><img src="http://farm8.staticflickr.com/7308/12333833705_1e111fd1dd_q.jpg" alt="" /></a> {% endcomment %}
+        {% comment %}       <a href="#" class="item"><img src="http://farm3.staticflickr.com/2852/12333832785_2b173fae28_q.jpg" alt="" /></a> {% endcomment %}
+        {% comment %}       <a href="#" class="item"><img src="http://farm6.staticflickr.com/5548/12334276684_4c4ab0dd86_q.jpg" alt="" /></a> {% endcomment %}
+        {% comment %}     </div> {% endcomment %}
+        {% comment %}     <a href="#" class="widget-view-more">View flickr profile</a> {% endcomment %}
+        {% comment %}   </div> {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="footer-info">
+    <div class="wrapper">
+      <ul class="right">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href='{{ site.baseurl }}news'>News</a></li>
+        <li><a href='{{ site.baseurl }}rimedi'>Rimedi</a></li>
+        <li><a href='{{ site.baseurl }}chicchi'>Chicchi</a></li>
+        <li><a href='{{ site.baseurl }}about'>About</a></li>
+        <li><a href='{{ site.baseurl }}contatti'>Contatti</a></li>
+        <li><a href='{{ site.baseurl }}cookie-policy'>Cookie Policy</a></li>
+      </ul>
+      <p>{{ site.name }} v{{site.version}}<strong>&copy; 2014-2016. All rights reserved.</strong> Crafted with love and care by <a href="mailto:paolo@codiceinsicuro.it">paolo@codiceinsicuro.it</a>.</p>
+    </div>
+  </div>
+
+</div>
 

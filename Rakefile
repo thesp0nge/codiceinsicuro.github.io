@@ -164,7 +164,7 @@ def create_post(filename, title, category, tags)
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "promotion: "
     post.puts "modified: "
-    post.puts "featured: true"
+    post.puts "featured: false"
     post.puts "category: [#{category}]"
     post.puts "tags: [#{tags}]"
     if category == "post"

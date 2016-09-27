@@ -3,7 +3,7 @@ layout: post
 title: "Affrontare il rientro"
 promotion: "Eccoci dopo un'altra estate ad affrontare il rientro, tra progetti e talk da preparare"
 modified: 
-featured: true
+featured: false
 category: [post]
 tags: [appsec, pipeline, dawnscanner, talk, conferenze, rientro, estate, vacanze]
 image:

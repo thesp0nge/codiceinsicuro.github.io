@@ -3,7 +3,7 @@ layout: post
 title: "Estate di cambiamenti, parte 1"
 promotion: 
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [blog, codiceinsicuro, logo]
 image:

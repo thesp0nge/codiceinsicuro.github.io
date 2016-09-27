@@ -1,90 +1,90 @@
 ---
-disqus: false
+layout: default
+disqus: true
 archive: false
-post_class: post-template
 ---
 
-{% include head.html %}
-{% include navigation.html %}
 
-<body class="{% if page.layout == 'post' %}post-template{% else %}home-template{% endif %}">
+<!-- BEGIN .wrapper -->
+<div class="wrapper">
+  <!-- BEGIN .portus-main-content-panel -->
+  <div class="paragraph-row portus-main-content-panel">
+    <div class="column12">
+      <div class="portus-main-content-s-block">
 
-  <main class="content" role="main">
+        <!-- BEGIN .portus-main-content -->
+        <div class="portus-main-content portus-main-content-s-3">
+          <div class="theiaStickySidebar">
+            <div class="portus-main-article-block">
+              <h2>{{page.title}}</h2>
 
-      <article class="post">
+              <p class="portus-main-article-intro">{{page.excerpt | strip_html | truncatewords: 150}}</p>
 
-          <header class="post-header">
-              <h1 class="post-title">{{ page.title }}</h1>
-              <section class="post-meta">
-                <p><em>Scritto da <a href="{{ site.author.uri }}">{{ site.author.name }}</a> il <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time></em></p>
-                  <p>
-                  <em>Questo post lo leggi in {{ page.content | reading_time }}</em>
-                  &bull; <em>Parla di {{ page.tags | array_to_sentence_string_it }}</em>
-                  </p>
-              </section>
-          </header>
+              <span class="portus-main-article-meta">
+                <a href="{{site.url}}" class="item-meta-i"><i class="po po-head"></i>{{site.author.name}}</a>
+                <a href="{{site.url}}" class="item-meta-i"><i class="po po-clock"></i>{{ page.date | italian_date }}</a>
+                <a href="#comments" class="item-meta-i"><i class="po po-portus"></i>193</a>
+                <span class="item-meta-i"><i class="fa fa-folder"></i><a href="blog.html">Gadgets</a>, <a href="blog.html">News</a></span>
+              </span>
 
-          <section class="post-content">
+              <div class="wp-caption aligncenter">
+                <a href="{{site.url}}/assets/images/{{page.image.feature}}" class="lightbox-photo" title="Photo by {{page.image.credit}}"><img src="{{site.url}}/assets/images/{{page.image.feature}}" alt="" /></a>
+                <p class="wp-caption-text">Photo by <strong>{{page.image.credit}}</strong></p>
+              </div>
+
               {{content}}
-          </section>
 
-          <section class="archive">
+              {% include prev_next_post.html %}
 
-            <div>
-              {% if page.image.credit %}
-                <em>Image courtesy by: 
-                {% if page.image.creditlink %}
-                  <a href="{{page.image.creditlink}}">{{page.image.credit}}</a>
-              {%else%}
-                  {{page.image.credit}}
-              {% endif %}
-              </em>
-            {% endif %}
             </div>
-          </section>
+            <!-- BEGIN .portus-content-block -->
+            <div class="portus-content-block">
+              {% include disqus.html %}
+              <!-- END .portus-content-block -->
+            </div>
 
-          {% if page.archive %}
-          <section class="archive">
-              <h5>Archive</h5>
-              <ul>
-                  {% for post in site.posts %}
-                      <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
-                  {% endfor %}
-                </ul>
-            </section>
-            {% endif %}
+          </div>
+          <!-- END .portus-main-content -->
+        </div>
+        <aside class="sidebar portus-sidebar-small">
+          <div class="theiaStickySidebar">
 
-            <footer class="post-footer">
-                <!-- If we want to display author's name and bio -->
-                {% if site.author %}
-                    <figure class="author-image">
-                        <a class="img" href="{{ site.author.uri }}" style="background-image: url(/assets/images/profile.png)">
-                        <span class="hidden">{{site.author.name}}'s Picture</span></a>
-                    </figure>
-                    <section class="author">
-                        <!-- Author Name -->
-                        <h4>{{ site.author.name }}</h4>
-                        <!-- Author Bio -->
-                        <p> 
-                        {{ site.author.bio }}
-                        </p>
-                    </section>
-                {% endif %}
+            <!-- BEGIN .widget -->
+            <div class="widget">
 
-                <!-- Share links section -->
-                {% include share.html %}
+              <h3>Leggi anche</h3>
+              <div class="w-article-list-num">
+                {% assign featured_posts = (site.posts|where:"featured","true") %}
 
-                <!-- Disqus comments -->
-                {% include disqus.html %}
+                {% for post in featured_posts limit:5 %}
+                  <div class="item">
+                    <span class="item-num">{{forloop.index}}</span>
+                    <div class="item-content">
+                      <div class="item-categories">
+                        <a href="#" data-ot-css="color: #f3d826;">{{post.category}}</a>
+                      </div>
+                      <h4><a href="{{post.url}}">{{post.title}}</a><a href="{{post.url}}.html#disqus_thread" class="post-title-comment"><i class="po po-portus" data-disqus-url="{{post.url}}"></i></a></h4>
+                      <div class="item-meta">
+                        <a href="{{post.url}}"><i class="po po-clock"></i>{{ post.date | italian_short_date }}</a>
+                      </div>
+                      <p>{{ post.excerpt | strip_html | truncatewords: 30}}</p>
+                    </div>
+                  </div>
+                {%endfor%}
 
-            </footer>
+              </div>
 
-        </article>
+            <!-- END .widget -->
+            </div>
 
-    </main>
-  {% include footer.html %}
-  {% include js.html %}
-  {% include ga.html %}
+          </div>
+        </aside>
 
-  </body>
-</html>
+      </div>
+    </div>
+    <!-- ENd .portus-main-content-panel -->
+  </div>
+
+  <!-- END .wrapper -->
+</div>
+

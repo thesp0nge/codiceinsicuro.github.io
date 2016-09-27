@@ -3,7 +3,7 @@ layout: post
 title: "Aprile ed i suoi attacchi di bile"
 promotion: 
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [italia, merito, energia]
 image:

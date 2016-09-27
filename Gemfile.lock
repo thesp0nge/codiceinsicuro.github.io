@@ -17,7 +17,7 @@ GEM
     buftok (0.2.0)
     colorator (1.1.0)
     concurrent-ruby (1.0.2)
-    domain_name (0.5.20160615)
+    domain_name (0.5.20160826)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.10)
     extras (0.1.0)
@@ -58,7 +58,7 @@ GEM
       pathutil (>= 0.8)
       rack (> 1, < 2)
       sprockets (~> 3.3, < 3.7)
-    jekyll-feed (0.6.0)
+    jekyll-feed (0.7.0)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
     jekyll-paginate (1.1.0)
@@ -95,10 +95,6 @@ GEM
       sawyer (~> 0.7.0, >= 0.5.3)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    posix-spawn (0.3.11)
-    pygments.rb (0.6.3)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.2.0)
     rack (1.6.4)
     rake (11.2.2)
     rash (0.4.0)
@@ -155,8 +151,8 @@ DEPENDENCIES
   jekyll-tagging-related_posts
   jekyll-twitter-plugin
   kramdown
-  pygments.rb
   rake
+  rouge
   stringex
   thor
 

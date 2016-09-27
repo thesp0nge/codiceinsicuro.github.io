@@ -3,7 +3,7 @@ layout: post
 title: "Sono tutti open con il source degli altri"
 promotion: "Il problema dell'opensource è la mancanza di risorse economiche ma soprattutto umane. Questo è quello che penso io."
 modified: 
-featured: true
+featured: false
 category: [post]
 tags: [opensource, comunità, impegno, volontariato]
 image:
