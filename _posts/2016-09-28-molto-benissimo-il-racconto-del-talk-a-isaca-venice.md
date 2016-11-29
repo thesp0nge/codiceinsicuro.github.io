@@ -85,8 +85,8 @@ approfondimento e l'occasione di mostrare qualcosa live. Speriamo in futuro di
 poter vedere [CopperDroid](http://copperdroid.isg.rhul.ac.uk/copperdroid/about.php) all'opera.
 
 Seconda menzione per l'ultimo talk della giornata, prima della plenaria. _Come
-sopravvivere ad un CFP_ dove [Marco
-Squarcina](https://www.linkedin.com/in/squarcina), ha raccontato il recente CFP
+sopravvivere ad un CTF dove [Marco
+Squarcina](https://www.linkedin.com/in/squarcina), ha raccontato il recente CTF
 in Russia e l'esperienza del team veneziano.
 
 Ottimi intereventi, ottima organizzazione, grande prosecco. Che dire, all'anno prossimo!
