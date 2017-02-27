@@ -78,4 +78,6 @@ There is a "last updated" at the bottom.
   * https://objective-see.com/blog.html
   * https://www.youtube.com/watch?v=fv4l9yAL2sU
 
+9. This blog hidden gems
+    * https://codiceinsicuro.it/feed-mb.xml - XML feed for Monday Blues video podcast
 _last update: Ven 22 Lug 2016 15:55:19 CEST_

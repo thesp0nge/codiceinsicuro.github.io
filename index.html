@@ -40,7 +40,7 @@ about: 'about.html'
                       </div>
                       <p>{{ post.excerpt | strip_html | truncatewords: 100}}</p>
                       <div class="item-helper-a">
-                        <a href="{{site.url}}" class="button-alt button-alt-frame"><i class="fa fa-reply"></i>Read more</a>
+                        <a href="{{post.url}}" class="button-alt button-alt-frame"><i class="fa fa-reply"></i>Read more</a>
                         {% comment %} <a href="#" class="button-alt"><i class="fa fa-plus-circle"></i>Read later</a> {% endcomment %}
                       </div>
                     </div>

@@ -1,0 +1,39 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.name | xml_escape }} - Monday Blues</title>
+    <description>Monday Blues e' la video serie di Codice Insicuro, dove si parla delle cose che non vanno nel mondo IT quando incontra la sicurezza applicativa. Suggerimenti per migliorare i lunedì di tutti, verranno dispensati in armonia.</description>
+    <link>{{ site.url }}/monday-blues</link>
+    <image>
+        <url>{{site.url}}/assets/images/mb.jpg</url>
+        <title>La locanda dell'ultima casa</title>
+
+    </image>
+    <atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
+    {% for post in site.mb %}
+    {% unless post.link %}
+    {% if post.share %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      {% if post.excerpt %}
+      <description>
+        <![CDATA[<img src="{{site.url}}/assets/images/mb/{{post.cover}}" />
+        {{ post.excerpt | xml_escape }}]]>
+      </description>
+      {% else %}
+      <description>
+        <![CDATA[<img src="{{site.url}}/assets/images/mb/{{post.cover}}" />
+        {{ post.content | xml_escape }}]]>
+      </description>
+      {% endif %}
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+    </item>jekyll 
+    {% endif %}
+    {% endunless %}
+    {% endfor %}
+  </channel>
+</rss>
