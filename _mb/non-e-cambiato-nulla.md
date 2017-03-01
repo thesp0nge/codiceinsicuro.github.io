@@ -3,7 +3,7 @@ layout: mb
 title: "Non è cambiato nulla, lo giuro!"
 comments: true
 share: false
-video: 
+video: Nq-wjDNJT_o
 cover: 3.png
 order: 4
 ---
@@ -17,5 +17,5 @@ Ma quali sono i tempi giusti per richiedere un WAPT?
 Quali le informazioni che servono?
 Sicuri che non cambi mai nulla nel vostro codice?
 
-{% youtube xxx %}
+{% youtube Nq-wjDNJT_o %}
 
