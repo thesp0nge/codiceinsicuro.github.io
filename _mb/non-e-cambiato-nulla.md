@@ -1,6 +1,6 @@
 ---
 layout: mb
-title: "Non è cambiato nulla, lo giuro!"
+title: "Non e' cambiato nulla"
 comments: true
 share: false
 video: Nq-wjDNJT_o

@@ -1,6 +1,6 @@
 ---
 layout: mb
-title: "Non è cambiato nulla, lo giuro!"
+title: "Metodologie agili"
 comments: true
 share: false
 video: acorqLb_eBg
