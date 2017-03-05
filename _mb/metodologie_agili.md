@@ -3,7 +3,7 @@ layout: mb
 title: "Metodologie agili"
 comments: true
 share: false
-video: acorqLb_eBg
+video: AXvs6zrFAOA
 cover: 4.png
 order: 5
 ---
@@ -15,5 +15,5 @@ mentre tutto il mondo va verso cicli di rilascio continuo?
 No, anche la sicurezza applicativa deve abbracciare il vento del cambiamento e
 diventare più agile.
 
-{% youtube acorqLb_eBg %}
+{% youtube AXvs6zrFAOA %}
 
