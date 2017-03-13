@@ -2,7 +2,7 @@
 layout: mb
 title: "Devo studiare?"
 comments: true
-share: false
+share: true
 video: jNVNJEHEqk4 
 cover: 2.png
 order: 3

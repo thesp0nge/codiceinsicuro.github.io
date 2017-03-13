@@ -2,7 +2,7 @@
 layout: mb
 title: "Metodologie agili"
 comments: true
-share: false
+share: true
 video: AXvs6zrFAOA
 cover: 4.png
 order: 5

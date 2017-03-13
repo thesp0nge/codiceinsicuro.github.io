@@ -2,7 +2,7 @@
 layout: mb
 title: "Non e' cambiato nulla"
 comments: true
-share: false
+share: true
 video: Nq-wjDNJT_o
 cover: 3.png
 order: 4
