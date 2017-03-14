@@ -44,7 +44,7 @@ A questo punto posso, data una stringa arbitraria, calcolare il valore
 dell'entropia così come definita da Shannon.
 
 {%highlight sh%}
-$ irb                                                                                                                master  ✱
+$ irb
 2.3.3 :001 > class String
 2.3.3 :002?>     def entropy
 2.3.3 :003?>         self.each_char.group_by(&:to_s).values.map { |x| x.length / self.length.to_f }.reduce(0) { |e, x| e - x*Math.log2(x) }
@@ -123,7 +123,36 @@ entropy("correct horse battery staple") #=> 3.494680
 entropy("Nullam id dolor id nibh ultricies vehicula ut id elit.") #=> 3.837316
 {%endhighlight%}
 
-Questo risultato, figlio del limitato alfabeto usato per la passphrase, mi dice che in realtà la quantità di informazioni necessarie per memorizzare Gennaio2017 è _quasi_ quella necessaria per memorizzare questo [Leopardi](http://www.pensieriparole.it/poesie/poesie-d-autore/poesia-18135) rivisitato.
+Questo risultato, figlio del limitato alfabeto usato per la passphrase, mi dice
+che in realtà la quantità di informazioni necessarie per memorizzare
+Gennaio2017 è _quasi_ quella necessaria per memorizzare questo
+[Leopardi](http://www.pensieriparole.it/poesie/poesie-d-autore/poesia-18135)
+rivisitato.
+
+*Primo risultato:* vista dal punto di vista di un calcolatore, una passphrase
+non è *molto* più robusta di una password banale come _Gennaio2017_.
+
+Per rendere l'entropia della nostra passphrase maggiore, ne arricchiamo
+l'alfabeto. Vediamo come, aggiungendo tipologie di caratteri differenti, ho un
+aumento della quantità di informazione necessaria per memorizzare le stringhe
+differenti.
+
+Questo però vanifica l'obiettivo di avere qualcosa di semplice da memorizzare,
+obiettivo che fa scegliere una frase piuttosto che una parola incomprensibile
+con lettere e numeri.
+
+{%highlight sh%}
+entropy("correct horse battery staple") #=> 3.494680
+entropy("correct horse battery staple!") #=> 3.590571
+entropy("correct horse battery staple123") #=> 3.768555
+entropy("correct horse battery staple123!") #=> 3.851410
+{%endhighlight%}
+
+Le nostre password, però, vengono memorizzate in forma offuscata all'interno di
+un database. Non useremo né MD5, né SHA1 in quanto ora entrambe vulnerabili a
+collisioni, ci affideremo a SHA256.
+
+Offuschiamo le password e calcoliamone l'entropia.
 
 {%highlight sh%}
 Entropy for SHA256 counterpart:
@@ -140,9 +169,41 @@ entropy("c4bbcb1fbec99d65bf59d85c8cb62ee2db963f0fe106f483d9afa73bd4e39a8a") #=> 
 entropy("3610bece7b415d00354be7e61e80b30cde56a51d0ff19300bd949810e1b3fc14") #=> 3.713754
 {%endhighlight%}
 
-{%highlight sh%}
-entropy("correct horse battery staple") #=> 3.494680
-entropy("correct horse battery staple!") #=> 3.590571
-entropy("correct horse battery staple123") #=> 3.768555
-entropy("correct horse battery staple123!") #=> 3.851410
-{%endhighlight%}
+Essendo parole di uno stesso alfabeto ed aventi tutte la stessa lunghezza,
+l'entropia è pressapoco la stessa.
+
+*Secondo risultato:* quando offuschiamo una parola chiave o una frase, possiamo
+abbassarne il valore di entropia.
+
+## Dal punto di vista dell'attaccante
+
+Chi vuole violare la mia password parte dal suo valore offuscato. Da questo
+punto di partenza, essendo le funzioni di hash ad una sola direzione, l'unico
+approccio possibile, oltre al social engineering o compromettere la postazione
+della vittima, è un attacco a forza bruta.
+
+E qui la passphrase si rivela essere la scelta migliore. Una parola chiave con
+una combinazione di lettere, numeri e caratteri speciali, può essere sempre
+ricavata da un tool di bruteforce. Potrebbero volerci anni per arrivare alla
+parola corretta, ma prima o poi il caso mi porterà al tanto agoniato
+_Gennaio2017_ o _Farfallina78_.
+
+Se la mia parola chiave è invece, _"cantami o diva del pelide achille"_ o
+_"cani mangiano dromedari verdi"_, sfido qualsiasi programma automatico a
+prendere parole per comporre frasi di senso compiuto o meno. Neanche le più
+sofisticate AI.
+
+## Perché scegliere una passphrase
+
+Al posto di una password scegliete una passphrase perché:
+
+* ha in ogni caso un buon valore di base di entropia
+* è semplice da memorizzare perché associata a nostri processi mentali
+* non è ricavabile da un tool automatico di bruteforce
+
+Se sei uno sviluppatore, quindi, battiti per togliere quei vincoli assurdi sul
+numero di minuscole, maiuscole, numeri, lettera e testamento. Supporta le
+passphrase, tanto poi nel tuo DB occuperanno sempre lo stesso numero di byte,
+una volta offuscate.
+
+Enjoy it!
