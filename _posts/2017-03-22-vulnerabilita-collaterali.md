@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Vulnerabilità collaterali"
-promotion: 
+promotion: "Introdurre un processo di gestione delle vulnerabilità è un passo fondamentale per avere una security posture aziendale sui temi cybsecurity. Vediamo come."
 modified: 
 featured: false
 category: [post]
 tags: [vulnerabilità, opensource, librerie, dipendenze, code review]
 image:
-  feature:
-  credit:
-  creditlink:
+  feature: legami.jpg
+  credit: Daniele
+  creditlink: https://flic.kr/p/avxakD
 comments: true
 share: true
 ---
@@ -19,7 +19,7 @@ macchine, è la mancata percezione del software di terze parti, come un pericolo
 per la sicurezza della propria applicazione.
 
 Prendiamo, per esempio, l'ultima vulnerabilità grave legata al framework
-[Struts2](#). Tutte le applicazioni J2EE, basate sulla versione vulnerabile di
+[Struts2](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5638). Tutte le applicazioni J2EE, basate sulla versione vulnerabile di
 Struts2, non importa quanto sviluppate in modo sicuro, non importa quanti
 penetration test avessero subito, potevano essere bucate.
 
@@ -82,7 +82,7 @@ Il check più corposo che fa, ad esempio, [dawnscanner](https://dawnscanner.org)
 è proprio sulle vulnerabilità delle gemme incluse nel bundle di un'applicazione
 Rails, Sinatra, Padrino e presto Hanami.
 
-Sto lavorando su [Owasp Orizon](#), per introdurre lo stesso tipo di controllo
+Sto lavorando su [Owasp Orizon](https://www.owasp.org/index.php/Category:OWASP_Orizon_Project), per introdurre lo stesso tipo di controllo
 sulle librerie incluse in un Jar, War o Ear.
 
 Avere un report periodico che ci dica le vulnerabilità che la nostra
