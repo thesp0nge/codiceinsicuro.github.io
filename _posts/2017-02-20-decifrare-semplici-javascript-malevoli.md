@@ -3,7 +3,7 @@ layout: post
 title: "Decifrare semplici Javascript malevoli"
 promotion: 
 modified: 
-featured: false
+featured: true
 category: [post]
 tags: [javascript, malware, evilcode]
 image:

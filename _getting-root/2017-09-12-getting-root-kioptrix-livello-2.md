@@ -150,7 +150,7 @@ Cerco quindi exploit per CentOS 4.5 e sono abbastanza fortunato.
 ![CentOS exploit]({{site.url}}/assets/images/getting-root/k2/centos_exploit.png)
 
 Visto che le macchine, per come è stato creato il mini laboratorio, non escono
-su Internet direttamente, carico gli exlploit nella mia _/var/www/html_ e
+su Internet direttamente, carico gli exploit nella mia _/var/www/html_ e
 usando wget li prelevo dal target.
 
 Provo prima l'exploit per il CVE-2009-2698 ma, una volta caricato fallisce.

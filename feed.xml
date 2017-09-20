@@ -55,5 +55,21 @@
     {% endunless %}
     {% endfor %}
 
+    {% for post in site.getting-root %}
+    {% unless post.link %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      {% if post.excerpt %}
+      <description>{{ post.excerpt | xml_escape }}</description>
+      {% else %}
+      <description>{{ post.content | xml_escape }}</description>
+      {% endif %}
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+    </item>
+    {% endunless %}
+    {% endfor %}
+
   </channel>
 </rss>
