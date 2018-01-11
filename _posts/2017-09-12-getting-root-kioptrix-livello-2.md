@@ -9,6 +9,10 @@ featured: false
 category: [getting-root]
 tags: [walkthrough, oscp, kioptrix, getting-root]
 comments: true
+image:
+  feature: root.png
+  credit: 
+  creditlink: 
 share: true
 ---
 
