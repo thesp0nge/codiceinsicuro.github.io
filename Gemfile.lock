@@ -41,6 +41,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 3)
       safe_yaml (~> 1.0)
+    jekyll-asciinema (0.2.0)
+      jekyll (>= 2.0)
     jekyll-assets (3.0.3)
       activesupport (~> 5.0)
       execjs (~> 2.7)
@@ -128,6 +130,7 @@ DEPENDENCIES
   activesupport
   buff
   jekyll
+  jekyll-asciinema
   jekyll-assets
   jekyll-feed
   jekyll-gist
