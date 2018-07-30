@@ -34,6 +34,6 @@ Student ID: SLAE-1217
 
 <ul>
 {% for s in slaes %}
-  <li>Assignement #{{s.order}}: <a href="{{s.url}}">{{s.title}}</a></li>
+  <li><a href="{{s.url}}">{{s.title}}</a></li>
 {% endfor %}
 </ul>
