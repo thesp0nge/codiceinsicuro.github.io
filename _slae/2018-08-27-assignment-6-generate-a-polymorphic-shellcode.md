@@ -1275,3 +1275,12 @@ shellcodes requires a lot of attentions in not mangling program logic flow.
 Another important thing I learnt in this assignment is that, GDB is one of my
 best friends and the .gdbinit file with the hook-stop function is one of the
 customization you have to care most of it.
+
+## SLAE Exam Statement
+
+This blog post has been created for completing the requirements of the SecurityTube Linux Assembly Expert certification:
+
+[http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/](http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/)
+
+Student ID: SLAE-1217
+
