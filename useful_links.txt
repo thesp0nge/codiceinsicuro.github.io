@@ -79,5 +79,17 @@ There is a "last updated" at the bottom.
   * https://www.youtube.com/watch?v=fv4l9yAL2sU
 
 9. This blog hidden gems
-    * https://codiceinsicuro.it/feed-mb.xml - XML feed for Monday Blues video podcast
+  * https://codiceinsicuro.it/feed-mb.xml - XML feed for Monday Blues video podcast
+  * https://codiceinsicuro.it/slae
+
+10. Egg Hunting
+  * https://github.com/sh3llc0d3r1337/SLAE32-egghunter/blob/master/egghunter/shellcode.asm
+  * http://cloud101.eu/linux/security/programming/slae32/2013/05/03/slae-assigment-3-egg-hunter-shellcode.html
+  * https://phackt.com/slae-egg-hunter
+  * https://gist.github.com/geyslan/5254424
+  * https://xmgv.wordpress.com/2015/02/24/slae-3-egg-hunter-shellcode/
+  * http://www.hick.org/code/skape/papers/egghunt-shellcode.pdf
+  * https://networkfilter.blogspot.it/2015/08/slae-assignment-3-egg-hunter-shellcode.html
+
+
 _last update: Ven 22 Lug 2016 15:55:19 CEST_
