@@ -36,8 +36,9 @@ There is a "last updated" at the bottom.
 
 
 4. Reading pane
-  * https://codiceinsicuro.it (IT)
-  * http://armoredcode.com ( EN - soon to be active again)
+  * Codice Insicuro (https://codiceinsicuro.it)
+  * Armored Code (http://armoredcode.com)
+  * Insicurezze Collaterali (https://tinyletter.com/insicurezze-collaterali)
   * Dentro Anonymous. Viaggio nelle legioni dei cyberattivisti (http://www.amazon.it/gp/product/B009H6EJWI/ref=as_li_ss_tl?ie=UTF8&camp=3370&creative=24114&creativeASIN=B009H6EJWI&linkCode=as2&tag=codicinsic-21)
   * DEEP WEB - La rete oltre Google: Personaggi, storie e luoghi dell'internet profonda (http://www.amazon.it/gp/product/B00L9GLK1M/ref=as_li_ss_tl?ie=UTF8&camp=3370&creative=24114&creativeASIN=B00L9GLK1M&linkCode=as2&tag=codicinsic-21)
   * Using "Git Clone" to get Pwn3D https://blog.skullsecurity.org/2012/using-git-clone-to-get-pwn3d
@@ -71,6 +72,9 @@ There is a "last updated" at the bottom.
 7. Misc
   * Statusify is a web-application status app, written entirely in Ruby - (https://github.com/statusify/statusify)
   * Dashing is a Sinatra based framework that lets you build beautiful dashboards - (http://dashing.io)
+  * Cybersecurity Swiss Army Knife (https://gchq.github.io/CyberChef/)
+  * Awesome Pentest (https://github.com/coreb1t/awesome-pentest-cheat-sheets)
+  * Awesome Red Teaming (https://github.com/yeyintminthuhtut/Awesome-Red-Teaming)
 
 8. Malware and Mac OS X
   * http://sysdev.me/trusted-bsd-in-osx/
@@ -92,4 +96,4 @@ There is a "last updated" at the bottom.
   * https://networkfilter.blogspot.it/2015/08/slae-assignment-3-egg-hunter-shellcode.html
 
 
-_last update: Ven 22 Lug 2016 15:55:19 CEST_
+_last update: ven 23 nov 2018, 14.13.01, CET_
