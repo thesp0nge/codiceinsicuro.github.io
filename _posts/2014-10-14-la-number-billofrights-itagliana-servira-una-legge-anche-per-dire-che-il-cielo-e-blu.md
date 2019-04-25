@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "La #billOfRights itaGLiana. Servirà una legge anche per dire che il cielo è blu?"
 modified: 2014-10-14 07:52:12 +0200
 category: [Chiacchiere da bar]
 tags: [banfa, billOfRights, legge, boldrini, carta dei diritti, privacy, diritto all'oblio, neutralità della rete]
 image:
   feature: magna-carta.png
-  credit: James Joel
-  creditlink: https://flic.kr/p/ffnnRb
 comments: true
 share: true
 ---

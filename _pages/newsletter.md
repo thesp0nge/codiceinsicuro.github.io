@@ -1,11 +1,10 @@
 ---
 layout: page
+author: thesp0nge
 permalink: /newsletter/
 title: "Insicurezze colleterali"
 image:
   feature: news_cover.jpg
-  credit: lindalino
-  creditlink: https://flic.kr/p/9WDc71
 ---
 
 Viviamo in un'era iper connessa. Una volta Internet era un modo per sfuggire

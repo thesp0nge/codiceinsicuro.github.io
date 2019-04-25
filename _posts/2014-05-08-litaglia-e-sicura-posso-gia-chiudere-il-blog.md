@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "L'ItaGLia è sicura. Posso già chiudere il blog"
 modified: 2014-05-08 08:13:44 +0200
 category: [builders]
 tags: [sicurezza, banfa, media, interviste, carrier, ddos, sicurezza perimetrale, chiacchiere, sha7, daje, owasp, owasp italy, owasp day]
 image:
   feature: italia_sicura.jpg
-  credit: Kiki Hood
-  creditlink: https://flic.kr/p/5yunZJ
 comments: true
 share: true
 ---

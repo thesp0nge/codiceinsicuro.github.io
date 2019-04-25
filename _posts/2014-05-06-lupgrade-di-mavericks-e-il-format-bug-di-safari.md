@@ -1,15 +1,15 @@
 ---
 layout: post
+author: thesp0nge
 title: "L'upgrade di Mavericks e il format bug di Safari"
 modified:
 category: [attackers]
-tags: [os-x, apple, format-bug, snprintf, anni 90, mavericks, 10.9, safari, cve-2014-1315]
+tags: [os-x, apple, format-bug, snprintf, anni 90, mavericks, safari, cve-2014-1315]
 image:
   feature: safari_format_bug.png
-  credit: Il mio macbook
-  creditlink:
 comments: true
 share: true
+featured: false
 ---
 
 ## Quello che non conosci potrebbe ucciderti

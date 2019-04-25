@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Testiamo in automatico le password dei nostri utenti"
 promotion: "Con un piccolo script ruby verifichiamo che i nostri utenti non abbiano password banali"
 modified: 
-featured: true
+featured: false
 category: [Pick'n'chic]
 tags: [ruby, ldap, active directory, password, password policy]
 image:
   feature: pwd_incorrect.jpg
-  credit: Lulu Hoeller
-  creditlink: https://flic.kr/p/fm3FML
 comments: true
 share: true
 ---

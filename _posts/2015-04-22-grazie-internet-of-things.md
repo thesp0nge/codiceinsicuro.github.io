@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Grazie Internet of Things"
 promotion: "Con la diffusione della domotica e dell'IoT capiremo l'importanza dell'ICT Security? Forse sì."
 modified: 
-featured: true
+featured: false
 category: [Spinaci]
 tags: [iot, sicurezza applicativa, banfa, awareness]
 image:
   feature: iot.jpg
-  credit: vintagedept
-  creditlink: https://flic.kr/p/gVdg2p
 comments: true
 share: true
 ---

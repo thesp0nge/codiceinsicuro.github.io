@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "32 Milioni di account twitter trafugati: ancora problemi con le credenziali"
 promotion: "32 Milioni di account twitter trafugati: ancora problemi con le credenziali"
 modified: 
-featured: true
+featured: false
 category: [News]
 tags: [twitter, password, credenziali, attacco]
 image:
   feature: twitter_hacked.jpg
-  credit: The Internet
-  creditlink: http://mediad.publicbroadcasting.net/p/wjct/files/styles/x_large/public/201309/twitter_hacked.jpg
 comments: true
 share: true
 ---

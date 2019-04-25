@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Getting Root: Kioptrix livello 1"
 exercise: https://www.vulnhub.com/entry/kioptrix-level-1-1,22/
 level: SEMPLICE
@@ -11,8 +12,6 @@ tags: [walkthrough, oscp, kioptrix, getting-root]
 comments: true
 image:
   feature: root.png
-  credit: 
-  creditlink: 
 share: true
 ---
 

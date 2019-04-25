@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Lo hai bucato perché è un server di test"
 promotion: "Hai bucato quel server solo perché è di test. Se è online è un obiettivo, sei d'accordo?"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [digital agency, agenzia digitale, pubblicità, marketing, server di test, ignoranti digitali, internet, social, yo yo]
 image:
   feature: dummies.jpg
-  credit: Simon Yeo
-  creditlink: https://flic.kr/p/dmrfY1
 comments: true
 share: true
 ---

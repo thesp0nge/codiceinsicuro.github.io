@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Nuove strade e Buon Natale"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [natale, osce, ctp, offensive security]
 image:
   feature: snow_aroad.jpg
-  credit: John Salzarulo
-  creditlink: https://unsplash.com/photos/_R0gzzRUZoI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 comments: true
 share: true
 ---

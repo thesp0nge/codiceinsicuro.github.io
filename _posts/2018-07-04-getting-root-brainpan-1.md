@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Getting root: Brainpan 1"
 promotion: Brainpan 1 è una boot2root pensata per esercitarsi nello scrivere semplici exploit per buffer overflow semplici, senza meccanismi di protezione dello stack.
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [walkthrough,oscp,vulnhub,getting-root,brainpan,write-up]
 image:
   feature: brainpan_1.png
-  credit:
-  creditlink:
 comments: true
 share: true
 ---

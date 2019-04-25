@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Smart TV e violazione della privacy"
 promotion: 
 modified: 

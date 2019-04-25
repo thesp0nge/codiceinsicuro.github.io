@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Propositi e previsioni per la sicurezza applicativa nel 2016"
 promotion: "Come sarà il 2016 per l'#appsec? #IoT, #OWASP, #Malware, #cybercrime e molto altro. Leggi qui."
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [propositi, anno nuovo, sicurezza applicativa, previsioni, duemilaquindici]
 image:
   feature: palle_2016.jpg
-  credit: Laura Canovaro
-  creditlink: https://flic.kr/p/5Lr631
 comments: true
 share: true
 ---

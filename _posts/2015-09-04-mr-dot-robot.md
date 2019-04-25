@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Mr.Robot"
 promotion: "Mr.Robot la serie TV su hacking e società così reale da sembrare drammaticamente finta. O viceversa?"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [mr. robot, hacking, società, serie tv]
 image:
   feature: blue_robot.jpg
-  credit: Dan Thornton
-  creditlink: https://flic.kr/p/a6z7Kp
 comments: true
 share: true
 ---

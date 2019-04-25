@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Codiceinsicuro su bloglovin"
 modified: 2014-07-22 11:40:40 +0200
 category: [Chiacchiere da bar]
 tags: [bloglovin, traction]
 image:
   feature:
-  credit:
-  creditlink:
 comments: true
 share: true
 ---

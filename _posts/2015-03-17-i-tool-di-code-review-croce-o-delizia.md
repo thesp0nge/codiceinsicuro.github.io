@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "I tool di code review: croce o delizia?"
 promotion: "I tool di analisi statica soffrono di hype e alcune feature mal progettate. Vediamo quali."
 modified: 
-featured: true
+featured: false
 category: [Sicurina]
 tags: [code review, sast, findbugs, /dev/brain]
 image:
   feature: lana_colorata.jpg
-  credit: Hilke Kurzke
-  creditlink: https://flic.kr/p/aUjLoM
 comments: true
 share: true
 ---

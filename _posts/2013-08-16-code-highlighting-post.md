@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: Syntax Highlighting Post
 description: "Demo post displaying the various ways of highlighting code in Markdown."
 published: false

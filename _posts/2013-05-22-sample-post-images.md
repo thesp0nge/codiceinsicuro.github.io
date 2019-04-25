@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "A Post with Images"
 description: "Examples and code for displaying images in posts."
 published: false

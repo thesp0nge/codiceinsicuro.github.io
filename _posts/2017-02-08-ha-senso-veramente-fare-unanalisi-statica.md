@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Ha senso veramente fare un'analisi statica?"
 promotion: "Code review è una buzzword da spendere in prevendita o qualcosa che serve veramente? Vediamolo insieme."
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [dawnscanner, sast, code review, opensource]
 image:
   feature: compito.jpg
-  credit: Claudio Migliavacca
-  creditlink: https://flic.kr/p/4b2H67
 comments: true
 share: true
 ---

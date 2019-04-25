@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "bettercap: rimettiamo al centro l'attaccante"
 promotion: "Scopriamo bettercap, un altro tool italiano per il MITM."
 modified: 
-featured: true
+featured: false
 category: [under]
 tags: [bettercap, ruby, mitm, parser, credenziali, http, ftp]
 image:
   feature: divieto_discarica.jpg
-  credit: Marco Marveggio
-  creditlink: https://flic.kr/p/r8qcei
 comments: true
 share: true
 ---

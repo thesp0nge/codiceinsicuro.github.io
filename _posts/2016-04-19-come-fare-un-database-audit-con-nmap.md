@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Come fare un database audit con nmap"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [Under attack]
 tags: [nmap, database audit, mysql, cis]
 image:
   feature: database.jpg
-  credit: Linux Screenshots
-  creditlink: https://flic.kr/p/hHD5Ru
 comments: true
 share: true
 ---

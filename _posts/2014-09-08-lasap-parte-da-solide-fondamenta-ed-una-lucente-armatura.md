@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "L'ASAP parte da solide fondamenta ed una lucente armatura"
 modified:
 category: [Spinaci]
 tags: [asap, owasp core ruleset, owasp, waf, mod_security, apache, nginx, hardening, linux, unix, patch, security advisories, security management]
 image:
   feature: sith_armor.png
-  credit: pdragon
-  creditlink: https://flic.kr/p/6w2N4g
 comments: true
 share: true
 ---

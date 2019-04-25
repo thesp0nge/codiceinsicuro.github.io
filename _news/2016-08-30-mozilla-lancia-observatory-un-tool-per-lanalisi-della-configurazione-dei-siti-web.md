@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Mozilla lancia Observatory: un tool per l'analisi della configurazione dei siti web"
 promotion: 
 modified: 

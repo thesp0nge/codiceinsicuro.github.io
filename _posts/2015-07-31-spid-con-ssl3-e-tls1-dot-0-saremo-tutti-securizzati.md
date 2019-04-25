@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "SPID: con SSL3 e TLS1.0 saremo tutti securizzati"
 promotion: "L'AGID dimostra che la strada è ancora lunga per avere servizi statili sul web disegnati in maniera sicura"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [ssl 3.0, tls 1.0, spid, agid, governo, banfa, cifratura, poodle, beast]
 image:
   feature: stolen_identity.jpg
-  credit: Luca Rossato
-  creditlink: https://flic.kr/p/8LRjiD
 comments: true
 share: true
 ---

@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "MS15-034: IIS denial of service con una sola richiesta HTTP"
 promotion: "MS15-034: IIS denial of service con una sola richiesta HTTP"
 modified: 
-featured: true
+featured: false
 category: [Under attack]
 tags: [iis, patching tuesday, denial of service, http, exploit, ms15-034, cve-2015-1635]
 image:
   feature: broken-heart.jpg
-  credit: David Goehring
-  creditlink: https://flic.kr/p/cKgfT
 comments: true
 share: true
 ---

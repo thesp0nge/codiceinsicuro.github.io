@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Erase and Rewind"
 promotion: Un Gennaio con una grossa delusione, può dare via a qualcosa che si spera diventi importante? Bhé spero proprio di sì. Tu intanto, scopri di più su codiceinsicuro.it.
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [introspezione, off-topic, vita, bitcoin, startup, ripartire, progetti, 40anni]
 image:
   feature: introspezione.jpg
-  credit: corrado colombo
-  creditlink: https://flic.kr/p/F3a5m
 comments: true
 share: true
 ---

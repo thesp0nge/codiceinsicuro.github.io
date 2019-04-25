@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Lo skill shortage e l'olio di palma"
 promotion: "Si pensa che il problema del #cybersec in Italia sia la mancanza di skill. Siamo sicuri sia proprio così?"
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [skill shortage, mercato del lavoro, cybersecurity, italia, remunerazioni, skill, ambizioni, carriera]
 image:
   feature: shortage.jpg
-  credit: Hafiz Bastan
-  creditlink: https://flic.kr/p/9Witzb
 comments: true
 share: true
 ---

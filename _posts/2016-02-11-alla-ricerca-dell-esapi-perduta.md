@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Alla ricerca dell'ESAPI perduta"
 promotion: "Agli sviluppatori java manca una libreria di security enforcement che sia realmente usabile. Sei d'accordo? Leggi qui."
 modified: 
-featured: true
+featured: false
 category: [Sicurina]
 tags: [java, secure library, ssdlc, sviluppo sicuro, owasp, coverity, esapi, api, owasp esapi]
 image:
   feature: libreria.jpg
-  credit: Oscar F. Hevia
-  creditlink: https://flic.kr/p/jD4vM7
 comments: true
 share: true
 ---

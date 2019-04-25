@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "LastPass security breach e le tue password nel cloud"
 promotion: "LastPass è stato appena bucato, davvero metteresti le tue credenziali nel cloud?"
 modified: 
-featured: true
+featured: false
 category: [under]
 tags: [cloud, sicurezza informatica, password manager, password, attacco informatico]
 image:
   feature: doors.jpg
-  credit: Jack Amick
-  creditlink: https://flic.kr/p/dJDSv6
 comments: true
 share: true
 ---

@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Ladri di biciclette: HTTPS bicycle attack"
 promotion: "HTTPS bicycle attack: ecco come ottengo informazioni utili da qualche pacchetto TLS catturato"
 modified: 
-featured: true
+featured: false
 category: [Under attack]
 tags: [https, tls, stream cipher, information disclosure, https bicycle, bycycle attack]
 image:
   feature: bici_2016.jpg
-  credit: Armando Magro
-  creditlink: https://flic.kr/p/5KxzVA
 comments: true
 share: true
 ---

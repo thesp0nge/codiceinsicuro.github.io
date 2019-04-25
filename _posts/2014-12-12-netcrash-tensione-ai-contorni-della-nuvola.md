@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Netcrash: tensione ai contorni della nuvola"
 promotion: "Un cyber thriller che mette a nudo le nostre paure sul #cloud"
 modified: 
@@ -7,8 +8,6 @@ category: [L'angolo del libro]
 tags: [recensione, cloud, cloud computing, frisco, bug, hacker, romanzo, disastro]
 image:
   feature: libro.png
-  credit: Jorge Luis G 
-  creditlink: https://flic.kr/p/mTs3Uy
 comments: true
 share: true
 ---

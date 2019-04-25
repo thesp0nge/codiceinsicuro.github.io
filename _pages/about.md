@@ -1,79 +1,36 @@
 ---
 layout: page
-permalink: /about/
-title: Su questo blog
-tagline: Un blog di application security morbido fuori e croccante dentro
-tags: [about, Jekyll, theme, responsive]
-modified: 11-02-2016
-comments: false
-share: true
-image:
-  feature: about.png
-  credit:
-  creditlink:
+author: thesp0nge
+title: Mediumish Template for Jekyll
+permalink: /about
+comments: true
 ---
 
-Quando ho aperto [armoredcode.com](http://armoredcode.com)[^1], il mio scopo
-era quello di scrivere di application security.
-Avevo letto da poco un libro, Technical Blogging di A.Cangiano e mi aveva
-inspirato. Da sempre cercavo di creare un punto di interesse attorno ai temi
-della sicurezza applicativa, ancora poco diffusa in Italia e partii dai
-suggerimenti trovati in quel libro.
+<div class="row justify-content-between">
+<div class="col-md-8 pr-5">
 
-Con il tempo, gli impegni, la vita e i [progetti
-collaterali](http://dawnscanner.org) nel campo sempre ICT security hanno reso
-la scrittura di post di un certo livello, molto più difficile. Non impossibile,
-solo molto difficile.
+<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
 
-Per questo motivo, dato che a me piace scrivere, ho deciso di creare un blog su
-quello che amo fare in italiano. Almeno la parte di scrittura risulterà più
-fluente e più semplice in termini di tempo.
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
+<h4>Documentation</h4>
 
-### Perché un altro blog di application security?
+<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
 
-In questi anni ho cercato sul web delle risorse che affrontassero il tema della
-sicurezza applicativa ma ho trovato solamente blog che postavano notizie di
-incidenti, di patch di security da applicare e di recensioni di tool. Ho
-trovato veramente pochi posti dove si parlasse della sicurezza del codice, con
-il codice.
+<h4>Questions or bug reports?</h4>
 
-Questo blog vuole parlare di sicurezza applicativa codice sorgente alla mano,
-quando disponibile, e dimostrare che scrivere codice di per sé non è un lavoro
-semplice, ma per farlo sicuro poi ci vuole proprio una bella squadra.
+<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
 
-### Qui non troverai
+</div>
 
-* seriali di software
-* dettagli su come commettere illeciti informatici
-* warez
-* codici sorgente di exploit
-* 0 day
-* marchette commerciali
+<div class="col-md-4">
 
-### Invece potrai
+<div class="sticky-top sticky-top-80">
+<h5>Buy me a coffee</h5>
 
-* imparare a scrivere codice sicuro
-* imparare che scrivere codice non è una cosa brutta di cui vergognarsi
-* trovare esempi di safe coding in [ruby](http://ruby-lang.org/en)
-* trovare esempi di codice per eseguire test (statici o dinamici) sempre in
-  [ruby](http://ruby-lang.org/en)
-* imparare come mettere in sicurezza un application server
-* imparare il significato di termini come vulnerability assessment, web
-  application penetration test, code review e perché tutte queste cose servono a
-  te e alla tua azienda
-* ...
+<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
 
-[Codice Insicuro]({{site.root}}) vuole diventare il principale blog italiano sui temi di
-application security. Per ora è il primo blog italiano di application security
-croccante fuori e morbido dentro.
+<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
 
-Per qualsiasi dubbio o perplessità mi trovate via email qui:
-[paolo@codiceinsicuro.it](mailto:paolo@codiceinsicuro.it)
-
-### Qualche dato
-
-{% capture count %}{{ site.posts.size }}{%endcapture%}
-Sono stati scritti {{ count }} posts ad oggi. Il primo è stato scritto il {{ site.posts.last.date | date: "%d/%m/%Y"}} mentre l'ultimo il {{ site.posts.first.date | date: "%d/%m/%Y" }}.
-
-
-[^1]: sempre un blog di application security, in inglese, aperto il 16 Marzo 2011.
+</div>
+</div>
+</div>

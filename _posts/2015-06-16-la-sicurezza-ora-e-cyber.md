@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "La sicurezza ora è Cyber"
 promotion: 
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [sicurezza cibernetica, nuovi modi di fare business, ict security, malware, cyber war, cyber warefare, cyber sha7, cyber parco]
 image:
   feature: cyber.jpg
-  credit: Rooners Toy Photography
-  creditlink: https://flic.kr/p/pXEUkx
 comments: true
 share: true
 ---

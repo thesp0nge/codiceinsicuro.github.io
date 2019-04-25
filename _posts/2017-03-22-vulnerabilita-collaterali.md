@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Vulnerabilità collaterali"
 promotion: "Introdurre un processo di gestione delle vulnerabilità è un passo fondamentale per avere una security posture aziendale sui temi cybsecurity. Vediamo come."
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [vulnerabilità, opensource, librerie, dipendenze, code review]
 image:
   feature: legami.jpg
-  credit: Daniele
-  creditlink: https://flic.kr/p/avxakD
 comments: true
 share: true
 ---

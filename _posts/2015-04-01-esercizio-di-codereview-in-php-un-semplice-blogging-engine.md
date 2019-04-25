@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Esercizio di code review in PHP: un semplice blogging engine"
 promotion: "Questa code review ha dei problemi. Tu sei in grado di vedere dove ho sbagliato? Provaci."
 modified: 
-featured: true
+featured: false
 category: [Under attack]
 tags: [code review, php, owasp top 10, life]
 image:
   feature: pagella.jpg
-  credit: Alessandro Cani
-  creditlink: https://flic.kr/p/wXZAh
 comments: true
 share: true
 ---

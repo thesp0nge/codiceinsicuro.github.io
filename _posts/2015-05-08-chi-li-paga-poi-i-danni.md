@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Chi li paga poi i danni?"
 promotion: "Affrontiamo il tema spinoso della mitigazione alle vulnerabilità emerse dopo un penetration test applicativo"
 modified: 
-featured: true
+featured: false
 category: [Meditazione]
 tags: [awareness, sicurezza applicativa, project management, gantt]
 image:
   feature: cocci.jpg
-  credit: Sara y Tzunki (Cecilia e Francesco)
-  creditlink: https://flic.kr/p/5SjWZn
 comments: true
 share: true
 ---

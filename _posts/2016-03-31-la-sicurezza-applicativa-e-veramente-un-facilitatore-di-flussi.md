@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "La sicurezza applicativa è veramente un facilitatore di flussi?"
 promotion: "Proteggiamo veramente le cose nel modo corretto? Siamo sicuri di dare valore aggiunto a chi ci sta accanto? Leggi come esserlo una volta per tutte."
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [protezione, asset, web properties, ssdlc]
 image:
   feature: flussi.jpg
-  credit: Alessandro Scarcella
-  creditlink: https://flic.kr/p/bxbwhF
 comments: true
 share: true
 ---

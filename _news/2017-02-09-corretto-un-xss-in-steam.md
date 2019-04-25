@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Corretto un XSS in Steam"
 promotion: 
 modified: 

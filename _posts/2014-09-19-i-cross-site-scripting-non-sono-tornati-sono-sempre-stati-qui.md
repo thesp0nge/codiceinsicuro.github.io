@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "I cross site scripting. Non sono tornati, sono sempre stati qui"
 modified:
 category: [Chiacchiere da bar]
 tags: [xss, validare l'input, sanitizzare l'input, filtro, caratteri illegati, confindustria, ibm, media company, asap, vulnerabilità]
 image:
   feature: conf-xss.png
-  credit: Matteo Flora
-  creditlink: http://mgpf.it/2014/09/19/sito-confindustria-colabrodo.html
 comments: true
 share: true
 ---
@@ -30,7 +29,6 @@ tondo, quell'AppScan croce e delizia di chi l'ha visto all'opera[^1].
 
 Bene, il sito istituzione di [confindustria](http://www.confindustria.it)
 soffre di un banalissimo cross site scripting[^2] nella form di ricerca, come
-ci mostra [@LK](http://mgpf.it/2014/09/19/sito-confindustria-colabrodo.html) al quale va anche il credit per l'immagine
 usata per questo post.
 
 ## Che cos'è il cross site scripting?

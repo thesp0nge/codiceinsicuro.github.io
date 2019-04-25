@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Getting Root: Sedna"
 exercise: https://www.vulnhub.com/entry/hackfest2016-sedna,181/
 level: INTERMEDIO
@@ -11,8 +12,6 @@ tags: [walkthrough, oscp, hackfest 2016, getting-root]
 comments: true
 image:
   feature: root.png
-  credit: 
-  creditlink: 
 share: true
 ---
 

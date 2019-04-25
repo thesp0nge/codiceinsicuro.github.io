@@ -1,13 +1,12 @@
 ---
 layout: page
+author: thesp0nge
 permalink: /opensource/
 title: "Progetti Opensource"
 modified: 2015-10-20 08:13
 tags: [opensource, github, analisi statica, code review, ruby, ruby on rails, sinatra, padrino, xss, owasp]
 image:
   feature:
-  credit:
-  creditlink:
 share: true
 ---
 

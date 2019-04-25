@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "F**k Donald Trump: contestazione al tempo dell'hack"
 promotion: 
 modified: 

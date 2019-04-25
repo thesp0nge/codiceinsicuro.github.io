@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Alcune lezioni dal primo tentativo fallito per l'OSCE"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [osce, offensive security, pentest]
 image:
   feature: osce_1.jpg
-  credit: Chen Hu
-  creditlink: https://unsplash.com/photos/FZ0qzjVF_-c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 comments: true
 share: true
 ---

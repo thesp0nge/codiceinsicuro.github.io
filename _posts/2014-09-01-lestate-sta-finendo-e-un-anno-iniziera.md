@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "L'estate sta finendo e un anno inizierà"
 modified:
 category: [Chiacchiere da bar]
 tags: [pensieri, estate, settembre, progetti, voglia di fare]
 image:
   feature: spiaggia.jpg
-  credit: Cristian Conti
-  creditlink: https://flic.kr/p/5QR9fW
 comments: true
 share: true
 ---

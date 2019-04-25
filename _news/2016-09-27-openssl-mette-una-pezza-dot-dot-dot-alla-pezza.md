@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "OpenSSL mette una pezza... alla pezza"
 promotion: 
 modified: 

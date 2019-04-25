@@ -1,11 +1,10 @@
 ---
 layout: page
+author: thesp0nge
 permalink: /chicchi/
 title: "Chicchi di caffè, macinati in modo sicuro"
 image:
   feature: java.jpg
-  credit: Lilian Wong
-  creditlink: https://flic.kr/p/7Ubonh
 ---
 
 Il buongiorno di ogni buon pirata, parte con una dose di codice sicuro.

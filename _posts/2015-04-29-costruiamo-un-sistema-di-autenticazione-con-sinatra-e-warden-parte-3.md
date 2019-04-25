@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Costruiamo un sistema di autenticazione con Sinatra e Warden - Parte 3"
 promotion: "Costruiamo un sistema di autenticazione con poche righe di ruby grazie a Sinatra e Warden (parte 3)."
 modified: 
-featured: true
+featured: false
 category: [Sicurina]
 tags: [sinatra, ruby, warden, ldap, bcrypt, web app, talk_rd2015]
 image:
   feature: warden-3.jpg
-  credit: John Haslam
-  creditlink: https://flic.kr/p/3qrPVn
 comments: true
 share: true
 ---

@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Game, set e partita"
 promotion: "Quante storie da raccontare di fronte alla mail di un recruiter. Tutte fanno passare il nostro come il terzo mondo in campo ICT e, purtroppo, non solo in quello."
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [lavoro, recruiter, mercato del lavoro, estero, itaglia, peracottai, banfa, rant]
 image:
   feature: tennis.jpg
-  credit: hirotomo t
-  creditlink: https://flic.kr/p/6cFASL
 comments: true
 share: true
 ---

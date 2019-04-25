@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Applicazioni iOS e problemi di TLS"
 promotion: 
 modified: 

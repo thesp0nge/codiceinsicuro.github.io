@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "L'illusione di un mercato che non c'è... ancora"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [lavoro, mercato del lavoro, pre sales, application security, cybsersecurity]
 image:
   feature: mercato_pesce.jpg
-  credit: Emiliano Bechi Gabrielli
-  creditlink: https://flic.kr/p/8CiLJd
 comments: true
 share: true
 ---

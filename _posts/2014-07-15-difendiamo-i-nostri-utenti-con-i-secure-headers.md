@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Difendiamo i nostri utenti con i secure headers"
 modified:
 category: [Sicurina]
 tags: [ruby, twitter, secure headers, csp, hsts, x-frame, x-xss, x-content-type]
 image:
   feature: scudo.png
-  credit: Stefano Corso
-  creditlink: https://flic.kr/p/dtfk3T
 comments: true
 share: true
 ---

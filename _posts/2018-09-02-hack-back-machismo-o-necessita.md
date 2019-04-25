@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Hack-back: machismo o necessità?"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [hacking, cybersecurity, fuffa, feud]
 image:
   feature: sheriff.jpg
-  credit: Paul
-  creditlink: https://flic.kr/p/5dihgc
 comments: true
 share: true
 ---

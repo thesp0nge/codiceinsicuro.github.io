@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Automattic compra Woocommerce e WordPress diventa adulto"
 promotion: "Automattic compra Woocommerce. WordPress ridisegna il concetto di eCommerce"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [wordpress, php, code review, stand by wordpress, ecommerce, woocommerce, automattic, plugin, internet]
 image:
   feature: barber.jpg
-  credit: Gerry Dincher
-  creditlink: https://flic.kr/p/e9p4tD
 comments: true
 share: true
 ---

@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Cerchiamo un host in Nexpose con Ruby"
 promotion: "Vediamo come usare ruby e le API di Nexpose per cercare se un host è scansionato o no"
 modified: 
-featured: true
+featured: false
 category: [Pick'n'chic]
 tags: [ruby, nexpose, rapid7, vulnerability management, vulnerability assessment, scripting, script]
 image:
   feature: lumaca.jpg
-  credit: Olivier Bacquet
-  creditlink: https://flic.kr/p/Ruy9M
 comments: true
 share: true
 ---

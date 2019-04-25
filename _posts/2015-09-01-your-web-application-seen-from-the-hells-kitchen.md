@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Your web application seen from the hell's kitchen"
 promotion: "Al prossimo RubyDay, a Torino a Novembre, terrò un talk che mostra le fasi di progettazione e costruzione di una web app dagli occhi dell'attaccante."
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [rubyday, talk, sicurezza applicativa, gente losca, awareness]
 image:
   feature: vicolo.jpg
-  credit: Giorgio Minguzzi
-  creditlink: https://flic.kr/p/oVvZdC
 comments: true
 share: true
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Write-up non serio di una CTF domenicale"
 promotion: "Write-up di una CTF andata decisamente male e della mia ruggine unita alla sindrome da NCIS"
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [ctf, hackinbo, wapt, mentalist, hacktive security, paolo stagno]
 image:
   feature: NetBSD-old.jpg
-  credit: NetBSD 
-  creditlink: http://www.netbsd.org
 comments: true
 share: true
 ---

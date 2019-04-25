@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "SSDLC, alla ricerca del processo perduto"
 modified: 2014-08-02 08:58:56 +0200
 category: [Sicurina]
 tags: [ssdl, sviluppo sicuro, sviluppo, processo, programmatore, team, interviste, codice sicuro]
 image:
   feature: opificio_crespi.png
-  credit: emilius da atlantide
-  creditlink: https://flic.kr/p/9xdDjC
 comments: true
 share: true
 ---

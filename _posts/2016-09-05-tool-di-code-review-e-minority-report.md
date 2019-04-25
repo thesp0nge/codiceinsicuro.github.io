@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Tool di code review e minority report"
 promotion: "Gli strumenti di analisi del codice: tra una dashboard alla minority report e la promessa di 0% falsi positivi"
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [owasp, owasp orizon, dawnscanner, tool, code review, minority report, dinis cruz, ricordi]
 image:
   feature: minority.jpg
-  credit: youflavio
-  creditlink: https://flic.kr/p/eR5fWS
 comments: true
 share: true
 ---

@@ -1,11 +1,10 @@
 ---
 layout: page
+author: thesp0nge
 permalink: /monday-blues/
 title: "Piccole storie dell'orrore di Application Security"
 image:
   feature: 
-  credit: 
-  creditlink: 
 ---
 
 Nel mondo ci sono storie che meritano di essere raccontate. Storie che

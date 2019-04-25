@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Sofacy all'attacco delle macchine OSX con il trojan Komplex"
 promotion: 
 modified: 

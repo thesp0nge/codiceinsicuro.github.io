@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Un venerdì di passione fuori stagione"
 promotion: "Lo scorso venerdì, una remote privilege escalation su tutti i kernel Linux dal 2007 in poi ed il più grande attacco DDoS della storia. Ma tre giorni dopo il Web è già risorto."
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [ddos, dirty cow, linux kernel, iot, dns]
 image:
   feature: golgota.jpg
-  credit: Sandro Lombardo
-  creditlink: https://flic.kr/p/H7Bu1u
 comments: true
 share: true
 ---

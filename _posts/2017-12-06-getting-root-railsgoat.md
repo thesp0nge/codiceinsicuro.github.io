@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Getting Root: Railsgoat"
 exercise: https://railsgoat.cktricky.com
 level: FACILE
@@ -11,8 +12,6 @@ tags: [walkthrough, oscp, owasp, owasp-bwap, getting-root]
 comments: true
 image:
   feature: root.png
-  credit: 
-  creditlink: 
 share: true
 ---
 

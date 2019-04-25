@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "dawnscanner: la code review per ruby può parlare italiano?"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [code review, ruby, sinatra, ruby on rails, padrino, hanami, mvc]
 image:
   feature: dict.jpg
-  credit: Alessandro Prada
-  creditlink: https://flic.kr/p/62xNcB
 comments: true
 share: true
 ---

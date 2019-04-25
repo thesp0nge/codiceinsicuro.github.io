@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Shellshock capitolo 1. La prova pratica che le code review servono"
 modified: 2014-09-29 18:37:43 +0200
 category: [Chiacchiere da bar]
 tags: [code review, opensource, bash, shellshock, exploit, vulnerabilità, heartbleed, cve-2014-6271, cve-2014-6277, cve-2014-7169, cve-2014-7186, cve-2014-7187]
 image:
   feature: shells.png
-  credit: Alex Loach
-  creditlink: https://flic.kr/p/bDzuBm
 comments: true
 share: true
 ---

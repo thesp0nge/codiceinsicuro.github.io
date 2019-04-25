@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Milioni di device CISCO a rischio a causa di NSA"
 promotion: 
 modified: 

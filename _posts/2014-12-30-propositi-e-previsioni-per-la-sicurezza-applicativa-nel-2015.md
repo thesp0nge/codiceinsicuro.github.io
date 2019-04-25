@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Propositi e previsioni per la sicurezza applicativa nel 2015"
 promotion: "Come sarà il 2015 per l'#appsec? Tra #malware e #smartTV leggilo qui."
 modified: 
@@ -7,8 +8,6 @@ category: [Chiacchiere da bar]
 tags: [propositi, anno nuovo, sicurezza applicativa, previsioni, duemilaquindici]
 image:
   feature: palle_2015.png
-  credit: Doriano J.
-  creditlink: https://flic.kr/p/7o6Zn7
 comments: true
 share: true
 ---

@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Rubygems vulnerabile a DNS Hijack"
 promotion: "Rubygems ha corretto lo scorso maggio un possibile DNS Hijack sul sistema di distribuzione delle gemme ruby"
 modified: 
-featured: true
+featured: false
 category: [Under attack]
 tags: [cve-2015-3900, cve-2015-4020, dns hijack, rubygems, ruby, vulnerabilità, web]
 image:
   feature: gems.jpg
-  credit: Andrea
-  creditlink: https://flic.kr/p/7AViT1
 comments: true
 share: true
 ---

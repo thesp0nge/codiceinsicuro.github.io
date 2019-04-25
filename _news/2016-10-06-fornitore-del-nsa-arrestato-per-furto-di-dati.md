@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Fornitore del NSA arrestato per furto di dati"
 promotion: 
 modified: 

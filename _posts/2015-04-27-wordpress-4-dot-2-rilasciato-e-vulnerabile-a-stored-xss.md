@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "WordPress 4.2 rilasciato e vulnerabile a stored XSS"
 promotion: "WordPress 4.2 e precedenti vulnerabili a stored XSS. Leggi qui come correre ai ripari"
 modified: 
-featured: true
+featured: false
 category: [Under attack]
 tags: [xss, wordpress, blog, php, cross site scripting, input validation, wordstress]
 image:
   feature: stored_xss.jpg
-  credit: Jekyll283
-  creditlink: https://flic.kr/p/8L3GwN
 comments: true
 share: true
 ---

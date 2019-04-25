@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Il tuo .git su Internet? No, no, no!"
 promotion: "Lasciare la directory .git su un server Internet equivale a lasciare il tar.gz dei sorgenti. Vediamo perché."
 modified: 
-featured: true
+featured: false
 category: [Under attack]
 tags: [git, google dork, codice sorgente, perdita di informazioni, source code disclosure]
 image:
   feature: testing.png
-  credit: Lego Corporation
-  creditlink:
 comments: true
 share: true
 ---

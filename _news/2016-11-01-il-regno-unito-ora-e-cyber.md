@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Il regno unito ora è cyber!"
 promotion: 
 modified: 

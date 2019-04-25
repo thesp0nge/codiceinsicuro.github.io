@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Scopriamo insieme la superficie d'attacco"
 date: 2014-04-22 07:59:20 +0200
 modified: Wed Aug  6 07:14:04 CEST 2014
@@ -7,8 +8,6 @@ category: [Pick'n'chic]
 tags: [awareness, superficie d'attacco, codice]
 image:
   feature: moon_surface.jpg
-  credit: SantiMB
-  creditlink: https://www.flickr.com/photos/smb_flickr/
 comments: true
 share: true
 ---

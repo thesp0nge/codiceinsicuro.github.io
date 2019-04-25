@@ -1,11 +1,10 @@
 ---
 layout: page
+author: thesp0nge
 permalink: /rimedi/
 title: "I rimedi veloci del bucaniere"
 image:
   feature: first_aid.jpg
-  credit: Felix E. Guerrero
-  creditlink: https://flic.kr/p/7K7eX7
 ---
 
 Spesso abbiamo bisogno di una soluzione veloce ad un problema abbastanza

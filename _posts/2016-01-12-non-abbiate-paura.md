@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Non abbiate paura"
 promotion: "La conflittualità tra diversi team, può avvenire a causa di mancata conoscenza? Leggi e scoprilo"
 modified: 
-featured: true
+featured: false
 category: [Meditazione]
 tags: [appsec, conflitti, team, sviluppatori, sistemisti, devops]
 image:
   feature: paura.jpg
-  credit: Elisa Santarelli
-  creditlink: https://flic.kr/p/4zTVHR
 comments: true
 share: true
 ---

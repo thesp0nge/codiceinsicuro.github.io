@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Digital Spamionship"
 promotion: 
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [digital champion, spam, privacy]
 image:
   feature: campioni.jpg
-  credit: Annalisa Antonini
-  creditlink: https://flic.kr/p/htWiC
 comments: true
 share: true
 ---
