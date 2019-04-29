@@ -41,6 +41,15 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+{% if site.adsense == "enabled" %}
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2061263441355929",
+          enable_page_level_ads: true
+     });
+</script>
+{% endif %}
 
 </head>
 
@@ -136,7 +145,7 @@ window.cookieconsent.initialise({
 ================================================== -->
 <div class="alertbar">
 	<div class="container text-center">
-		<span><img src="{{ site.url }}/{{ site.logo }}" alt="{{site.title}}" style="width: 20%;"> &nbsp; Non perdere neanche un <b>post</b>, <a href="{{site.mailchimp-list}}" class="heart">iscriviti</a> ora alla newsletter</span>
+		<span><img src="{{ site.url }}/assets/images/{{ site.logo }}" alt="{{site.title}}" style="width: 20%;"> &nbsp; Non perdere neanche un <b>post</b>, <a href="{{site.mailchimp-list}}" class="heart">iscriviti</a> ora alla newsletter</span>
             </div>
         </form>
 	</div>
