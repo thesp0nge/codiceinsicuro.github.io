@@ -1,12 +1,12 @@
 ---
 layout: page
 author: thesp0nge
-title: Mediumish Template for Jekyll
+title: Il progetto Codice Insicuro
 permalink: /about
 comments: true
 ---
 
-Quando ho aperto [armoredcode.com](http://armoredcode.com)[^1], il mio scopo
+Quando ho aperto [armoredcode.com](http://armoredcode.com), il mio scopo
 era quello di scrivere di application security.
 Avevo letto da poco un libro, Technical Blogging di A.Cangiano e mi aveva
 inspirato. Da sempre cercavo di creare un punto di interesse attorno ai temi
@@ -80,7 +80,7 @@ paolo@codiceinsicuro.it)
 
 ### Buy me a coffee
 
-Grazie per il supporto! Le donazioni mi aiuteranno a portare avanti il progetto <a target="_blank" href="https://codiceinsicuro.it">Codice Insicuro <i class="fab fa-github"></i></a>.</p> 
+Grazie per il supporto! Le donazioni mi aiuteranno a portare avanti il progetto <a target="_blank" href="https://codiceinsicuro.it">Codice Insicuro</a>.</p> 
 
 <a target="_blank" href="https://www.buymeacoffee.com/thesp0nge" class="btn btn-danger">Buy me a coffee</a> 
 
