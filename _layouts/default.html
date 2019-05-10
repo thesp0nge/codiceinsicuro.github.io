@@ -103,8 +103,43 @@ window.cookieconsent.initialise({
                 <a class="nav-link" href="{{ site.url }}/index.html">Blog</a>
                 </li>
 
+                {% if page.url == "/about" %}
+                <li class="nav-item active">
+                {% else %}
                 <li class="nav-item">
+                {% endif %}
                 <a class="nav-link" href="{{ site.url }}/about">About</a>
+                </li>
+
+                {% if page.url == "/contatti/" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.url }}/contatti">Contatti</a>
+                </li>
+                
+                {% if page.url == "/slae/" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.url }}/slae">Slae</a>
+                </li>
+
+
+                <li class="nav-item">
+                  <a target="_blank" class="nav-link" href="https://www.facebook.com/codiceinsicuro/"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a target="_blank"  class="nav-link" href="https://twitter.com/codiceinsicuro"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a target="_blank"  class="nav-link" href="https://linkedin.com/company/codice-insicuro"><i class="fab fa-linkedin"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a target="_blank"  class="nav-link" href="https://codiceinsicuro.it/feed.xml"><i class="fas fa-rss"></i></a>
                 </li>
 
 
@@ -126,13 +161,13 @@ window.cookieconsent.initialise({
 <div class="container">
 
 <!-- Site Title
-================================================== -->
 <div class="mainheading">
     <h1 class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
         {{ site.description }}
     </p>
 </div>
+================================================== -->
 
 <!-- Content
 ================================================== -->
