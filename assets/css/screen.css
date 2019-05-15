@@ -385,6 +385,10 @@ blockquote {
     top: 100px;
 }
 
+.sticky-news {
+  top: 330px;
+}
+
 @media (min-width:1024px) {
     .share ul li {
         display: block;
