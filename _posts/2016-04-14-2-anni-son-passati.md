@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "2 anni son passati"
 promotion: "Fermiamoci un attimo per celebrare il secondo compleanno del blog e capire dove siamo"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [blog, codiceinsicuro]
 image:
   feature: b_cake_2016.jpg
-  credit: Paul Downey
-  creditlink: https://flic.kr/p/5NkXh8
 comments: true
 share: true
 ---

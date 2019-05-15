@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Usare Apple è veramente contrario all'etica?"
 promotion: "Siamo sicuri che gli strumenti che usiamo misurino la nostra etica in un campo?"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [etica, baruffe chioggiotte, opensource, linux, compilo il kernel = sono figo]
 image:
   feature: anguille.jpg
-  credit: Stefano Mortellaro
-  creditlink: https://flic.kr/p/aiifP
 comments: true
 share: true
 ---

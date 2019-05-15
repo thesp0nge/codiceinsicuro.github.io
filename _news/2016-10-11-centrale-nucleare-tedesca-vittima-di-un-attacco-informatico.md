@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Centrale nucleare tedesca"
 promotion: 
 modified: 

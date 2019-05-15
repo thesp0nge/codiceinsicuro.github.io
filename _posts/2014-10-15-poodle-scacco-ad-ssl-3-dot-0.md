@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Poodle: scacco ad ssl 3.0"
 modified:
 category: [Under attack]
 tags: [ssl, man in the middle, exploit, cve-2014-3566, tls, google, sslv3, heartbleed, beast, poodlebleed, poodlebleed.com, ciphersurfer]
 image:
   feature: scacchi.png
-  credit: DavideDeNova
-  creditlink: https://flic.kr/p/Bsgss
 comments: true
 share: true
 ---
@@ -20,7 +19,6 @@ Non è stato un anno semplice per [ssl](http://www.openssl.org), [heartbleed
 prima](https://codicinsicuro.it/blog/heartbleed-parte-2-chiacchierata-da-pub-ma-tecnica-questa-volta)
 ed ora [poodle](https://www.imperialviolet.com/2014/10/14/poodle.html).
 
-I _credits_ vanno a tre persone di [Google](http://www.google.it), Bodo Moller,
 Thai Duong e Krzysztof Kotowicz. Potete quindi partire, se volete, con teorie
 complottiste a più non posso su #nsa che ci spia, #google che sapeva del bug da
 decenni ma non ci ha detto niente perché voleva spiare tutte le email che

@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Il codice sorgente di Mirai è pubblico"
 promotion: 
 modified: 

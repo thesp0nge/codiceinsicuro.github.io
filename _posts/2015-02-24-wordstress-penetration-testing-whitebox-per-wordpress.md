@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Wordstress: penetration testing whitebox per wordpress"
 promotion: "Wordstress è un tool di penetration test whitebox #opensource per #wordpress scritto in #ruby"
 modified:
@@ -7,8 +8,6 @@ category: [Pick'n'chic]
 tags: [wapt, wordpress, whitebox, penetration test, plugin, blog, temi, ruby]
 image:
   feature: worpress_art.png
-  credit: mkhmarketing
-  creditlink: https://flic.kr/p/dUnZDe
 comments: true
 share: true
 ---

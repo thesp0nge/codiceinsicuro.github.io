@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Linux Mint, la ISO intorno al buco"
 promotion: "Linux Mint ha subito una compromissione e alcune delle sue ISO contengono una backdoor. "
 modified: 
-featured: true
+featured: false
 category: [Spinaci]
 tags: [linux, linux mint, backdoor, opensource, vulnerability warning]
 image:
   feature: mint.jpg
-  credit: sausyn
-  creditlink: https://flic.kr/p/5HN8oL
 comments: true
 share: true
 ---

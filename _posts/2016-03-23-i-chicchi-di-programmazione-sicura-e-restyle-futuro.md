@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "I chicchi di programmazione sicura e restyle futuro"
 promotion: 
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [codice sicuro, programmazione sicura, safe coding, blog, codiceinsicuro]
 image:
   feature: dawn.jpg
-  credit: john mcsporran
-  creditlink: https://flic.kr/p/qSdv2B
 comments: true
 share: true
 ---

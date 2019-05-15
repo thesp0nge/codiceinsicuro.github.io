@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Fairware: server Linux sotto attacco"
 promotion: 
 modified: 

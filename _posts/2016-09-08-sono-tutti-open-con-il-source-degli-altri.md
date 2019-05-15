@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Sono tutti open con il source degli altri"
 promotion: "Il problema dell'opensource è la mancanza di risorse economiche ma soprattutto umane. Questo è quello che penso io."
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [opensource, comunità, impegno, volontariato]
 image:
   feature: temporale.jpg
-  credit: trophygeek
-  creditlink: https://flic.kr/p/nwNHSx
 comments: true
 share: true
 ---

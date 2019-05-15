@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Mac OS X sotto il cofano: il system integrity protection"
 promotion: "El Capitain ha introdotto il System Integrity Protection: un meccanismo per proteggere il sistema persino da root"
 modified: 
-featured: true
+featured: false
 category: [Spinaci]
 tags: [mac os x, sip, system integrity protection, tampering, mac, segregation of duties]
 image:
   feature: sip.jpg
-  credit: Luigi Rosa
-  creditlink: https://flic.kr/p/4ETNGK
 comments: true
 share: true
 ---

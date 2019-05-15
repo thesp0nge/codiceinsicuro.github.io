@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Storie di Anonimi, Campioni e password in chiaro"
 promotion: Tra attacchi di cellule nostrane di Anonymous e campioni che non campionano, spuntano ancora password in chiaro.
 modified: 
-featured: true
+featured: false
 category: [Under attack]
 tags: [anonymous, digital champions, PA, expo, siti governativi, banfa, password in chiaro]
 image:
   feature: anon.jpg
-  credit: Enrique Dans
-  creditlink: https://flic.kr/p/9hX4y4
 comments: true
 share: true
 ---

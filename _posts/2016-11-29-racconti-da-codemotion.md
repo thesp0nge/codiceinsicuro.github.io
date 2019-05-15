@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Racconti da codemotion"
 promotion: "Qualche racconto dal mio ultimo talk a Codemotion. Tra una demo che si inceppa ed una scena IT che è viva."
 modified:
@@ -8,8 +9,6 @@ category: [post]
 tags: [codemotion, talk, bot, go, sviluppo, passione]
 image:
   feature: codemotion.jpg
-  credit: Gregor Fischer/codemotion
-  creditlink: https://flic.kr/p/AB6EnK
 comments: true
 share: true
 ---

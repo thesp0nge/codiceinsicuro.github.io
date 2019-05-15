@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Credenziali amministrative in tempo di crisi"
 promotion: "Sicuri serva lo UID=0 o essere Admin per un vulnerability assessment?"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [vulnerability assessment, nexpose, root, administrator, credenziali, login, permessi]
 image:
   feature: blue_door.jpg
-  credit: Mary
-  creditlink: https://flic.kr/p/Q2Bwb
 comments: true
 share: true
 ---

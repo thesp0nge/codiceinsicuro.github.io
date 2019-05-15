@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Recuperare informazioni via SNMP (con ruby)"
 modified:
 category: [attackers]
 tags: [h4f, snmp, ruby, information gathering, nmap, port scan]
 image:
   feature: trash-cable.jpg
-  credit: George P. Macklin
-  creditlink: https://flic.kr/p/amvx5E
 comments: true
 share: true
 ---

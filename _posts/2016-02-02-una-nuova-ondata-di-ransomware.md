@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Una nuova ondata di ransomware"
 promotion: "Fare soldi nel lato oscuro non passa, solo, dal violare i sistemi. Spesso è meglio rendere un PC inservibile."
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [cryptolocker, cifratura, allegati, virus, malware, ransomware, cbtlocker]
 image:
   feature: tesla_crypt.png
-  credit: The Internet
-  creditlink: http://www.google.it
 comments: true
 share: true
 ---

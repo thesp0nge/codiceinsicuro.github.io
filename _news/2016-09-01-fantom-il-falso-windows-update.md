@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Fantom, il falso windows update"
 promotion: 
 modified: 

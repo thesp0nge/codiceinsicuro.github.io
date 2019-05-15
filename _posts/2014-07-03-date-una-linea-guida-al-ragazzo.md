@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Date una linea guida al ragazzo"
 modified: 2014-07-03 07:46:56 +0200
 category: [Chiacchiere da bar]
 tags: [linee guida, awareness, test, documentazione]
 image:
   feature: linea_blu.png
-  credit: Dorli Photography
-  creditlink: https://flic.kr/p/e6iqJP
 comments: true
 share: true
 ---

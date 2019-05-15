@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "L'attacco ad hacking team e la scena forcaiola italiana"
 promotion: "L'Italiano medio si scopre esperto di security nell'analizzare l'attacco ad HackingTeam. A torto, però."
 modified: 
-featured: true
+featured: false
 category: [Under attack]
 tags: [hacking team, specialisti improvvisati, esperti, aranzulla, forsensica, magistratura, pm, antani, sha7, banfa]
 image:
   feature: hacked-team.png
-  credit: The Internet
-  creditlink:
 comments: true
 share: true
 ---

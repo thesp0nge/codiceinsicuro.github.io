@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Shellshock, automatizziamo il test"
 modified:
 category: [Spinaci]
 tags: [shellshock, automatizzare, application security, expect, bash, exploit, cve-2014-6271, cve-2014-6277, cve-2014-7169, cve-2014-7186 , cve-2014-7187]
 image:
   feature: shell2.png
-  credit: Karunakar Rayker
-  creditlink: https://flic.kr/p/4ed3D9
 comments: true
 share: true
 ---

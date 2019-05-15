@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Domenica d'Agosto, che caldo fa"
 promotion: "E' stato un anno fin qui molto ricco. Godiamoci questo weekend di Agosto con qualche highlight"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [blog, agosto, estate, hacking team, nmap, awareness, vulnerability assessment]
 image:
   feature: mare.jpg
-  credit: Io
-  creditlink: 
 comments: true
 share: true
 ---

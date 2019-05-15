@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Bucato il SaaS per le password OneLogin"
 promotion: 
 modified: 

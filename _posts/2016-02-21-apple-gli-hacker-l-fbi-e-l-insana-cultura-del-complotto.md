@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Apple, gli hacker, l'FBI e l'insana cultura del complotto"
 promotion: "Un giudice federale, per conto dell'FBI, vuole sdoganare la backdoor di stato. Ci serve veramente nel 2016?"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [complotto, csi, snowden, apple, google, fbi, s.bernardino, ios, secure enclave, rsa]
 image:
   feature: iphone.jpg
-  credit: Sean MacEntee
-  creditlink: https://flic.kr/p/dfssw5
 comments: true
 share: true
 ---

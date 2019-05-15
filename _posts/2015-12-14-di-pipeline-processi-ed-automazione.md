@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Di pipeline, processi ed automazione"
 promotion: "Automazione, evoluzione. Per un 2016 dove anche l'appsec diventi agile."
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [pipeline, automazione, processi, sicurezza, sicurezza informatica, sviluppo agile, sviluppo acdc]
 image:
   feature: pipes.jpg
-  credit: atomicity
-  creditlink: https://flic.kr/p/4GGNw
 comments: true
 share: true
 ---

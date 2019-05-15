@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Entropia, password e passphrase"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [entropia, shannon, password, complessità della password, passphrase]
 image:
   feature: password_strength.png
-  credit: xkcd.com
-  creditlink: http://imgs.xkcd.com/comics/password_strength.png
 comments: true
 share: true
 ---

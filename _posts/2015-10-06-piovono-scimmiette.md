@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Piovono scimmiette"
 promotion: "Stage a 800€ netti a Roma per lavorare in un acceleratore. Investimento o occasione persa?"
 modified: 
-featured: true
+featured: false
 category: [Meditazione]
 tags: [lavoro, itaglia, stipendi, stage, startup, fuffa]
 image:
   feature: piovono_scimmie.jpg
-  credit: O.Cartu.
-  creditlink: https://flic.kr/p/fr7qTQ
 comments: true
 share: true
 ---

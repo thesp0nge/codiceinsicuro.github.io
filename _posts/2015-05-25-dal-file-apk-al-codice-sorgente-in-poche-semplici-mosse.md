@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Dal file APK al codice sorgente in poche semplici mosse"
 promotion: "Vediamo come è possibile passare da un file APK ai codici sorgenti di un'applicazione mobile non offuscata."
 modified: 
@@ -8,8 +9,6 @@ category: [sicurina]
 tags: [codice sorgente, android, java, apk, classes.dex, dalvik, jvm, virtual machine]
 image:
   feature: android.jpg
-  credit: Uncalno Tekno
-  creditlink: https://flic.kr/p/e1wXZE
 comments: true
 share: true
 ---

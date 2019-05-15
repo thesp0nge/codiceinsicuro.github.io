@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Alcune lezioni dopo il secondo tentativo, riuscito, di certificarmi OSCP"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [oscp, penetration test, offensive security]
 image:
   feature: alba.jpg
-  credit: Ferruccio Berti
-  creditlink: https://flic.kr/p/aDKvnu
 comments: true
 share: true
 ---

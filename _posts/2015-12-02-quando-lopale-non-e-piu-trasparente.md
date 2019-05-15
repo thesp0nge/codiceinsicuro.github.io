@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Quando l'opale non è più trasparente"
 promotion: "Contribuire ad un progetto opensource ed avere forti opinioni personali: possibile conciliare le due cose?"
 modified: 
-featured: true
+featured: false
 category: [Meditazione]
 tags: [floss, politically correctness, opal, community, opensource, libertà di parola]
 image:
   feature:
-  credit:
-  creditlink:
 comments: true
 share: true
 ---

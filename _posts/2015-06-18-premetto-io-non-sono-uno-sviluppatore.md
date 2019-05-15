@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Premetto, io non sono uno sviluppatore"
 promotion: "Uno specialista di sicurezza applicativa che si rispetti deve saper mettere mano al codice"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [sicurezza applicativa, code review, banfa, consulente splendente]
 image:
   feature: kanban.jpg
-  credit: Dennis Hamilton
-  creditlink: https://flic.kr/p/6UNdWe
 comments: true
 share: true
 ---

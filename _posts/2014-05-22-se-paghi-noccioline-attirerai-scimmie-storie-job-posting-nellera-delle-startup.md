@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Se paghi noccioline attirerai scimmie: storie job posting nell'era delle startup"
 modified:
 category: [meditazione]
 tags: [startup, briatore, pizzeria, kebab, job posting, crisi, stipendio, qualità]
 image:
   feature: scimmia_indaffarata.png
-  credit: Patrizio Boschi
-  creditlink: https://flic.kr/p/5jXVx5
 comments: true
 share: true
 ---

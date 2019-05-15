@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Trafugati database del 2012 di Dropbox"
 promotion: 
 modified: 

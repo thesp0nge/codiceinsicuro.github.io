@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Quando la spia è la tastiera del tuo smartphone: il caso Flash Keyboard"
 promotion: "Quando la spia è la tastiera del tuo smartphone: il caso Flash Keyboard"
 modified: 
-featured: true
+featured: false
 category: [News]
 tags: [tastiera, spyware, android, cina, smartphone]
 image:
   feature: keyboard.jpg
-  credit: David Francis
-  creditlink: https://flic.kr/p/9CdHnr
 comments: true
 share: true
 ---

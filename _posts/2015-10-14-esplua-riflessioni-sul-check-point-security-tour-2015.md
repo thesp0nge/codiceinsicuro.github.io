@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Esplua': riflessioni sul Check Point security tour 2015"
 promotion: "Tra #exploit pronunciato alla francese ed analisi di #malware in #sandbox passando per automazione dell'ssdlc. Considerazioni sparse sulla tappa di Milano del #cpsectour2015"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [vendor, evento, poca banfa, apt, malware, exploit, threat prevention]
 image:
   feature: exploit.png
-  credit: Anders Knudsen
-  creditlink: https://flic.kr/p/83Dvqk
 comments: true
 share: true
 ---

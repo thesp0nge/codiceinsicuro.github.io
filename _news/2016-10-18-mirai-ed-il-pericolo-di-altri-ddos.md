@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Mirai ed il pericolo di altri DDoS"
 promotion: 
 modified: 

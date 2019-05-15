@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Bicchieri di acqua e menta"
 promotion: "E' stato un anno fin qui molto ricco. Godiamoci questo weekend di Agosto con qualche highlight"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [blog, agosto, estate]
 image:
   feature: mare.jpg
-  credit: Io
-  creditlink:
 comments: true
 share: true
 ---

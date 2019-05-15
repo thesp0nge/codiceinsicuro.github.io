@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Lettera aperta a Quintarelli su SPID e Security"
 promotion: "In questa lettera aperta a Stefano Quintarelli, pongo alcune riflessioni su quello che manca allo SPID lato #appsec. Che ne pensate?"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [spid, identità digitale, single sign on, otp, policy]
 image:
   feature: lettera.jpg
-  credit: Arkangel
-  creditlink: https://flic.kr/p/4vq9U2
 comments: true
 share: true
 ---
@@ -90,7 +89,6 @@ e lavarsene le mani.
 > application firewall e subire penetration test e code review periodiche.
 >
 > Per lo SPID, perché non avete dato delle linee guida di security alle quali,
-> chi si vuole accreditare come Identity Provider, deve sottostare? Avete
 > chiesto l'alta affidabilità? Avete chiesto piani di disaster recovery? Avete
 > chiesto che i server siano protetti da firewall perimetrali **e** da web
 > application firewall? Avete chiesto vengano seguite linee guida di sviluppo

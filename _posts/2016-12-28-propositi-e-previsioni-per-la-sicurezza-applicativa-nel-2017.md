@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Propositi e previsioni per la sicurezza applicativa nel 2017"
 promotion: "Come sarà il 2017 per l'#appsec? #IoT, #OWASP, #Malware, #cybercrime e molto altro. Leggi qui."
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [propositi, anno nuovo, sicurezza applicativa, previsioni, duemilasedici]
 image:
   feature: palle_2017.jpg
-  credit: Eugenio Vota
-  creditlink: https://flic.kr/p/DfrtGW
 comments: true
 share: true
 ---

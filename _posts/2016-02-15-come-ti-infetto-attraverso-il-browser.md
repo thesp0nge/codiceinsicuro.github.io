@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Come ti infetto attraverso il browser"
 promotion: "Non solo un allegato malevolo. Anche un sito web compromesso può essere un vettore di diffusione di malware. Vediamo come."
 modified: 
-featured: true
+featured: false
 category: [Spinaci]
 tags: [malware, ransomware, browser, javascript, js, sicurezza applicativa]
 image:
   feature: js_moleskine.jpg
-  credit: Paul Downey
-  creditlink: https://flic.kr/p/7hmEGJ
 comments: true
 share: true
 ---

@@ -1,11 +1,10 @@
 ---
 layout: page
+author: thesp0nge
 permalink: /slae/
 title: "SecurityTube Linux Assembly Expert certifiation"
 image:
   feature: slae.png
-  credit: Security Tube 
-  creditlink: http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/index.html
 ---
 
 In order to prepare myself for the [Cracking the

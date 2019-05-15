@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Aprile ed i suoi attacchi di bile"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [Chiacchiere da bar]
 tags: [italia, merito, energia]
 image:
   feature: finestra.jpg
-  credit: Cristina 
-  creditlink: https://flic.kr/p/9wWddj
 comments: true
 share: true
 ---

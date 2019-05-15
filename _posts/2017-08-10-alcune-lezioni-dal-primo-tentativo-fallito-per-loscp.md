@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Alcune lezioni dal primo tentativo fallito per l'OSCP"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [oscp, pentest, offensive security]
 image:
   feature: mare_2017.jpg
-  credit: Marco Crupi
-  creditlink: https://flic.kr/p/snYTFf
 comments: true
 share: true
 ---

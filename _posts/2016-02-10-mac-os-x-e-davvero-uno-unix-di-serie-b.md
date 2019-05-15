@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Mac OS X è davvero uno UNIX di serie B?"
 promotion: "Mac OS X è considerato un sistema per utenti poco esperti. Ma quello di casa Apple, è veramente uno UNIX di serie B? No. Vediamo perché"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [kernel, security, appsec, protezione, kernel extension, gatekeep, malware, firma digitale, hackosx]
 image:
   feature: bank.jpg
-  credit: Carlo Alfredo Clerici
-  creditlink: https://flic.kr/p/9MEAuY
 comments: true
 share: true
 ---

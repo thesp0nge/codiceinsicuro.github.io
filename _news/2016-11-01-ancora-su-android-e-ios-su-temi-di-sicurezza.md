@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Ancora su Android e iOS su temi di sicurezza"
 promotion: 
 modified: 

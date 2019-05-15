@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Come la vuole la disclosure? Full o Responsible?"
 promotion: "Una riflessione sulla disclosure e sulle difficoltà di ingaggiare il giusto team"
 modified: 
@@ -7,8 +8,6 @@ category: [Chiacchiere da bar]
 tags: [disclosure, vulnerabilità, libertà, censura, responsabilità, flussi aziendali, hacker, hacking, pentest]
 image:
   feature: bilancia.png
-  credit: Luigi
-  creditlink: https://flic.kr/p/e5ATgV
 comments: true
 share: true
 ---

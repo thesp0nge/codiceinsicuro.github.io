@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Shellerate: un framework per generare shellcode"
 promotion: 
 modified: 
-featured: false
+featured: true
 category: [post]
 tags: [python, tool, shellcode, slae, polimorfismo, encoding, x86]
 image:
   feature: shells.jpg
-  credit:
-  creditlink:
 comments: true
 share: true
 ---

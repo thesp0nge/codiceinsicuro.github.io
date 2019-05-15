@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Spiega la sicurezza informatica al marketing"
 promotion: "Come spiegare i rischi informatici ad altre strutture aziendali. Vediamo il marketing per esempio."
 modified: 
-featured: true
+featured: false
 category: [Doctor is in]
 tags: [awareness, marketing, rischi, attacchi, probabilità di accadimento, cavalieri di sventura]
 image:
   feature: quaterback.jpg
-  credit: photo-gator
-  creditlink: https://flic.kr/p/4FCN4T
 comments: true
 share: true
 ---

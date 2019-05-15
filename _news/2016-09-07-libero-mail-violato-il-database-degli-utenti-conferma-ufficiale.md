@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Libero Mail: violato il database degli utenti. Conferma ufficiale"
 promotion: 
 modified: 

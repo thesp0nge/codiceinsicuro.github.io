@@ -1,13 +1,12 @@
 ---
 layout: page
+author: thesp0nge
 permalink: /cookie-policy/
 title: "Cookie policy"
 modified: 2015-05-29 18:32
 tags: [cookie policy, cookie, garante della privacy, legge, normativa europea]
 image:
   feature: cookie.jpg
-  credit: Brian Richardson
-  creditlink: https://flic.kr/p/78fYp4
 share: true
 ---
 

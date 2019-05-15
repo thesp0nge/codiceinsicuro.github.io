@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Decifrare semplici Javascript malevoli"
 promotion: 
 modified: 
-featured: true
+featured: false
 category: [post]
 tags: [javascript, malware, evilcode]
 image:
   feature: code.jpg
-  credit: Christiaan Colen
-  creditlink: https://flic.kr/p/ydTDpb
 comments: true
 share: true
 ---

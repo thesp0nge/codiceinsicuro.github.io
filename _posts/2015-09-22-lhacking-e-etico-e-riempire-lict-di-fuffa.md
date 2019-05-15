@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "L'hacking è etico? E riempire l'ICT di fuffa?"
 promotion: "Nel 2015 mi tocca sentire che hacking è penetrare sistemi altrui in maniera non autorizzata e che l'ethical hacking non esiste. Qualche riflessione."
 modified: 
-featured: true
+featured: false
 category: [Meditazione]
 tags: [hacking, ethical hacking, etica, fuffa, bizniz, ict, manager, uber manager, gente di un certo calibro, banfa, peracottai]
 image:
   feature: ethic.jpg
-  credit: Stephen Wu
-  creditlink: https://flic.kr/p/tZ1LP
 comments: true
 share: true
 ---

@@ -1,99 +1,177 @@
 ---
 layout: default
-disqus: true
+disqus: false
 archive: false
+post_class: post-template
 ---
 
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
 
-<!-- BEGIN .wrapper -->
-<div class="wrapper">
-  <!-- BEGIN .portus-main-content-panel -->
-  <div class="paragraph-row portus-main-content-panel">
-    <div class="column12">
-      <div class="portus-main-content-s-block">
-
-        <!-- BEGIN .portus-main-content -->
-        <div class="portus-main-content portus-main-content-s-3">
-          <div class="theiaStickySidebar">
-            <div class="portus-main-article-block">
-              <h2>{{page.title}}</h2>
-
-              <p class="portus-main-article-intro">{{page.excerpt | strip_html | truncatewords: 150}}</p>
-
-              <span class="portus-main-article-meta">
-                <a href="{{page.url}}" class="item-meta-i"><i class="po po-head"></i>{{site.author.name}}</a>
-                <a href="{{page.url}}" class="item-meta-i"><i class="po po-clock"></i>{{ page.date | italian_date }}</a>
-                <a href="{{page.url}}/#disqus_thread" class="item-meta-i"><i class="po po-portus disqus-comment-count" data-disqus-url="{{page.url}}"></i></a>
-                <span class="item-meta-i"><i class="fa fa-folder"></i>
-                  {% for t in page.tags %}
-                    <a href="{{page.url}}">{{t}}</a>
-                  {%endfor%}
-                </span>
-              </span>
-
-              {% if page.image.feature %}
-              <div class="wp-caption aligncenter">
-                <a href="{{site.url}}/assets/images/{{page.image.feature}}" class="lightbox-photo" title="Photo by {{page.image.credit}}"><img src="{{site.url}}/assets/images/{{page.image.feature}}" alt="" /></a>
-                <p class="wp-caption-text">Photo by <strong>{{page.image.credit}}</strong></p>
-              </div>
-              {%endif%}
-
-              <div id="post-content">
-                {{content}}
-              </div>
-
-              {% include prev_next_post.html %}
-
-            </div>
-
-            <!-- BEGIN .portus-content-block -->
-            <div class="portus-content-block">
-              {% include disqus.html %}
-              <!-- END .portus-content-block -->
-            </div>
-
-          </div>
-          <!-- END .portus-main-content -->
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
         </div>
-        <aside class="sidebar portus-sidebar-small">
-          <div class="theiaStickySidebar">
 
-            <!-- BEGIN .widget -->
-            <div class="widget">
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
 
-              <h3>Leggi anche</h3>
-              <div class="w-article-list-num">
-                {% assign featured_posts = (site.posts|where:"featured","true") %}
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
 
-                {% for post in featured_posts limit:5 %}
-                  <div class="item">
-                    <span class="item-num">{{forloop.index}}</span>
-                    <div class="item-content">
-                      <div class="item-categories">
-                        <a href="#" data-ot-css="color: #f3d826;">{{post.category}}</a>
-                      </div>
-                      <h4><a href="{{post.url}}">{{post.title}}</a><a href="{{post.url}}.html#disqus_thread" class="post-title-comment"><i class="po po-portus" data-disqus-url="{{post.url}}"></i></a></h4>
-                      <div class="item-meta">
-                        <a href="{{post.url}}"><i class="po po-clock"></i>{{ post.date | italian_short_date }}</a>
-                      </div>
-                      <p>{{ post.excerpt | strip_html | truncatewords: 30}}</p>
+                <!-- Author Box -->
+                {% if page.author %}
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        {% if author.avatar %}
+                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                        {% else %}
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                        {% endif %}
                     </div>
-                  </div>
-                {%endfor%}
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                        <span class="author-description">{{ author.description }}</span>
+                    </div>
+                </div>
+                {% endif %}
 
-              </div>
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
 
-            <!-- END .widget -->
             </div>
 
-          </div>
-        </aside>
+            <!-- Post Featured Image -->
+            {% if page.image.feature %}
 
-      </div>
+            {% if site.lazyimages == "enabled" %}
+	    <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images//{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images/{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Summary</h3>
+                        {% include toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+                {{content}}
+            </div>
+
+            <!-- Rating -->
+            {% if page.rating %}
+            <div class="rating mb-4 d-flex align-items-center">
+                <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
+            </div>
+            {% endif %}
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    {% assign sortedCategories = page.categories | sort %}
+                    {% for category in sortedCategories %}
+                    <li>
+                        <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    {% assign sortedTags = page.tags | sort %}
+                    {% for tag in sortedTags %}
+                    <li>
+                        <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            {% if page.previous.url %}
+            <a class="prev d-block col-md-6" href="{{page.previous.url | absolute_url}}"> &laquo; {{page.previous.title}}</a>
+            {% endif %}
+            {% if page.next.url %}
+            <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo; </a>
+            {% endif %}
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
     </div>
-    <!-- ENd .portus-main-content-panel -->
-  </div>
-
-  <!-- END .wrapper -->
 </div>
+<!-- End Article
+================================================== -->
 
+<!-- Begin Comments
+================================================== -->
+{% if page.comments != false %}
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                {% include disqus.html %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+{% if page.rating %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Thing",
+    "name": "{{ page.title }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ author.display_name }}"
+  },
+  "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ page.rating }}",
+    "bestRating": "5"
+  }
+}
+</script>
+{% endif %}
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us1.list-manage.com","uuid":"f136287d72c1e72ed99ee0542","lid":"7fadc44aa9","uniqueMethods":true}) })</script>

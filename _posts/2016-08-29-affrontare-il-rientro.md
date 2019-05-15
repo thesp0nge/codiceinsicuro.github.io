@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Affrontare il rientro"
 promotion: "Eccoci dopo un'altra estate ad affrontare il rientro, tra progetti e talk da preparare"
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [appsec, pipeline, dawnscanner, talk, conferenze, rientro, estate, vacanze]
 image:
   feature: rientro.jpg
-  credit: paolo agostini
-  creditlink: https://flic.kr/p/5btkSW
 comments: true
 share: true
 ---

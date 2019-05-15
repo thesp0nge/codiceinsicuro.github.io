@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Estate di cambiamenti, parte 1"
 promotion: 
 modified: 
@@ -8,8 +9,6 @@ category: [Chiacchiere da bar]
 tags: [blog, codiceinsicuro, logo]
 image:
   feature: logo.png
-  credit:
-  creditlink:
 comments: true
 share: true
 ---

@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "La lentezza di una barra 16"
 promotion: "Un esempio di script ruby per la network discovery sicuramente migliorabile. Vediamo come."
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [ruby, host discovery, nexpose, reti, firewall]
 image:
   feature: discovery.jpg
-  credit: NASA's Marshall Space Flight Center
-  creditlink: https://flic.kr/p/9p2g8C
 comments: true
 share: true
 ---

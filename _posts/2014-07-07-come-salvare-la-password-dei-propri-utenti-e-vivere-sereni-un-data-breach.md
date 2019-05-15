@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Come salvare la password dei propri utenti e vivere sereni un data breach"
 modified: 2014-07-07 07:56:19 +0200
 category: [Sicurina]
 tags: [bcrypt, sha512, sha256, java, password]
 image:
   feature: lock.png
-  credit: Toni Verdú Carbó
-  creditlink: https://flic.kr/p/BCQVo
 comments: true
 share: true
 ---

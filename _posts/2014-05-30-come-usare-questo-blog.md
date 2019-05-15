@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Come usare questo blog"
 modified:
 category: [servizio]
 tags: [codice insicuro, blog, post, categorie, sicurina, pick'n'chich, doctor is in, angolo del libro, amazon]
 image:
   feature: istruzioni.png
-  credit: Arianna Flacco
-  creditlink: https://www.flickr.com/photos/impaginazione/
 comments: true
 share: true
 ---

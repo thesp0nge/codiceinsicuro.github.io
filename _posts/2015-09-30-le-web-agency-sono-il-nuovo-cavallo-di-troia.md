@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Le web agency sono il nuovo cavallo di troia?"
 promotion: "Le web agency sono il nuovo cavallo di troia? Grazie a loro gli attaccanti hanno vita più facile? Ahem... sì!"
 modified: 
-featured: true
+featured: false
 category: [Meditazione]
 tags: [web agency, application security, outsourcing, security, policy, banfa]
 image:
   feature: trojan_horse.jpg
-  credit: janet lackey
-  creditlink: https://flic.kr/p/am77rp
 comments: true
 share: true
 ---
@@ -158,7 +157,6 @@ buzzword da mettere sulle slide.
 
 ## Off by one
 
-L'attacco ai fornitori di questi istituti di credito è stato, per certi versi
 illuminante. Da la possibilità, a chi fa divulgazione, di sdoganare il concetto
 che l'anello più debole della catena può essere al di fuori dell'azienda e che,
 anche un pesce piccolo come un'agenzia web, diventa un target **strategico**

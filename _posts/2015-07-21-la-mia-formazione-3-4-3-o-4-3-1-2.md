@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "La mia formazione: 3-4-3 o 4-3-1-2"
 promotion: "Il mio percorso da ventenne curioso a specialista di sicurezza applicativa"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [università, certificazioni, spippolare, owasp, formazione, studio]
 image:
   feature: strada.jpg
-  credit: italo losero
-  creditlink: https://flic.kr/p/fDiYW5
 comments: true
 share: true
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Offuschiamo il bytecode Java per divertimento: prima parte"
 promotion: "Primo articolo di una serie che mostra come offuscare il bytecode java per divertimento e altro"
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [java, code obfuscation, bytecode, javassist]
 image:
   feature: nebbia.jpg
-  credit: Giulio Farella
-  creditlink: https://flic.kr/p/7xFUVP
 comments: true
 share: true
 ---

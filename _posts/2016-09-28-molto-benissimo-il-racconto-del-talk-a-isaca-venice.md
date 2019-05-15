@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Molto benissimo: il racconto del talk a ISACA Venice"
 promotion: "ISACA Venice ha ospitato lo scorso 23 Settembre un evento su #appsec e #iot. Vediamo come è andata."
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [talk, awareness, pipeline, europa, venezia, ca' foscari, università]
 image:
   feature: mestre.jpg
-  credit: Matthias Ripp
-  creditlink: https://flic.kr/p/jtfcNS
 comments: true
 share: true
 ---

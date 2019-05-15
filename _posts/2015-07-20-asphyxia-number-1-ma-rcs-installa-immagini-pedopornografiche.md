@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Asphyxia #1: ma RCS installa immagini pedopornografiche?"
 promotion: "Il software RCS di HackingTeam ha un meccanismo di evidence planting?"
 modified: 
-featured: true
+featured: false
 category: [under]
 tags: [Asphyxia, Hacking Team, RCS, evidenze, pedo pornografia, code review, ruby]
 image:
   feature: hacked-team.png
-  credit: The Internet
-  creditlink:
 comments: true
 share: true
 ---

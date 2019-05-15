@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "La sicurezza applicativa è il nuovo off-topic?"
 modified:
 category: [Chiacchiere da bar]
 tags: [conferenze, itaGLia, sviluppatori, off-topic, awareness]
 image:
   feature: offtopic.png
-  credit: Chris Devers
-  creditlink: https://flic.kr/p/81JzLb
 comments: true
 share: true
 ---

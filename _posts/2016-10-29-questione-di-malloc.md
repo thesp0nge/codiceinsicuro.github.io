@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Questione di malloc()"
 promotion: "Un po' di sana gogna acara per un codice C che contiene una vulnerabilità in più di quanto avessi preventivato."
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [malloc, talk, hackinbo, fun, code review, buffer overflow, memory leak, command injection]
 image:
   feature: memoria.jpg
-  credit: Stefano C. Manservisi
-  creditlink: https://flic.kr/p/5RMQTV
 comments: true
 share: true
 ---

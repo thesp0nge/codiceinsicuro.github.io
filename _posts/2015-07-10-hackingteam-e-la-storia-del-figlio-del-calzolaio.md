@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "HackingTeam e la storia del figlio del calzolaio"
 promotion: "Prologo all'analisi dei codici trafugati da HT. Perché il figlio del calzolaio ha sempre le scarpe rotte?"
 modified: 
-featured: true
+featured: false
 category: [Under attack]
 tags: [password banali, spionaggio, rcs, sudan, attacco informatico, apt, anonymous]
 image:
   feature: hacked-team.png
-  credit: The Internet
-  creditlink:
 comments: true
 share: true
 ---

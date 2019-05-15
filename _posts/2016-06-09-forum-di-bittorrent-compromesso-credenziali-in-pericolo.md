@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Forum di bittorrent compromesso: credenziali in pericolo"
 promotion: "Forum di bittorrent compromesso: credenziali in pericolo"
 modified: 
-featured: true
+featured: false
 category: [Under attack, News]
 tags: [bittorrent, forum, credenziali, attacco, troy hunt]
 image:
   feature: torrent.jpg
-  credit: Guglielmo D'Arezzo
-  creditlink: https://flic.kr/p/pyn8rf
 comments: true
 share: true
 ---
@@ -19,7 +18,7 @@ pomeriggio di oggi, la notizia che il forum di BitTorrent è stato compromesso e
 numerose credenziali di utenti sono state trafugate e sono da considerarsi
 compromesse.
 
-{% twitter oembed https://twitter.com/troyhunt/status/740567154668490752 %}
+{% twitter https://twitter.com/troyhunt/status/740567154668490752 %}
 
 In [questo
 advisory](https://forum.utorrent.com/announcement/1-important-security-advisory/),

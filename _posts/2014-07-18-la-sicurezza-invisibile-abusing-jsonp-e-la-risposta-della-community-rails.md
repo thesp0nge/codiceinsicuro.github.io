@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "La sicurezza invisibile: abusing jsonp e la risposta della community rails"
 modified:
 category: [Spinaci]
 tags: [CVE-2014-4671, miki, jsonp, callback, encoding, swf, flash, ruby on rails]
 image:
   feature: flash.png
-  credit: JD Hancock
-  creditlink: https://flic.kr/p/7zuBLD
 comments: true
 share: true
 ---

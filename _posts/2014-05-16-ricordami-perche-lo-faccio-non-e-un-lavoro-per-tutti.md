@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Ricordami perché lo faccio: non è un lavoro per tutti"
 modified:
 category: [meditazione]
 tags: [choosy, meditazione, sangue di giuda, senior, junior, mettersi in gioco, imparare, blog, twitter, antani]
 image:
   feature: vino.png
-  credit: Darco TT
-  creditlink: https://flic.kr/p/dPGnE
 comments: true
 share: true
 ---

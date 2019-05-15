@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Ecco gli strumenti usati per violare il sistema di voto elettronico americano"
 promotion: 
 modified: 

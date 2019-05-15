@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Shellshock, quando il codice è sotto nafta"
 modified:
 category: [Sicurina]
 tags: [code review, opensource, bash, shellshock, exploit, vulnerabilità, heartbleed, cve-2014-6271, cve-2014-6277, cve-2014-7169, cve-2014-7186, cve-2014-7187, c, bad programming habits, variabili globali, codice non mantenuto]
 image:
   feature: shell3.png
-  credit: Karunakar Rayker
-  creditlink: https://flic.kr/p/4ed3D9
 comments: true
 share: true
 ---

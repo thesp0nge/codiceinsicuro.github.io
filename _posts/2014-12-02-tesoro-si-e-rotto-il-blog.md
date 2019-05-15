@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Tesoro, si è rotto il blog"
 modified: 2014-12-02 07:55:30 +0100
 category: [Under attack]
 tags: [wordpress, wordstress, blog, dos, exploit, CVE-2014-9034]
 image:
   feature: ciuccio.png
-  credit: Franca Gramola
-  creditlink: https://flic.kr/p/6bZeJZ
 comments: true
 share: true
 ---

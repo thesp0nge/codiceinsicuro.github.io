@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Cos'è un penetration test applicativo web?"
 promotion: "Cos'è un web application penetration test? Scoprilo qui."
 modified: 
-featured: true
+featured: false
 category: [Doctor is in]
 tags: [wapt, penetration test]
 image:
   feature: doctor-who.jpg
-  credit: Thorsten Bonsch
-  creditlink: https://flic.kr/p/hM8yu2
 comments: true
 share: true
 ---

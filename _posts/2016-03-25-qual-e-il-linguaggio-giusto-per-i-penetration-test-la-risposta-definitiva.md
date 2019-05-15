@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Qual è il linguaggio giusto per i penetration test: la risposta definitiva"
 promotion: 
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [saggezza, verità scesa dal cielo, programmazione, ruby, c, python, perl, java, penetration test]
 image:
   feature: dizionario.jpg
-  credit: Federica Mambrini
-  creditlink: https://flic.kr/p/7a9eN4
 comments: true
 share: true
 ---

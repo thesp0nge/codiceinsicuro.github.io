@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "La non cultura dell'ASAP"
 modified:
 category: [Chiacchiere da bar]
 tags: [ASAP, release early release often, startup, big corporate, subito, produzione, bug, dilbert, cubicolo]
 image:
   feature: say_no.png
-  credit: Keith Chastain
-  creditlink: https://flic.kr/p/6LXqbS
 comments: true
 share: true
 ---

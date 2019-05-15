@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "EyePiramid: il Grande Fratello è tra noi"
 promotion: Il caso eyepiramid ha dimostrato, come se ce ne fosse bisogno, che la stampa non è pronta per i temi di cybersecurity (e forse anche alcuni esperti).
 modified: 
@@ -8,8 +9,6 @@ category: [post]
 tags: [banfa, eyepiramid, spear phishing, malware, phretor, lk]
 image:
   feature: pyramid.jpg
-  credit:
-  creditlink:
 comments: true
 share: true
 ---
@@ -59,7 +58,6 @@ in _crucifige_ sullo stato della cybersecurity italiana. Non totalmente a
 torto, diciamolo, ma quale è la colpa? Forse delle stesse società di consulenza che non fanno vero awareness per non rendere indipendente il proprio cliente? _grin_
 
 Questi due fratelli avrebbero, usato tecniche di phishing per compromettere
-prima delle macchine di studi legali per accreditarsi come fonte autorevole per
 lanciare un attacco verso più alti esponenti della vita pubblica italiana.
 Tecnologicamente avrebbero utilizzato un malware già noto, sembrerebbe
 modificato in qualche modo e scritto ex novo un sistema di controllo in Visual

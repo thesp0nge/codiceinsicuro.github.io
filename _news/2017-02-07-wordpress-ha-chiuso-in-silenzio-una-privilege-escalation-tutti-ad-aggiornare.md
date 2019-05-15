@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Wordpress ha chiuso in silenzio una privilege escalation. Tutti ad aggiornare"
 promotion: 
 modified: 

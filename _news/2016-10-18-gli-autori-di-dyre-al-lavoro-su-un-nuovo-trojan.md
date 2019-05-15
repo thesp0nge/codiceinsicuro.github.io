@@ -1,5 +1,6 @@
 ---
 layout: news
+author: thesp0nge
 title: "Gli autori di Dyre al lavoro su un nuovo trojan"
 promotion: 
 modified: 

@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "I pirati della sicurezza applicativa"
 promotion: "I pirati della sicurezza applicativa. Nuova linfa per @codiceinsicuro, il blog tecnico che non puoi non leggere."
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [jolly roger, arcadia, sicurezza applicativa, no banfa, no code no party]
 image:
   feature: logo.jpg
-  credit: Paolo Perego
-  creditlink:
 comments: true
 share: true
 ---

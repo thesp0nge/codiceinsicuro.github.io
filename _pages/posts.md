@@ -1,5 +1,6 @@
 ---
 layout: default
+author: thesp0nge
 permalink: /posts/
 title: Tutti i post
 tagline: Tutti i post di codice insicuro

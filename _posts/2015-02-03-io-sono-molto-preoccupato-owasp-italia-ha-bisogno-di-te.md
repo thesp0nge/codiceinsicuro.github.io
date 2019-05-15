@@ -1,5 +1,6 @@
 ---
 layout: post
+author: thesp0nge
 title: "Io sono molto preoccupato. Owasp Italia ha bisogno di te."
 promotion: "Di come una mail abbia dato nuova energia all'appsec made in Italy. Forza @OwaspItaly"
 modified: 
@@ -7,8 +8,6 @@ category: [Chiacchiere da bar]
 tags: [owasp, owasp italia, application security, sicurezza applicativa, talk, conferenze, fill the gap, sviluppatori]
 image:
   feature: dae.png
-  credit: Nazionale Anpas
-  creditlink: https://flic.kr/p/pyxr4v
 comments: true
 share: true
 ---

@@ -1,15 +1,14 @@
 ---
 layout: post
+author: thesp0nge
 title: "Se tolleri questo il tuo sito potrebbe essere il prossimo"
 promotion: "Fare awareness in campo ICT Security non è mai abbastanza. Il tuo sito è al sicuro? Capiamolo insieme"
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [awareness, sslv3, hardening, cloud, attaccanti, guardia e ladri]
 image:
   feature: bici.jpg
-  credit: Guido Andolfato
-  creditlink: https://flic.kr/p/4AHvEa
 comments: true
 share: true
 ---

@@ -1,13 +1,12 @@
 ---
 layout: post
+author: thesp0nge
 title: "Automatizzare, automatizzare e automatizzare. Quando non puoi fare tutto tu"
 modified: 
 category: [Sicurina]
 tags: [code review, svn, metriche, complessità ciclomatica, automatismi]
 image:
   feature:
-  credit:
-  creditlink:
 comments: true
 share: true
 ---
