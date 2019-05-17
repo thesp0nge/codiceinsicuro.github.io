@@ -1,0 +1,93 @@
+name: Codice Insicuro
+title: Codice Insicuro, blog di Cyber Security, sviluppo sicuro, code review e altro.
+description: I pirati della sicurezza applicativa
+meta_description: I pirati della sicurezza applicativa
+logo: 'logo.png'
+favicon: 'favicon.png'
+url: "https://codiceinsicuro.it"
+google_analytics: 'UA-50260618-1'
+mailchimp-list: 'https://mailchi.mp/f53e49d3060b/codice-insicuro'
+disqus: 'codiceinsicuro'
+include: ["_pages"]
+
+
+authors:
+  thesp0nge:
+    name: Paolo
+    display_name: thesp0nge
+    gravatar: d05560cd673cf2f4114012616fd57c33
+    email: paolo@codiceinsicuro.it
+    web: https://codiceinsicuro.it
+    twitter: https://twitter.com/thesp0nge
+    description: "Specialista di sicurezza applicativa e certificato OSCP. Amo spaccare e ricostruire il codice in maniera più robusta, cintura nera di taekwon-do, marito e papà. Ranger Caotico buono, scrivo su @codiceinsicuro e @the_armoredcode."
+
+version: '4.0.0'
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-gist
+  - jekyll-asciinema
+  - jekyll_video_tag
+  - jekyll-last-modified-at
+  - jekyll-seo-tag
+  - jekyll-twitter-plugin
+  - jekyll-feed
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
+    
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+
+
+# PATH
+source              : .
+destination         : ./_site
+permalink           : /blog/:title/
+
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-2061263441355929"
+adsense-data-ad-slot: "5046561295"
+
+facebook:
+  app_id: 267690690097571
+  publisher: https://www.facebook.com/codiceinsicuro/
+
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "enabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+collections:
+        - chicchi
+        - mb
+        - news
+        - rimedi
+        - slae
+
+

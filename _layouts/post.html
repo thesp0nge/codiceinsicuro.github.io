@@ -114,6 +114,7 @@ post_class: post-template
                 </ul>
             </div>
             <!-- End Tags -->
+ 
 
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
@@ -127,13 +128,39 @@ post_class: post-template
             </div>
             <!-- End Categories -->
 
+            {% if site.related_posts.size >= 1 %}
+              <hr />
+              <div class="container" id="related">
+                <h3>Simili a "{{page.title}}"</h3>
+                <div>
+                  <p>Se questo post ti è piaciuto, sono abbastanza sicuro che troverai questi contenuti altrettanto interessanti. Buona lettura.</p>
+                </div>
+                <div class="row">
+                {% for related_post in site.related_posts limit: 3 %}
+                  <div class="col-sm-4">
+                      <div class="card">
+                        <img class="card-image-top" src="{% if related_post.image.feature contains "://" %}{{ related_post.image }}{% else %}{{site.url}}/assets/images/{{ related_post.image.feature }}{% endif %}" alt="{{post.title}}">
+                        <div class="card-body">
+                          <h5 class="card-title">{{related_post.title}}</h5>
+                          <p class="card-text">{{related_post.excerpt}}</p>
+                          <a href="{{ related_post.url }}">Continua la lettura</a>
+                        </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
+
+
         </div>
         <!-- End Post -->
 
     </div>
+    
 </div>
 <!-- End Article
 ================================================== -->
+
 
 <!-- Begin Comments
 ================================================== -->
