@@ -6,12 +6,13 @@ permalink: /about
 comments: true
 ---
 
-Quando ho aperto [armoredcode.com](http://armoredcode.com), il mio scopo
-era quello di scrivere di application security.
-Avevo letto da poco un libro, Technical Blogging di A.Cangiano e mi aveva
-inspirato. Da sempre cercavo di creare un punto di interesse attorno ai temi
-della sicurezza applicativa, ancora poco diffusa in Italia e partii dai
-suggerimenti trovati in quel libro.
+Quando ho aperto il progetto [ArmoredCode](http://armoredcode.com), il mio
+scopo era quello di scrivere di application security.
+
+Avevo letto da poco un libro, [Technical Blogging](https://amzn.to/2VGPZsi) di
+A.Cangiano e mi aveva inspirato. Da sempre cercavo di creare un punto di
+interesse attorno ai temi della sicurezza applicativa, ancora poco diffusa in
+Italia e partii dai suggerimenti trovati in quel libro.
 
 Con il tempo, gli impegni, la vita e i [progetti
 collaterali](http://dawnscanner.org) nel campo sempre ICT security hanno reso
@@ -34,53 +35,22 @@ Questo blog vuole parlare di sicurezza applicativa codice sorgente alla mano,
 quando disponibile, e dimostrare che scrivere codice di per sé non è un lavoro
 semplice, ma per farlo sicuro poi ci vuole proprio una bella squadra.
 
-### Qui non troverai
-
-* seriali di software
-* dettagli su come commettere illeciti informatici
-* warez
-* codici sorgente di exploit
-* 0 day
-* marchette commerciali
-
-### Invece potrai
-
-* imparare a scrivere codice sicuro
-* imparare che scrivere codice non è una cosa brutta di cui vergognarsi
-* trovare esempi di safe coding in [ruby](http://ruby-lang.org/en)
-* trovare esempi di codice per eseguire test (statici o dinamici) sempre in
-  [ruby](http://ruby-lang.org/en)
-* imparare come mettere in sicurezza un application server
-* imparare il significato di termini come vulnerability assessment, web
-  application penetration test, code review e perché tutte queste cose servono a
-  te e alla tua azienda
-* ...
+Questo blog non è il classico blog dove si prendono le notizie, le si traducono
+e le si danno in pasto magari senza citare la fonte.
 
 [Codice Insicuro]({{site.root}}) vuole diventare il principale blog italiano sui temi di
 application security. Per ora è il primo blog italiano di application security
 croccante fuori e morbido dentro.
 
-Per qualsiasi dubbio o perplessità mi trovate via email qui:
+Ora, se volete, mi farebbe molto piacere mi lasciaste la vostra opinione, sia
+in pubblico tra i commenti, che eventualmente in privato scrivendo a
 [paolo@codiceinsicuro.it](mailto:paolo@codiceinsicuro.it)
-
-### Qualche dato
-
-{% capture count %}{{ site.posts.size }}{%endcapture%}
-Sono stati scritti {{ count }} posts ad oggi. Il primo è stato scritto il {{ site.posts.last.date | date: "%d/%m/%Y"}} mentre l'ultimo il {{ site.posts.first.date | date: "%d/%m/%Y" }}.
-
-
-### Domande?
-
-Leggi prima il post su [come usare il blog di Codice
-Insicuro](https://codiceinsicuro.it/blog/come-usare-questo-blog/), poi nel caso
-servisse qualche dettaglio in più, scrivimi una [mail](mailto:
-paolo@codiceinsicuro.it)
-
-
 
 ### Buy me a coffee
 
-Grazie per il supporto! Le donazioni mi aiuteranno a portare avanti il progetto <a target="_blank" href="https://codiceinsicuro.it">Codice Insicuro</a>.</p> 
+Vuoi aiutarmi a portare avanti il progetto <a target="_blank"
+href="https://codiceinsicuro.it">Codice Insicuro</a> con una donazione?
+Fantastico, allora non ti basta che premere il pulsante qui sotto.
 
-<a target="_blank" href="https://www.buymeacoffee.com/thesp0nge" class="btn btn-danger">Buy me a coffee</a> 
+<a target="_blank" href="https://www.buymeacoffee.com/thesp0nge" class="btn btn-danger">Supporta il progetto</a> 
 

@@ -389,6 +389,10 @@ blockquote {
   top: 330px;
 }
 
+.sticky-support {
+  top: 530px;
+}
+
 @media (min-width:1024px) {
     .share ul li {
         display: block;
