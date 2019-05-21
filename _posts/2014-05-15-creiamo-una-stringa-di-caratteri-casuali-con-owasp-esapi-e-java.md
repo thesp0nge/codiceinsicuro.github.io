@@ -3,7 +3,7 @@ layout: post
 author: thesp0nge
 title: "Creiamo una stringa di caratteri casuali con Owasp ESAPI e Java"
 modified: Thu May 15 18:00:28 CEST 2014
-category: [builders, quick howto]
+category: [sicurina]
 tags: [owasp, owasp esapi, java, numero casuale, pseudorandom, h4f]
 image:
   feature: random_string_2.png
