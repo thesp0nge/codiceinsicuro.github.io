@@ -1,7 +1,10 @@
 ---
+layout: post
+author: thesp0nge
 title: "Assignment #4: A custom encoder"
 tags: [slae, shellcode, encoder, xor, assembler, i386]
 comments: true
+category: [slae]
 share: true
 order: 4
 ---

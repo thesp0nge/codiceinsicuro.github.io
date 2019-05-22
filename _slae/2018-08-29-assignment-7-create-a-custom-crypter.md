@@ -1,7 +1,10 @@
 ---
+layout: post
+author: thesp0nge
 title: "Assignment #7: Create a custom crypter"
 tags: [slae, shellcode, crypter, python, launcher, shellcode, tea, xxtea, block cipher, assembler, i386]
 comments: true
+category: [slae]
 share: true
 order: 6
 ---

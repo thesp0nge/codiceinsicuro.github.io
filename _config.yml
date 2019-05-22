@@ -8,7 +8,7 @@ url: "https://codiceinsicuro.it"
 google_analytics: 'UA-50260618-1'
 mailchimp-list: 'https://mailchi.mp/f53e49d3060b/codice-insicuro'
 disqus: 'codiceinsicuro'
-include: ["_pages"]
+include: ["_pages" ]
 
 
 authors:
@@ -84,10 +84,16 @@ lazyimages: "enabled"
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
 
 collections:
-        - chicchi
-        - mb
-        - news
-        - rimedi
-        - slae
+  chicchi:
+    output: true
+  mb:
+    output: true
+  news: 
+    output: true
+  rimedi:
+    output: true
+  slae:
+    output: true
+    
 
 

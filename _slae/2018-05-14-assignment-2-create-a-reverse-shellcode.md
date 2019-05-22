@@ -1,7 +1,10 @@
 ---
+layout: post
+author: thesp0nge
 title: "Assignment #2: Create a reverse shell shellcode"
 tags: [slae, shellcode, reverse shellcode, assembler, i386]
 comments: true
+category: [slae]
 share: true
 order: 2
 ---

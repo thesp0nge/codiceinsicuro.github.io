@@ -1,7 +1,10 @@
 ---
+layout: post
+author: thesp0nge
 title: "Assignment #1: Create a bind shellcode"
 tags: [slae, shellcode, bind shellcode, assembler, i386]
 comments: true
+category: [slae]
 share: true
 order: 1
 ---

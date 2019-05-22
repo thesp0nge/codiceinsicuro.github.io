@@ -1,7 +1,10 @@
 ---
+layout: post
+author: thesp0nge
 title: "Assignment #3: An Egg Hunter journey"
 tags: [slae, shellcode, egg hunter, assembler, i386]
 comments: true
+category: [slae]
 share: true
 order: 3
 ---

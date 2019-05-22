@@ -1,9 +1,12 @@
 ---
+layout: post
+author: thesp0nge
 title: "Assignment #6: Generate polymorphic shellcodes"
 tags: [slae, shellcode, polymorphic, assembler, i386]
 comments: true
 share: true
-order: 5
+category: [slae]
+order: 6
 ---
 
 The sixth assignment for SLAE certification is to take up 3 shellcodes from

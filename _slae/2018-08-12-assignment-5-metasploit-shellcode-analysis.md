@@ -1,8 +1,11 @@
 ---
+layout: post
+author: thesp0nge
 title: "Assignment #5: Metasploit shellcode analysis"
 tags: [slae, shellcode, libemu, sctest, gdb, ndisasm, assembler, i386]
 comments: true
 share: true
+category: [slae]
 order: 5
 ---
 
