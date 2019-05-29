@@ -906,3 +906,7 @@ iframe {
 .category {
   text-transform: uppercase !important;
 }
+.readtime {
+  font-family: monospace;
+  font-size: 0.9em;
+}
