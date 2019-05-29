@@ -56,17 +56,8 @@ post_class: post-template
             {% endif %}
             <!-- End Featured Image -->
 
-            <div class="readtime">
-              {% capture words %}
-                {{ page.content | number_of_words | minus: 250 }}
-              {% endcapture %}
-              {% unless words contains "-" %}
-                <i class="far fa-file-alt"></i> {{ words | plus: 250 | append: " parole " }} - <i class="far fa-clock"></i> {{ words | plus: 250 | divided_by: 180 | prepend: "Lo leggerai in " | append: " minuti" }}
-              {% endunless %}
-
-              <hr />
-            </div>
-
+            {% include readtime_post.html%}
+ 
             <!-- Post Content -->
             <div class="article-post">
                 <!-- Toc if any -->

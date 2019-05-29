@@ -1,0 +1,11 @@
+ <div class="readtime">
+  {% capture words %}
+    {{ page.content | number_of_words  }}
+  {% endcapture %}
+  {% unless words contains "-" %}
+    <i class="far fa-file-alt"></i> {{ words | append: " parole " }} - <i class="far fa-clock"></i> {{ words  | divided_by: 180 | prepend: "Lo leggerai in " | append: " minuti" }}
+  {% endunless %}
+
+  <hr />
+</div>
+
