@@ -40,7 +40,7 @@ e le si danno in pasto magari senza citare la fonte.
 
 [Codice Insicuro]({{site.root}}) vuole diventare il principale blog italiano sui temi di
 application security. Per ora è il primo blog italiano di application security
-croccante fuori e morbido dentro.
+morbido fuori e croccante dentro.
 
 Ora, se volete, mi farebbe molto piacere mi lasciaste la vostra opinione, sia
 in pubblico tra i commenti, che eventualmente in privato scrivendo a
