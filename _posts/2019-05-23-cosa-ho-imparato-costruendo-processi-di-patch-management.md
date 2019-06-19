@@ -4,7 +4,7 @@ title: "Cosa ho imparato costruendo processi di patch management"
 author: thesp0nge
 featured: false
 category: [post]
-tags: [vulnerability assessment, patch management, security, nexpose, nessus, vita da ciso]
+tags: [vulnerability assessment, patch management, security, nexpose, nessus, vita da security manager]
 image:
   feature: big-p.jpg
 comments: true
@@ -133,7 +133,7 @@ Esempi di virtual patching possono essere, ad esempio:
 ## Off by one
 
 Spero che questi 3 punti che ho imparato sul campo, mentre mi sono trovato a
-preparare procesis di patch management ti sia piaciuto. Sono cose sulle quali
+preparare processi di patch management ti sia piaciuto. Sono cose sulle quali
 ci sto lavorando anche oggi e credo siano una quindi quelle cose che non
 finiranno mai.
 
