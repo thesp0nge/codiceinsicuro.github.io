@@ -48,9 +48,9 @@ post_class: post-template
             {% if page.image.feature %}
 
             {% if site.lazyimages == "enabled" %}
-	    <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images//{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
+	            <img class="featured-image img-fluid lazyimg mx-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images//{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
             {% else %}
-            <img class="featured-image img-fluid" src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images/{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
+              <img class="featured-image img-fluid mx-auto" src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images/{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
 
             {% endif %}
