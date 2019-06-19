@@ -18,8 +18,30 @@
 
 <script src="{{ site.url }}/assets/js/jquery.min.js"></script>
 
-
-
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#4b81e8",
+      "border": "#4b81e8"
+    }
+  },
+  "position": "top",
+  "content": {
+    "message": "Codice Insicuro utilizza solo cookie tecnici di terze parti per finalità legate al funzionamento del sito.",
+    "link": "Approfondisci"
+  }
+})});
+</script>
 {% if site.adsense == "enabled" %}
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -245,15 +267,6 @@
     
     var godefer2 = document.getElementsByTagName('link')[0];
     godefer2.parentNode.insertBefore(giftofspeed2, godefer2);
-
-    var giftofspeed = document.createElement('link');
-    giftofspeed.rel = 'stylesheet';
-    giftofspeed.href = 'https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css';
-    giftofspeed.type = 'text/css';
-    
-    var godefer = document.getElementsByTagName('link')[0];
-    godefer.parentNode.insertBefore(giftofspeed, godefer);
-
   </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -272,30 +285,6 @@
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#edeff5",
-      "text": "#838391"
-    },
-    "button": {
-      "background": "transparent",
-      "text": "#4b81e8",
-      "border": "#4b81e8"
-    }
-  },
-  "position": "top",
-  "content": {
-    "message": "Codice Insicuro utilizza solo cookie tecnici di terze parti per finalità legate al funzionamento del sito.",
-    "link": "Approfondisci"
-  }
-})});
-</script>
-
 
 </body>
 </html>
