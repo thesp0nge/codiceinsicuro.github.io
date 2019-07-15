@@ -52,7 +52,8 @@ window.cookieconsent.initialise({
 </script>
 {% endif %}
 
-</head>
+{% include tag_manager.html %}
+
 
 <!-- change your GA id in _config.yml -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50260618-1"></script>
@@ -64,10 +65,34 @@ window.cookieconsent.initialise({
   gtag('config', 'UA-50260618-1');
   gtag('set', {'user_id': 'USER_ID'}); // Imposta l'ID utente utilizzando l'ID utente della persona che ha eseguito l'accesso.
 </script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1051466591910316');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1051466591910316&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</head>
 	
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW69SFD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -130,6 +155,14 @@ window.cookieconsent.initialise({
                 <a class="nav-link" href="{{ site.url }}/contatti">Contatti</a>
                 </li>
                 
+                {% if page.url == "/social/" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.url }}/social">Social</a>
+                </li>
+ 
                 {% if page.url == "/slae/" %}
                 <li class="nav-item active">
                 {% else %}
@@ -285,6 +318,8 @@ window.cookieconsent.initialise({
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
-
+  <script>
+$("table").addClass("table");
+  </script>
 </body>
 </html>
