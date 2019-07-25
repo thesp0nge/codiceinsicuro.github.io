@@ -74,6 +74,7 @@ task :post, :title do |t, args|
   end
   tags = get_stdin("Enter tags to classify your post (comma separated): ")
   create_post(filename, title, "post", tags)
+  puts "Remember to run concert -resize 750x500 on the image you want to use"
 end
 
 # usage rake new_page
