@@ -4,7 +4,7 @@ author: thesp0nge
 title: "Le cose che uno sviluppatore deve sapere su penetration test e code review"
 promotion: "Spesso chi subisce un penetration test o una code review, commette errori che invalidano i risultati dei test. Vediamo cosa non va mai fatto."
 modified: 
-featured: true
+featured: false
 category: [Post]
 tags: [appsec, sviluppatori, penetration test, code review, pipeline]
 image:

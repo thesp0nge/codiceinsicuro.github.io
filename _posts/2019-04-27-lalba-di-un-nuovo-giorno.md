@@ -4,7 +4,7 @@ title: "L'alba di un nuovo giorno"
 author: thesp0nge
 promotion: 
 modified: 
-featured: true
+featured: false
 category: [post]
 tags: [blog, scrittura]
 image:

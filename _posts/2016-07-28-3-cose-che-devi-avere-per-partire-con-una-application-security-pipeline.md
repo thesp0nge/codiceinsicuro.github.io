@@ -4,7 +4,7 @@ author: thesp0nge
 title: "3 cose che devi avere per partire con una application security pipeline"
 promotion: "Per iniziare la costruzione di una pipeline di sicurezza applicativa devi partire da queste 3 cose."
 modified: 
-featured: true
+featured: false
 category: [Chiacchiere da bar]
 tags: [appsec pipe, tools, api, processi]
 image:
