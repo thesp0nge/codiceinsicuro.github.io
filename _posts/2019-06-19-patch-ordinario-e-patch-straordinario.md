@@ -2,7 +2,7 @@
 layout: post
 title: "Patch ordinario e patch straordinario"
 author: thesp0nge
-featured: false
+featured: true
 category: [post]
 tags: [vulnerability assessment, patch management, security, nexpose, nessus, vita da security manager]
 image:

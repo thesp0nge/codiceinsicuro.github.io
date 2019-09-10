@@ -2,7 +2,7 @@
 layout: post
 title: "Diamo un'occhiata a msf-egghunter"
 author: thesp0nge
-featured: false
+featured: true
 category: [post]
 tags: [egghunter, exploit, offensive, payload, assembly]
 image:

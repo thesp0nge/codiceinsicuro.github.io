@@ -2,7 +2,7 @@
 layout: post
 title: "Sessione AMA il prossimo 6 settembre"
 author: thesp0nge
-featured: true
+featured: false
 category: [post]
 tags: [ama, social, saiberinfluenser, domande e risposte]
 image:
