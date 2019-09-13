@@ -4,7 +4,7 @@ title: "Getting root: unknowndevice64: 1"
 author: thesp0nge
 featured: false
 category: [getting-root]
-tags: [offensive, boot2root, vulnhub]
+tags: [offensive, boot2root, vulnhub, oscp]
 image:
   feature: root.png
 comments: true

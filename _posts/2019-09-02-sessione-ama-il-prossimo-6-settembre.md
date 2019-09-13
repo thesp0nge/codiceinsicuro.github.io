@@ -25,3 +25,12 @@ tutte le domande che avreste voluto farmi ma non avete mai avuto il coraggio
 di...
 
 Enjoy it
+
+## Off by one
+
+L'AMA di settimana scorsa è andato veramente bene ed è stato divertente. Ho
+deciso quindi di mettere un repository pubblico su Github, dove potete farmi in
+qualsiasi momento qualsiasi domanda.
+
+Questo AMA perpetuo lo potete trovare [qui](https://github.com/thesp0nge/ama)
+
