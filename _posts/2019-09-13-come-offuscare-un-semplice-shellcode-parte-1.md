@@ -6,7 +6,7 @@ featured: false
 category: [post, offensive]
 tags: [shellcode, oscp, exploit, exploit development, code obfuscation]
 image:
-  feature: convert.jpg
+  feature: fog.jpg
 comments: true
 share: true
 ---
@@ -25,7 +25,7 @@ Oggi parliamo ancora di offuscare uno shellcode, partendo da un esempio
 semplice e proseguendo per passi successivi.
 
 (Il codice utilizzato in questo post, e successivi, è presente in [questo
-repository Github](https://github.com/thesp0nge/bin_sh_obfuscation).
+repository Github](https://github.com/thesp0nge/bin_sh_obfuscation)).
 
 ## Trivia
 
@@ -37,7 +37,7 @@ nasm -f elf32 _nomefile_
 ld _nomefile_.o -o _nomefile_ -m elf_i386
 {% endhighlight %}
 
-![Come compiliamo i file sorgente](compile_obfuscation_asm.png)
+![Come compiliamo i file sorgente]({{site.url}}/assets/images/compile_obfuscation_asm.png)
 
 ## Perché offuscare il proprio shellcode?
 
