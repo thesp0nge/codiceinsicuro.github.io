@@ -147,6 +147,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a class="nav-link" href="{{ site.url }}/chi-sono/">Chi sono</a>
                 </li>
 
+                {% if page.url == "/talks/" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.url }}/talks/">Talks</a>
+                </li>
+
+
                 {% if page.url == "/contatti/" %}
                 <li class="nav-item active">
                 {% else %}
@@ -197,8 +206,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <a target="_blank"  class="nav-link" href="https://codiceinsicuro.it/feed.xml"><i class="fas fa-rss"></i></a>
                 </li>
 
-
-                {% include search-lunr.html %}
 
             </ul>
 
