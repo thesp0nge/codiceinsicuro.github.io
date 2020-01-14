@@ -6,7 +6,7 @@ require "stringex"
 ssh_user       = "thesp0nge@goliath.armoredcode.com"
 ssh_port       = "22"
 document_root  =  "/var/www/codiceinsicuro.it"
-rsync_delete   = true
+rsync_delete   = false
 deploy_default = "rsync"
 public_dir      = "_site"    # compiled site directory
 
