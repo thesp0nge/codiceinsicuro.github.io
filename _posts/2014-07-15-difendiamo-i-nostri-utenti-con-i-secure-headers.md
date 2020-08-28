@@ -6,7 +6,7 @@ modified:
 category: [Sicurina]
 tags: [ruby, twitter, secure headers, csp, hsts, x-frame, x-xss, x-content-type]
 image:
-  feature: scudo.png
+  feature: 
 comments: true
 share: true
 ---
