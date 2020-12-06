@@ -44,7 +44,7 @@ post_class: post-template
 
             </div>
 
-            <!-- Post Featured Image -->
+            <!-- Post Featured Image 
             {% if page.image.feature %}
 
             {% if site.lazyimages == "enabled" %}
@@ -53,7 +53,7 @@ post_class: post-template
               <img class="featured-image img-fluid mx-auto" src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images/{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
 
-            {% endif %}
+            {% endif %}-->
             <!-- End Featured Image -->
 
             {% include readtime_post.html%}
