@@ -27,16 +27,6 @@ Abbiamo però una parte fondamentale nel momento in cui prendiamo delle
 decisioni che, nonostante in un primo momento ci sembrano giuste, condizionano
 il nostro presente e ci chiedono di invertire la rotta.
 
-In questi mesi sono stato assente, immerso in un'avventura che mi ha portato di
-fronte ad un punto morto. Devo essere sincero: motivazioni, energia e passione
-si sono affievolite, forse anche a causa del secondo lockdown che ha ridotto le
-giornate ad una routine monotona e grigia.
-
-Punto morto dicevo. Ebbene sì, ci sono stati cambiamenti che non si sono
-rivelati esattamente quello che mi auspicavo, promesse assolutamente disattese
-ed un mondo chiuso, spocchioso ed autoreferenziale che mi ha fatto veramente
-male.
-
 Ma... ma.
 
 Come in tutti i combattimenti è chi combatte a doversi prendere il centro del
@@ -45,14 +35,13 @@ quadrato, quindi per il 2021 la parola d'ordine dovrà essere: **rinascita**.
 Su Twitter un paio di giorni fa ho elencato in punti quello che succederà nel
 2021:
 
-{% twitter https://twitter.com/thesp0nge/status/1342045844858671104 %}
+{% twitter https://twitter.com/thesp0nge/status/1343394090403168256 %}
 
 ### OSWE
 
-Tralasciando il primo punto, su cui ho un controllo parziale di quello che può
-succedere, ma ci sono tante prospettive interessanti, sicuramente la cosa più
-interessante sarà partire il prossimo gennaio con il corso per la
-certificazione [OSWE](https://www.offensive-security.com/awae-oswe/).
+Sicuramente la cosa più interessante sarà partire il prossimo gennaio con il
+corso per la certificazione
+[OSWE](https://www.offensive-security.com/awae-oswe/).
 
 Focalizzata sull'analisi del codice e sulla costruzione di exploit complessi
 partendo da vulnerabilità web, credo sia il compendio perfetto al percorso
