@@ -2,7 +2,7 @@
 layout: post
 title: "Getting root: symfonos: 5"
 author: thesp0nge
-featured: true
+featured: false
 category: [getting-root]
 tags: [offensive, boot2root, vulnhub, oscp, osce]
 image:

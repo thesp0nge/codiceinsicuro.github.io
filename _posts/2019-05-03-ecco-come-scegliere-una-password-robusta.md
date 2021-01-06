@@ -2,7 +2,7 @@
 layout: post
 title: "Ecco come scegliere una password robusta"
 author: thesp0nge
-featured: true
+featured: false
 category: [post]
 tags: [password, passphrase, chicchi]
 image:
