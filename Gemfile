@@ -11,6 +11,8 @@ source "https://rubygems.org"
 gem 'stringex'
 gem 'kramdown-parser-gfm'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem 'minimal-mistakes-jekyll'
+
 group :jekyll_plugins do
     gem 'jekyll-tagging-related_posts'
     gem 'jekyll-tagging'

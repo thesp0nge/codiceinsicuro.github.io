@@ -21,7 +21,8 @@ authors:
     twitter: https://twitter.com/thesp0nge
     description: "Specialista di sicurezza applicativa e certificato OSCE e OSCP, amo spaccare e ricostruire il codice in maniera sicura. Sono cintura nera di taekwon-do, marito e papà. Ranger Caotico Neutrale, scrivo su @codiceinsicuro."
 
-version: '4.0.0'
+version: '5.0.0'
+theme: minimal-mistakes-jekyll
 
 # Plugins
 plugins: 
