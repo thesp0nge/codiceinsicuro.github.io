@@ -4,7 +4,7 @@ title: "5 mesi intensi e cambi di rotte"
 author: thesp0nge
 featured: false
 category: [post]
-tags: [2021, nuova vita]
+tags: [nuova vita]
 image:
    feature: gecko.jpg
    author_id: jonlepp
@@ -56,4 +56,3 @@ Ora il mio mondo è fatto di review di codice e di pacchetti da manutenere.
 Di sicuro, il 2021 ha segnato una svolta lavorativa importante.
 
 Enjoy it!
-
