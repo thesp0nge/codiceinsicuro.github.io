@@ -11,7 +11,9 @@ source "https://rubygems.org"
 gem 'stringex'
 gem 'kramdown-parser-gfm'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem "sprockets", "~> 3.7"
 group :jekyll_plugins do
+    gem 'jekyll-admin'
     gem 'jekyll-tagging-related_posts'
     gem 'jekyll-tagging'
     gem 'jekyll-assets'
