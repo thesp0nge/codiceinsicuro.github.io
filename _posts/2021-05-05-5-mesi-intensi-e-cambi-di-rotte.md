@@ -22,7 +22,7 @@ originale](https://twitter.com/thesp0nge/status/1343394090403168256) aveva un
 riferimento ad un punto 1 che riguardava il rimediare ad una situazione
 professionale ed è qui che la vera svolta si è consumata.
 
-Andiamo in ordine. E' circa dal 2000 che io ho due passioni: sviluppare softare
+Andiamo in ordine. E' circa dal 2000 che io ho due passioni: sviluppare software
 e la sicurezza informatica. Non mi sono mai sentito uno di quei professionsti
 "buco tutto ma non voglio sapere come scrivere un'applicazione".
 
