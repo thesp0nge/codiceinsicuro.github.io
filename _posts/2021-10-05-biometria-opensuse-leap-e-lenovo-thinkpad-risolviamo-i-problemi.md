@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Biometria"
+title: "Biometria, openSUSE Leap e Lenovo Thinkpad: rivolviamo i problemi"
 author: thesp0nge
 featured: false
 category: [post]
@@ -38,9 +38,9 @@ Per installare fprintd dai pacchetti sperimentali ho quindi aggiunto il
 repository della mia versione di openSUSE Leap utilizzando zypper:
 
 {% highlight sh %}
-# zypper addrepo https://download.opensuse.org/repositories/hardware/openSUSE_Leap_15.3/hardware.repo
-# zypper refresh
-# zypper in fprintd-pam-1.90.9-lp153.39.2.x86_64 fprintd-1.90.9-lp153.39.2.x86_64 fprintd-lang-1.90.9-lp153.39.2.x86_64
+zypper addrepo https://download.opensuse.org/repositories/hardware/openSUSE_Leap_15.3/hardware.repo
+zypper refresh
+zypper in fprintd-pam-1.90.9-lp153.39.2.x86_64 fprintd-1.90.9-lp153.39.2.x86_64 fprintd-lang-1.90.9-lp153.39.2.x86_64
 {% endhighlight %}
 
 _Et voilà_
@@ -55,7 +55,7 @@ WantedBy=multi-user.target
 In questo modo potremo abilitare il servizio fprintd ed averlo a disposizione al prossimo boot:
 
 {% highlight sh %}
-# systemctl enable fprintd
+systemctl enable fprintd
 {% endhighlight %}
 
 Enjoy it!
