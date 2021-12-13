@@ -2,7 +2,7 @@
 layout: post
 title: "Nuova iniziativa: Cybercoach corner"
 author: thesp0nge
-featured: false
+featured: true
 category: [post]
 tags: [mentor, mentorship, cybersecurity, awareness, call, condividere]
 image:
