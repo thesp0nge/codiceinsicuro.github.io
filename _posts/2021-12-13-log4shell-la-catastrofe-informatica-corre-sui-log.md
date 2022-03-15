@@ -2,7 +2,7 @@
 layout: post
 title: "log4shell: la catastrofe informatica corre sui log"
 author: thesp0nge
-featured: true
+featured: false
 category: [post]
 tags: [log4j, librerie di terze parti, governance, log4shell, cve-2021-44228]
 image:
@@ -45,16 +45,16 @@ siete salvi. Questa chiamata automatica JNDI è disabilitata per default, così
 come, nelle versioni vulnerabili, potete **mitigare** la vulnerabilità con
 questa impostazione nei _settings_:
 
-``` java
+{%highlight java%}
 log4j2.formatMsgNoLookups=true
-```
+{%endhighlight%}
 
 Potete anche cambiare la linea di comando della vostra applicazione Java,
 passando questa impostazione come parametro all'interprete:
 
-``` sh
+{%highlight sh%}
 java -Dlog4j2.formatMsgNoLookups=true -jar myapp.jar
-```
+{%endhighlight%}
 
 Il consiglio comunque che raccomandano tutti e al quale mi associo è quello di
 aggiornare la libreria. Questo è un consiglio che vale però sempre, a
@@ -64,6 +64,16 @@ Vi lascio un interessante
 [post](https://news.sophos.com/en-us/2021/12/12/log4shell-hell-anatomy-of-an-exploit-outbreak/)
 di Sophos che vale la pena leggere circa la spiegazione tecnica di come viene
 portato l'attacco.
+
+**EDIT**: invito tutti a leggere [questo
+thread](https://github.com/apache/logging-log4j2/pull/608). Sotto certe
+circostanze, anche la versione 1.x risulta vulnerabile. L'impatto è sicuramente
+minore proprio per le numerose condizioni al contorno che devono essere
+soddisfatte. Questa vulnerabilità è tracciata come [CVE-2021-4104](https://www.suse.com/security/cve/CVE-2021-4104.html)
+
+Altro [post molto
+interessante](https://securityboulevard.com/2021/12/log4shell-jndi-injection-via-attackable-log4j/)
+che vale la pena di essere letto.
 
 ## Cosa possiamo imparare da log4j?
 
