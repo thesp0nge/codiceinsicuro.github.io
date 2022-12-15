@@ -3,7 +3,7 @@ layout: post
 author: thesp0nge
 title: "Getting root: Brainpan 1"
 promotion: Brainpan 1 è una boot2root pensata per esercitarsi nello scrivere semplici exploit per buffer overflow semplici, senza meccanismi di protezione dello stack.
-modified: 
+modified:
 featured: false
 category: [post]
 tags: [walkthrough,oscp,vulnhub,getting-root,brainpan,write-up]
@@ -20,7 +20,7 @@ l'[OSCP](https://www.offensive-security.com/information-security-certifications/
 
 Questa macchina è l'ideale per chi vuole esercitarsi nella scrittura di exploit
 per buffer overflow molto simili a quelli che si trovano nel corso di Offensive
-Security. 
+Security.
 
 ## Enumeration
 
@@ -83,7 +83,7 @@ password all'utente.
 ![Servizio in ascolta sulla 9999]({{site.url}}/assets/images/brainpan_9999.png)
 
 Sulla porta 10000 è in ascolto un web server con un'infografica di Veracode come
-homepage. 
+homepage.
 
 ![Veracode]({{site.url}}/assets/images/veracode.png)
 
@@ -199,7 +199,7 @@ l'esame]({{site.url}}/slae/assignment-2-create-a-reverse-shellcode/).
 Lanciando l'exploit, dopo averlo provato sul exe scaricato dal sito, ottengo una
 reverse shell non privilegiata sulla macchina.
 
->> Provandolo sul mio target reale, invece non succede niente. Perché? 
+>> Provandolo sul mio target reale, invece non succede niente. Perché?
 
 Passa un giorno, mi scervello, ascolto musica neu metal, cade una bomba d'acqua
 sull'Italia settentrionale, l'Inghilterra passa sulla Colombia ai rigori agli
@@ -252,7 +252,7 @@ chiamata a JMP ESP.
 L'offset a cui sovrascrivo l'EIP è 116 bytes. Noto che EAX punta al mio
 shellcode, nel eseguibile validate trovo una call eax (FF D0) all'indirizzo
 0x804862b. Metto questo nel mio EIP, in maniera tale da saltare all'interno del
-mio stack. Ora sono l'utente anansi. 
+mio stack. Ora sono l'utente anansi.
 
 Dall'output del comando 'sudo -l' sappiamo che il comando
 /home/anansi/bin/anansi_util può essere eseguito come utente root, via sudo

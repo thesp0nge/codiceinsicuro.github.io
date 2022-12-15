@@ -24,7 +24,7 @@ authors:
 version: '4.0.0'
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-paginate
   - jekyll-archives
   - jekyll-gist
@@ -36,8 +36,8 @@ plugins:
   - jekyll-feed
   - jekyll/tagging
   - jekyll-tagging-related_posts
-    
-    
+
+
 # Archives
 jekyll-archives:
   enabled:
@@ -45,11 +45,11 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
-# Pagination 
+
+# Pagination
 paginate: 12
 paginate_path: /page:num/
-    
+
 # Other
 markdown: kramdown
 
@@ -88,12 +88,9 @@ collections:
     output: true
   mb:
     output: true
-  news: 
+  news:
     output: true
   rimedi:
     output: true
   slae:
     output: true
-    
-
-

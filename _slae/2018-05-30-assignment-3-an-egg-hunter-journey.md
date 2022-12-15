@@ -43,11 +43,11 @@ specific access rights to a given file on disk.
 ## The proof of concept
 
 First of all, I'll make very few modifications to our execve("/bin/sh")
-shellcode. In fact, I'll add only the EGG marker repeated twice. 
+shellcode. In fact, I'll add only the EGG marker repeated twice.
 
 {% highlight assembly %}
 ; Filename: 	execve.nasm
-; Author:	Paolo Perego <paolo@codiceinsicuro.it>  
+; Author:	Paolo Perego <paolo@codiceinsicuro.it>
 ; Website:  	https://codiceinsicuro.it
 ; Blog post:  	https://codiceinsicuro.it/slae/
 ; Twitter:   	@thesp0nge
@@ -55,7 +55,7 @@ shellcode. In fact, I'll add only the EGG marker repeated twice.
 ; Purpose:	This is the default payload for the egg hunter demo. It will
 ; 		      execute "/bin/sh" using execve() system call.
 
-global _start			
+global _start
 
 dd 0xdeadbeef
 dd 0xdeadbeef
@@ -65,14 +65,14 @@ section .text
 _start:
 	xor eax, eax		; init EAX to 0
 	push eax		    ; pushing 0 to the stack to be used as NULL pointer
-	
-	; execve is defined as #define __NR_execve 11 in 
+
+	; execve is defined as #define __NR_execve 11 in
 	; /usr/include/i386-linux-gnu/asm/unistd_32.h:
 	;
-	; system call prototype is: 
+	; system call prototype is:
   ; int execve(const char *filename, char *const argv[], char *const envp[]);
 
-	
+
 	push 0x68732f2f		; pushing //bin/sh into the stack
 	push 0x6e69622f		; the init double / is for alignment purpose
 
@@ -99,7 +99,7 @@ in memory. Now, let's have a look to our egg hunter implementation.
 
 {% highlight assembly %}
 ; Filename: 	egghunter.nasm
-; Author:	Paolo Perego <paolo@codiceinsicuro.it>  
+; Author:	Paolo Perego <paolo@codiceinsicuro.it>
 ; Website:  	https://codiceinsicuro.it
 ; Blog post:  	https://codiceinsicuro.it/slae/
 ; Twitter:   	@thesp0nge
@@ -108,7 +108,7 @@ in memory. Now, let's have a look to our egg hunter implementation.
 ;		looping through memory and jumping on the payload after the
 ;		second egg found in memory.
 
-global _start			
+global _start
 
 section .text
 
@@ -129,10 +129,10 @@ next_addr:
 
 	xor eax, eax
 
-	; access is defined as #define __NR_acces 33 in 
+	; access is defined as #define __NR_acces 33 in
 	; /usr/include/i386-linux-gnu/asm/unistd_32.h:
 	;
-	; system call prototype is: 
+	; system call prototype is:
 	; int access(const char *pathname, int mode);
 
 	mov al, 0x21
@@ -148,7 +148,7 @@ next_addr:
 	scasd
 
 	jnz next_addr
- 
+
 	scasd
 	jnz next_addr
 
@@ -186,7 +186,7 @@ unsigned char egg_hunter[] = \
 unsigned char code[] = \
 "\xef\xbe\xad\xde\xef\xbe\xad\xde\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x89\xe2\x50\x89\xe1\xb0\x0b\xcd\x80";
 
-		       
+
 int main(int argc, char **argv)
 {
 	printf("Shellcode Length:  %d\n", strlen(code));
@@ -297,4 +297,3 @@ This blog post has been created for completing the requirements of the SecurityT
 [http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/](http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/)
 
 Student ID: SLAE-1217
-

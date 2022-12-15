@@ -3,7 +3,7 @@ layout: post
 author: thesp0nge
 title: "IOLI Crackme 0x00"
 promotion: "Si inizia l'avventura in preparazione alla certificazione OSCE, con questi semplici esercizi introduttori al binary patching"
-modified: 
+modified:
 featured: false
 category: [post]
 tags: [osce, binary exploitation, crackme, ioli, radare, binary patching]
@@ -77,4 +77,3 @@ viaggio sembra lungo, ma ormai... fatta la prima tappa bisogna per forza
 continuare.
 
 Enjoy it!
-
