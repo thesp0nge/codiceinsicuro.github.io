@@ -311,7 +311,6 @@ push eax
 As you can see, now our shellcode still works and there are no NULL bytes into
 it.
 
-{% asciicast 181335 %}
 
 ### Error checking on connect()
 
@@ -566,7 +565,6 @@ print shellcode
 Running our shellcode, we had a reverse shell on port 4444 on address 127.0.0.1
 as shown in this video.
 
-{% asciicast 181334 %}
 
 
 Using scdump.sh helper, I extracted the shellcode from the binary tool and
@@ -594,12 +592,10 @@ On another terminal, there is a netcat listening on port 4444, waiting for
 reverse connection. As you can see, reverse shell was successfully spawned on
 connection.
 
-{% asciicast 181389 %}
 
 Now, with the python script I changed the reverse shell destination port to
 1337 and as we can see our shellcode works as expected.
 
-{% asciicast 180520 %}
 
 ## SLAE Exam Statement
 

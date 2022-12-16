@@ -679,7 +679,6 @@ compile.sh helper and run it. As you can see from the following video the 4444
 port is opened and a shell was successfully spawned when connecting using
 netcat tool.
 
-{% asciicast 180492 %}
 
 Using scdump.sh helper, I extracted the shellcode from the binary tool and
 inserted in the shellcode.c helper program.
@@ -703,14 +702,12 @@ As you can see from the video, after compiling the C code, disabling stack
 protection and run it, the 4444 TCP port it has been opened and a shell
 successfully spawned when connecting to it.
 
-{% asciicast 180497 %}
 
 Now it's time to change the PORT. For such a reason, I'm going to use the
 python script providing a different port number, 5555 in this case. I pasted
 the obtained shellcode into the C launcher, compile it, run it and as you can
 see everything works as expected and a shell is spawned when connecting to port 5555.
 
-{% asciicast 180520 %}
 
 ## SLAE Exam Statement
 

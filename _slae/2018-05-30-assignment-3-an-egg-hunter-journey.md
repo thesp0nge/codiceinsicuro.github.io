@@ -274,21 +274,17 @@ if __name__ == "__main__":
 In this video, you can see the very default payload executing /bin/sh after the
 EGG being found in memory.
 
-{% asciicast 184329 %}
 
 Here, the payload is a TCP bind shellcode on port 4444 on localhost, developed
 for the [first SLAE
 assignment](https://codiceinsicuro.it/slae/assignment-1-create-a-bind-shellcode/)
 
-{% asciicast 184330 %}
 
 This video shows the payload for a TCP reverse shell shellcode on localhost on
 port 4444 developed for the [second SLAE
 assignment](https://codiceinsicuro.it/slae/assignment-2-create-a-reverse-shellcode/)
-{% asciicast 184331 %}
 
 And in the last video, I show the default payload but with a different EGG.
-{% asciicast 184332 %}
 
 ## SLAE Exam Statement
 

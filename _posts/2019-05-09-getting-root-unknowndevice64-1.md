@@ -112,5 +112,3 @@ Quello che ho fatto è stato:
 * root dance.
 
 Il tutto documentato da questo filmato:
-
-<!-- {%asciicast 245181%} -->

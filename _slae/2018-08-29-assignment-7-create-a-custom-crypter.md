@@ -90,7 +90,6 @@ _start:
 However, the crypter tool accepts also a custom encryption key and a custom
 shellcode to be used instead of the default one.
 
-{% asciicast 198703 %}
 
 Here you can find the source code for the crypter script:
 
@@ -252,7 +251,6 @@ protection for memory regions:
 
 See it in action:
 
-{% asciicast 198715 %}
 
 ## SLAE Exam Statement
 

