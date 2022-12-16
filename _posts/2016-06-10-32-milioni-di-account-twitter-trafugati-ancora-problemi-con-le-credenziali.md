@@ -3,7 +3,7 @@ layout: post
 author: thesp0nge
 title: "32 Milioni di account twitter trafugati: ancora problemi con le credenziali"
 promotion: "32 Milioni di account twitter trafugati: ancora problemi con le credenziali"
-modified: 
+modified:
 featured: false
 category: [News]
 tags: [twitter, password, credenziali, attacco]
@@ -17,7 +17,6 @@ Sembra sia un periodo caldo per i sistemi di autenticazione là fuori. Nella
 giornata di martedì 7 Giugno, Twitter dal suo account per il supporto esce con
 questa dichiarazione.
 
-{% twitter oembed https://twitter.com/Support/status/739949019594674176 %}
 
 Techcrunch è uscito poche ore fa con un
 [post](http://techcrunch.com/2016/06/08/twitter-hack/) che parla di 32 milioni
@@ -39,7 +38,6 @@ noto nel mondo della sicurezza applicativa, ha confermato l'incidente
 rassicurando gli utenti che l'elenco trafugato non sarebbe originato da un
 breach sui sistemi.
 
-{% twitter oembed https://twitter.com/_mwc/status/740762909144428544 %}
 
 Dovrebbe trattarsi quindi, di un data leak volontario. Un dipendente
 insoddisfatto? Errore umano? Un database che si è trovato nel posto sbagliato
@@ -51,7 +49,6 @@ basati sulla forza bruta. Se quindi la vostra password non è come quella di
 [Mark Zuckemberg](#), ovvero 'dadada', la sicurezza del vostro account dovrebbe
 essere al sicuro.
 
-{% twitter oembed https://twitter.com/_mwc/status/740764470708965376 %}
 
 Comunque, per essere tranquilli, fate una ricerca su
 [leakedsource.com](https://leakedsource.com) e se trovate la vostra email

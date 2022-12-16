@@ -31,7 +31,6 @@ plugins:
   - jekyll_video_tag
   - jekyll-last-modified-at
   - jekyll-seo-tag
-  - jekyll-twitter-plugin
   - jekyll-feed
   - jekyll/tagging
   - jekyll-tagging-related_posts

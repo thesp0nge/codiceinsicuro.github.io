@@ -8,7 +8,7 @@ tags: []
 image:
   feature: new_year.jpg
   author_id: "@danwhale"
-  author_name: Danil Aksenov 
+  author_name: Danil Aksenov
   author_link: new_year
 comments: true
 share: true
@@ -33,9 +33,7 @@ Come in tutti i combattimenti è chi combatte a doversi prendere il centro del
 quadrato, quindi per il 2021 la parola d'ordine dovrà essere: **rinascita**.
 
 Su Twitter un paio di giorni fa ho elencato in punti quello che succederà nel
-2021:
-
-{% twitter https://twitter.com/thesp0nge/status/1343394090403168256 %}
+[2021](https://twitter.com/thesp0nge/status/1343394090403168256)
 
 ### OSWE
 
@@ -51,7 +49,7 @@ iniziato qualche anno fa con OSCP.
 
 Quando, durante il primo lockdown, ho iniziato [Io speriamo che me la
 cyber](https://www.youtube.com/c/PaoloPerego) ammetto di essermi divertito ed
-appassionato al mondo del VLOG. 
+appassionato al mondo del VLOG.
 
 Come spesso accade, ci sono un sacco di canali in inglese e pochissimo
 italiano. Al momento, il meglio nella nostra lingua, lo offre il canale dei
@@ -104,4 +102,3 @@ e quell'energia che avevo fino a pochi mesi fa.
 E ci riuscirò. Cascassse il mondo.
 
 Enjoy!
-
