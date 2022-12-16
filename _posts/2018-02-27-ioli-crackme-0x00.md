@@ -35,7 +35,7 @@ testo all'interno dell'eseguibile, una stringa _250382_, poteva essere una
 password. Provandola, otteniamo il messaggio che ci conferma che è la password
 corretta.
 
-{% asciicast 165681 %}
+<!-- {% asciicast 165681 %} -->
 
 Tuttavia, lo scopo dell'esercizio è quello di modificare il binario affinché
 accetti qualsiasi password in ingresso. Per fare questo, usiamo radare2, uno
@@ -59,7 +59,7 @@ scriviamo il codice assembly corrispondente ad un salto non condizionato.
 In questo modo, qualsiasi sia la stringa inserita dall'utente, verrà preso il
 branch che porta ad un messaggio di password accettata.
 
-{% asciicast 165683 %}
+<!-- {% asciicast 165683 %} -->
 
 ## Off by one
 

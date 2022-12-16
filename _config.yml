@@ -27,7 +27,7 @@ plugins:
   - jekyll-paginate
   - jekyll-archives
   - jekyll-gist
-  - jekyll-asciinema
+  # - jekyll-asciinema
   - jekyll_video_tag
   - jekyll-last-modified-at
   - jekyll-seo-tag

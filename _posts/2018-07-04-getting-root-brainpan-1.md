@@ -138,7 +138,7 @@ if __name__ == "__main__":
 
 {%endhighlight %}
 
-{% asciicast 189656 %}
+<!-- {% asciicast 189656 %} -->
 
 Il fuzzer si ferma dopo aver inviato 800 byte quando il demone smette di
 rispondere andando in crash. Il messaggio di errore ci dice che abbiamo
@@ -151,7 +151,7 @@ Modificando il mio semplice fuzzer, provo a mandare un buffer di 1000 byte
 generato con pattern_create.rb per capire dopo quanti caratteri ho la
 sovrascrittura dell'EIP.
 
-{% asciicast 189800 %}
+<!-- {% asciicast 189800 %} -->
 
 Il valore del EIP è 0x35724134. Per calcolare l'offset entro il quale io
 sovrascrivo il mio EIP, uso il tool pattern_offset. Ottengo che si trova dopo
@@ -162,7 +162,7 @@ ulteriormente il mio EIP. Modifico quindi il codice del mio fuzzer in maniera
 tale da mandare 524 byte di padding e la stringa "BBBB" allo scopo di causare
 la sovrascrittura dell'EIP con 0x42424242.
 
-{% asciicast 189801 %}
+<!-- {% asciicast 189801 %} -->
 
 Debugger alla mano posso vedere lo stato dei miei registri. Il mio shellcode
 viene copiato nello stack e referenziato dai registri opportuni.
@@ -194,7 +194,7 @@ macchina, usai msfvenom per creare un payload, ora però, visto che sto
 studiando per la SLAE, uso lo shellcode creato per [il secondo assignment per
 l'esame]({{site.url}}/slae/assignment-2-create-a-reverse-shellcode/).
 
-{%asciicast 190052%}
+<!-- {%asciicast 190052%} -->
 
 Lanciando l'exploit, dopo averlo provato sul exe scaricato dal sito, ottengo una
 reverse shell non privilegiata sulla macchina.
@@ -219,7 +219,7 @@ Potete approfondire [qui, quando faccio la PoC analysis]({{site.url}}/slae/assig
 Quindi, ho fatto uno shellcode troppo moderno per Brainpan. Torniamo a
 msfvenom.
 
-{%asciicast 190053%}
+<!-- {%asciicast 190053%} -->
 
 Da qui, il takeover della macchina prende molteplici strade. A Gennaio, presi
 la strada panoramica, mentre a Giugno, quando stavo usando questa macchina per
@@ -272,7 +272,7 @@ pager preferito, di aprire una shell per noi e, visto che anansi_util ha
 mantenuto il privilegio di root per eseguire man, mi trovo root, quasi per
 caso.
 
-{%asciicast 190054%}
+<!-- {%asciicast 190054%} -->
 
 ## Off by one
 

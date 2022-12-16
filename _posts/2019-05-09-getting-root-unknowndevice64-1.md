@@ -113,4 +113,4 @@ Quello che ho fatto è stato:
 
 Il tutto documentato da questo filmato:
 
-{%asciicast 245181%}
+<!-- {%asciicast 245181%} -->

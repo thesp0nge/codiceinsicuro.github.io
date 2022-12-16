@@ -104,7 +104,7 @@ impedirebbero poi l'utilizzo all'atto pratico all'interno di un exploit:
 Qui vediamo la nostra shell originale in esecuzione ed è quello che vogliamo
 ottenere da ogni codice offuscato, un prompt di una shell.
 
-{% asciicast 267227 %}
+<!-- {% asciicast 267227 %} -->
 
 ## Primo passaggio: code refactoring
 
@@ -150,7 +150,7 @@ Codice esadecimale dello shellcode:
 \x31\xc0\x50\x50\x50\x59\x5a\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\xb0\x0b\xcd\x80
 {% endhighlight %}
 
-{% asciicast 267241 %}
+<!-- {% asciicast 267241 %} -->
 
 ## Secondo passaggio: cambio meccanismo di inizializzazione
 
@@ -201,7 +201,7 @@ Codice esadecimale dello shellcode:
 \xb9\xef\xbe\xad\xde\x81\xe9\xef\xbe\xad\xde\xf7\xe1\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\xb0\x0b\xcd\x80
 {% endhighlight %}
 
-{% asciicast 267663 %}
+<!-- {% asciicast 267663 %} -->
 
 Come si può vedere, in questo caso lo shellcode che otteniamo ha effettivamente
 un aspetto diverso da quello di partenza. La strada è ancora lunca, ma stiamo
@@ -302,7 +302,7 @@ Una volta compilato, ottengo il seguente esadecimale:
 Ad una prima occhiata è nettamente diverso dal codice di partenza anche se non
 rappresenta alcuna difficoltà per un qualsiasi membro di un blue team.
 
-{%asciicast 268232%}
+<!-- {%asciicast 268232%} -->
 
 ## Off by one
 

@@ -20,7 +20,7 @@ group :jekyll_plugins do
   gem 'jekyll-video-tag'
   gem 'jekyll-seo-tag'
   gem 'jekyll-gist'
-  gem 'jekyll-asciinema', '=0.2.0'
+  # gem 'jekyll-asciinema', '=0.2.0'
   # gem 'jekyll-youtube'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'
