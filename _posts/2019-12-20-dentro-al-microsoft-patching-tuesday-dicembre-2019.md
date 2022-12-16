@@ -23,54 +23,10 @@ Se non sei ancora iscritto alla
 [newsletter](https://codiceinsicuro.it/newsletter/) ti suggerisco caldamente di
 farlo.
 
-## L'analisi
-
-Queste le CVE contenute nel bollettino di Dicembre.
-
-| CVE | Vulnerabilità | 
-|-----|---------------|
-| {% ms_cve CVE-2019-1489 %} | Remote Desktop Protocol Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1465 %} | Windows GDI Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1468 %} | Win32k Graphics Remote Code Execution Vulnerability |
-| {% ms_cve CVE-2019-1466 %} | Windows GDI Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1467 %} | Windows GDI Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1400 %} | Microsoft Access Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1464 %} | Microsoft Excel Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1461 %} | Microsoft Word Denial of Service Vulnerability |
-| {% ms_cve CVE-2019-1462 %} | Microsoft PowerPoint Remote Code Execution Vulnerability |
-| {% ms_cve CVE-2019-1463 %} | Microsoft Access Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1485 %} | VBScript Remote Code Execution Vulnerability |
-| {% ms_cve CVE-2019-1453 %} | Windows Remote Desktop Protocol (RDP) Denial of Service Vulnerability |
-| {% ms_cve CVE-2019-1476 %} | Windows Elevation of Privilege Vulnerability |
-| {% ms_cve CVE-2019-1477 %} | Windows Printer Service Elevation of Privilege Vulnerability |
-| {% ms_cve CVE-2019-1474 %} | Windows Kernel Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1478 %} | Windows COM Server Elevation of Privilege Vulnerability |
-| {% ms_cve CVE-2019-1483 %} | Windows Elevation of Privilege Vulnerability |
-| {% ms_cve CVE-2019-1488 %} | Microsoft Defender Security Feature Bypass Vulnerability |
-| {% ms_cve CVE-2019-1487 %} | Microsoft Authentication Library for Android Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1490 %} | Skype for Business Server Spoofing Vulnerability |
-| {% ms_cve CVE-2019-1332 %} | Microsoft SQL Server Reporting Services XSS Vulnerability |
-| {% ms_cve CVE-2019-1350 %} | Git for Visual Studio Remote Code Execution Vulnerability |
-| {% ms_cve CVE-2019-1349 %} | Git for Visual Studio Remote Code Execution Vulnerability |
-| {% ms_cve CVE-2019-1486 %} | Visual Studio Live Share Spoofing Vulnerability |
-| {% ms_cve CVE-2019-1387 %} | Git for Visual Studio Remote Code Execution Vulnerability |
-| {% ms_cve CVE-2019-1354 %} | Git for Visual Studio Remote Code Execution Vulnerability |
-| {% ms_cve CVE-2019-1351 %} | Git for Visual Studio Tampering Vulnerability |
-| {% ms_cve CVE-2019-1352 %} | Git for Visual Studio Remote Code Execution Vulnerability |
-| {% ms_cve CVE-2019-1471 %} | Windows Hyper-V Remote Code Execution Vulnerability |
-| {% ms_cve CVE-2019-1470 %} | Windows Hyper-V Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1472 %} | Windows Kernel Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1458 %} | Win32k Elevation of Privilege Vulnerability |
-| {% ms_cve CVE-2019-1469 %} | Win32k Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1480 %} | Windows Media Player Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1481 %} | Windows Media Player Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1484 %} | Windows OLE Remote Code Execution Vulnerability |
-
-
 Ci sono 2 CVE che hanno una priorità alta e che quindi richiedono un patching abbastanza rapido:
 
-* {% ms_cve CVE-2019-1468 %}
-* {% ms_cve CVE-2019-1458 %}
+* CVE-2019-1468
+* CVE-2019-1458
 
 In particolare per la [CVE-2019-1458](https://securelist.com/windows-0-day-exploit-cve-2019-1458-used-in-operation-wizardopium/95432/) sono state rilevate evidenze di utilizzo in the wild durante attacchi reali.
 

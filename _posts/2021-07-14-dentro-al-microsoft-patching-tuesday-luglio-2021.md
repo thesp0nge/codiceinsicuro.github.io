@@ -47,14 +47,7 @@ Delle 117 vulnerabilità corrette, 4 sono in questo momento sfruttate in
 attacchi reali. Questo significa che esiste un exploit e che quindi la
 correzione della vulnerabilità è un'attività critica.
 
-| CVE | Vulnerabilità |
-|-----|---------------|
-| {%ms_cve CVE-2021-33771 %} | Windows Kernel Elevation of Privilege Vulnerability |
-| {% ms_cve CVE-2021-34448 %} | Scripting Engine Memory Corruption Vulnerability|
-| {% ms_cve CVE-2021-31979 %} | Windows Kernel Elevation of Privilege Vulnerability|
-| {% ms_cve  CVE-2021-34527 %} | Windows Print Spooler Remote Code Execution Vulnerability
-
-In particolare la {% ms_cve  CVE-2021-34527 %} è quella balzata agli [onori
+In particolare la CVE-2021-34527 è quella balzata agli [onori
 della
 cronaca](https://securelist.com/quick-look-at-cve-2021-1675-cve-2021-34527-aka-printnightmare/103123/)
 col nome di PrintNighmare. A causa di un problema nel sistema di gestione dello
@@ -63,7 +56,7 @@ spooler di stampa di Windows è possibile eseguire codice arbitrario da remoto.
 Su GitHub sono
 [molti](https://www.google.com/search?q=print+nightmare+exploit+github) i
 repository contenenti PoC per PrintNightmare (in origine classificato solo come
-{% ms_cve CVE-2021-1675 %} non corretta completamente da un update precedente),
+CVE-2021-1675 non corretta completamente da un update precedente),
 tuttavia l'analisi più bella della vulnerabilità, con spiegato passo passo come
 sfruttarla è sicuramente
 [questa](https://github.com/JumpsecLabs/PrintNightmare/blob/main/PrivEscTest.md).

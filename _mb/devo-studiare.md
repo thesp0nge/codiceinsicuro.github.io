@@ -3,13 +3,13 @@ layout: mb
 title: "Devo studiare?"
 comments: true
 share: true
-video: jNVNJEHEqk4 
+video: jNVNJEHEqk4
 cover: 2.png
 order: 3
 ---
 
 Ogni tanto, qualche lettore di [Codice Insicuro]({{site.url}}), chiede consigli
-circa la propria formazione. 
+circa la propria formazione.
 
 Domande come le seguenti, non sempre hanno una risposta che va bene per tutti:
 > _"Devo fare la laurea magistrale?"_
@@ -19,5 +19,4 @@ Domande come le seguenti, non sempre hanno una risposta che va bene per tutti:
 Avevo scritto [un post]({{site.url}}/blog/la-mia-formazione-3-4-3-o-4-3-1-2/)
 un po' di tempo fa, ma riprendiamo il tema con un bel video.
 
-{% youtube jNVNJEHEqk4 %}
-
+{% include youtube.html id="NVNJEHEqk4" %}

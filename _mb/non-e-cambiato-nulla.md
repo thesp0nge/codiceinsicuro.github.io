@@ -17,5 +17,4 @@ Ma quali sono i tempi giusti per richiedere un WAPT?
 Quali le informazioni che servono?
 Sicuri che non cambi mai nulla nel vostro codice?
 
-{% youtube Nq-wjDNJT_o %}
-
+{% include youtube.html id="Nq-wjDNJT_o" %}

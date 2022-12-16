@@ -2,8 +2,8 @@
 layout: post
 author: thesp0nge
 title: "Shellerate: un framework per generare shellcode"
-promotion: 
-modified: 
+promotion:
+modified:
 featured: false
 category: [post]
 tags: [python, tool, shellcode, slae, polimorfismo, encoding, x86]
@@ -69,7 +69,7 @@ semplice da leggere.
 
 Creare una versione dello stesso shellcode, con un
 [egg hunter](https://codiceinsicuro.it/slae/assignment-3-an-egg-hunter-journey/)
-è semplice tanto quanto la versione offuscata: 
+è semplice tanto quanto la versione offuscata:
 
 {%highlight python%}
 b=BindShellcode(4444, 'x86', 'linux')
@@ -90,7 +90,7 @@ shellcode utilizzando delle istruzioni di sottrazione e di push.
 Tutta farina del sacco di Mati Aharoni che ha presentato questa tecnica in
 questo talk a Defcon 16.
 
-{% youtube gHISpAZiAm0 %}
+{% include youtube.html id="gHISpAZiAm0" %}
 
 Io ho solo messo insieme qualche pezzo e scritto un codice, utilizzato anche
 nel mio ultimo tentativo di certificazione, per offuscare uno shellcode. Posso

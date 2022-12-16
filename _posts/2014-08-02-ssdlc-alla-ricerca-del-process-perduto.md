@@ -115,7 +115,7 @@ Vi suggerisco di guardare questo video. [Stephen de Vries](http://twitter.com/st
 di application security ma è anche uno sviluppatore. In questo talk parla di
 come approcciare i temi di sicurezza in un modello _agile_ di sviluppo.
 
-{% youtube JkgrEwko_mY %}
+{% include youtube.html id="JkgrEwko_mY" %}
 
 Quando avete spremuto a fondo google, provate ad individuare in quali punti del
 processo che avete sentito dagli sviluppatori, voi mettereste i vari controlli

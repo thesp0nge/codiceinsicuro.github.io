@@ -15,5 +15,4 @@ mentre tutto il mondo va verso cicli di rilascio continuo?
 No, anche la sicurezza applicativa deve abbracciare il vento del cambiamento e
 diventare più agile.
 
-{% youtube AXvs6zrFAOA %}
-
+{% include youtube.html id="AXvs6zrFAOA" %}

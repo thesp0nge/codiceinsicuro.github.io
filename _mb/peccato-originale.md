@@ -23,7 +23,6 @@ E se tutto dipendendesse dallo sviluppo? E se i crash non fossero altro che una 
 Ne parliamo oggi.
 
 
-{% youtube U2twbDK3EgM %}
+{% include youtube.html id="U2twbDK3EgM" %}
 
 [^1]: ciao Marco.
-

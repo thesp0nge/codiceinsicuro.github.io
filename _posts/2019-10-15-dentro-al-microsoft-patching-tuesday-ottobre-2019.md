@@ -20,32 +20,6 @@ Collaterali](https://codiceinsicuro.it/newsletter/) hanno ricevuto un foglio di
 calcolo contenente i CVE coperti dal bollettino assieme ad una valutazione del
 livello di priorità da dare ad ogni singola issue.
 
-## L'analisi
-
-Queste le CVE contenute nel bollettino di Ottobre.
-
-| CVE | Vulnerabilità | 
-|-----|---------------|
-| {% ms_cve CVE-2019-1070 %} | Microsoft Office SharePoint XSS Vulnerability |
-| {% ms_cve CVE-2019-1230 %} | Hyper-V Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1313 %} | SQL Server Management Studio Information Disclosure Vulnerability|
-| {% ms_cve CVE-2019-1314 %} | Windows 10 Mobile Security Feature Bypass Vulnerability|
-| {% ms_cve CVE-2019-1327 %} | Microsoft Excel Remote Code Execution Vulnerability  |
-| {% ms_cve CVE-2019-1328 %} | Microsoft SharePoint Spoofing Vulnerability|
-| {% ms_cve CVE-2019-1329 %} | Microsoft SharePoint Elevation of Privilege Vulnerability |
-| {% ms_cve CVE-2019-1330 %} | Microsoft SharePoint Elevation of Privilege Vulnerability|
-| {% ms_cve CVE-2019-1331 %} | Microsoft Excel Remote Code Execution Vulnerability |
-| {% ms_cve CVE-2019-1334 %} | Windows Kernel Information Disclosure Vulnerability|
-| {% ms_cve CVE-2019-1337 %} | Windows Update Client Information Disclosure Vulnerability |
-| {% ms_cve CVE-2019-1344 %} | Windows Code Integrity Module Information Disclosure Vulnerability|
-| {% ms_cve CVE-2019-1345 %} | Windows Kernel Information Disclosure Vulnerability|
-| {% ms_cve CVE-2019-1358 %} | Jet Database Engine Remote Code Execution Vulnerability|
-| {% ms_cve CVE-2019-1359 %} | Jet Database Engine Remote Code Execution Vulnerability|
-| {% ms_cve CVE-2019-1361 %} | Microsoft Graphics Components Information Disclosure Vulnerability|
-| {% ms_cve CVE-2019-1363 %} | Windows GDI Information Disclosure Vulnerability|
-| {% ms_cve CVE-2019-1369 %} | Open Enclave SDK Information Disclosure Vulnerability|
-| {% ms_cve CVE-2019-1378 %} | Windows 10 Update Assistant Elevation of Privilege Vulnerability
-
 Ora, secondo i miei KPI non ci sono vulnerabilità con priorità alta e
 l'installazione di questo bollettino Microsoft può avvenire entro il prossimo
 mese di marzo 2020, secondo il processo di vulnerability management che vuole
@@ -63,7 +37,7 @@ management può essere utile avere una traccia che dica, quando hai un grosso
 parco macchine da gestire, se intervenire di corsa o essere ragionevolmente più
 rilassati.
 
-Voi come gestite i feedback negativi? E il vulnerability management? 
+Voi come gestite i feedback negativi? E il vulnerability management?
 
 ## Regalo per voi
 

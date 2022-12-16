@@ -3,7 +3,7 @@ layout: post
 author: thesp0nge
 title: "Propositi e previsioni per la sicurezza applicativa nel 2016"
 promotion: "Come sarà il 2016 per l'#appsec? #IoT, #OWASP, #Malware, #cybercrime e molto altro. Leggi qui."
-modified: 
+modified:
 featured: false
 category: [Chiacchiere da bar]
 tags: [propositi, anno nuovo, sicurezza applicativa, previsioni, duemilaquindici]
@@ -43,11 +43,10 @@ Il 2015 è stato l'anno di [Mr. Robot]({{site.url}}/blog/mr-dot-robot/). Dai
 tempi del primo Matrix, è la prima serie TV che c'entra in pieno il tema _cyber
 thriller_ senza cadere in tristezze sia italiche...
 
-{% youtube s5ocXFgowZA %}
-
+{% include youtube.html id="s5ocXFgowZA" %}
 Che di oltreoceano fattura
 
-{% youtube plcIQgX-kbo %}
+{% include youtube.html id="plcIQgX-kbo" %}
 
 Attendo con ansia la [seconda stagione (attenzione link con video spoiler
 sull'ultimo episodio della prima
@@ -124,7 +123,7 @@ Sia chiaro, io **amo** il progetto [Codice Insicuro]({{site.url}}) e continuerò
 a portarlo avanti. Sento però anche l'esigenza di lavorare ad un progetto più
 grosso. E' chiaro che mi piacerebbe molto che tutti gli sviluppatori, gli IT
 Manager o i Security Manager venissero a leggere sia [Codice
-Insicuro]({{site.url}}) che [Armored Code](http://armoredcode.com). 
+Insicuro]({{site.url}}) che [Armored Code](http://armoredcode.com).
 
 Il mio capo lo fa già, dì anche al tuo di farlo!
 

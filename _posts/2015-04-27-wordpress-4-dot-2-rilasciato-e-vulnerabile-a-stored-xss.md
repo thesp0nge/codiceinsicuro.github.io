@@ -3,7 +3,7 @@ layout: post
 author: thesp0nge
 title: "WordPress 4.2 rilasciato e vulnerabile a stored XSS"
 promotion: "WordPress 4.2 e precedenti vulnerabili a stored XSS. Leggi qui come correre ai ripari"
-modified: 
+modified:
 featured: false
 category: [Under attack]
 tags: [xss, wordpress, blog, php, cross site scripting, input validation, wordstress]
@@ -37,7 +37,7 @@ per inserire il codice javascript che più gradisce.
 In questo filmato si vede l'exploit di questa vulnerabilità con l'inserimento
 di un javascript e l'introduzione di una backdoor nel blog.
 
-{% youtube OCqQZJZ1Ie4%}
+{% include youtube.html id="OCqQZJZ1Ie4"%}
 
 In questo caso non c'è ancora una patch e disabilitare i commenti può essere
 troppo drastico.

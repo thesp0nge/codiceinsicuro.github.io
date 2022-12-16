@@ -3,7 +3,7 @@ layout: post
 author: thesp0nge
 title: "Tra conflitti di interesse e 007: addio meritocrazia"
 promotion: "Il Premier Renzi nomina un suo amico a capo della cybersecurity nazionale. Il merito e le competenze arriveranno nei prossimi governi, promette"
-modified: 
+modified:
 featured: false
 category: [Chiacchiere da bar]
 tags: [cys4, renzi, cyber security, meritocrazia, conflitto di interessi, politica]
@@ -114,4 +114,4 @@ Non è divertente per me, ma se devo dire che una certa cosa è una cagata
 pazzesca non riesco a trattenermi. E questa nomina, questa storia, questo
 inciucione all'italiana, è solo una cagata pazzesca.
 
-{% youtube eHf-NWLlahY %}
+{% include youtube.html id="eHf-NWLlahY" %}

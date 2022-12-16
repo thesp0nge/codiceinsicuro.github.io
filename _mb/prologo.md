@@ -14,4 +14,4 @@ della settimana.
 Monday Blues nasce per raccontarci quello che ci fa iniziare male la settimana.
 Lo scopo è quello di dire a tutti, come non rovinare il nostro lunedì.
 
-{% youtube vcafHiOlYHc %}
+{% include youtube.html id="vcafHiOlYHc" %}

@@ -3,7 +3,7 @@ layout: post
 author: thesp0nge
 title: "Erase and Rewind"
 promotion: Un Gennaio con una grossa delusione, può dare via a qualcosa che si spera diventi importante? Bhé spero proprio di sì. Tu intanto, scopri di più su codiceinsicuro.it.
-modified: 
+modified:
 featured: false
 category: [post]
 tags: [introspezione, off-topic, vita, bitcoin, startup, ripartire, progetti, 40anni]
@@ -48,9 +48,9 @@ Ma visto che siamo nella vita reale, titolo il post con un più emergico
 ## Erase and rewind
 
 "Erase and Rewind" è il titolo di una canzone dei Cardigans, contenuta
-nell'album Gran Turismo dell'anno 1998. 
+nell'album Gran Turismo dell'anno 1998.
 
-{% youtube 6WOYnv59Bi8 %}
+{% include youtube.html id="6WOYnv59Bi8" %}
 
 Terminata l'introspezione, osservando il report del mio self-assessment,
 sentivo l'esigenza di ricominciare, ritrovando l'entusiasmo e la voglia di
