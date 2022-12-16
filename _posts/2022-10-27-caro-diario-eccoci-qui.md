@@ -2,7 +2,7 @@
 id: 531
 title: 'Caro diario eccoci qui&#8230;'
 date: '2022-10-27T17:55:09+02:00'
-author: 'Paolo Perego'
+author: thesp0nge
 layout: post
 guid: 'https://codiceinsicuro.it/?p=531'
 permalink: /2022/10/27/caro-diario-eccoci-qui/

@@ -2,7 +2,7 @@
 id: 5
 title: 'Facciamo behavior-driven development con il C'
 date: '2022-04-01T11:16:33+02:00'
-author: 'Paolo Perego'
+author: thesp0nge
 excerpt: "Il Behaviour-driven development, utilizzato spesso nello sviluppo di applicazioni web, è un paradigma che ho conosciuto quando scrivevo codice in Ruby on Rails, lavorativamente una vita fa.\n\nLeggi in questo post, come applicare lo stesso concetto ad un codice scritto in C"
 layout: post
 guid: 'https://paoloperego.it/2022/03/16/facciamo-behavior-driven-development-con-il-c/'

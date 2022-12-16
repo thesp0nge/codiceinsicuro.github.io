@@ -2,7 +2,7 @@
 id: 428
 title: 'Di antivirus, etica e rischi pindarici'
 date: '2022-03-23T10:35:51+01:00'
-author: 'Paolo Perego'
+author: thesp0nge
 layout: post
 guid: 'https://codiceinsicuro.it/?p=428'
 permalink: /2022/03/23/di-antivirus-etica-e-rischi-pindaric/

@@ -2,7 +2,7 @@
 id: 479
 title: 'Password vs Passphrase: la cracking challenge'
 date: '2022-04-21T18:32:41+02:00'
-author: 'Paolo Perego'
+author: thesp0nge
 excerpt: 'Password cracking challenge: 5 hash da rompere (2 password e 3 passphrase). Quale hash resisterà più a lungo?'
 layout: post
 guid: 'https://codiceinsicuro.it/?p=479'

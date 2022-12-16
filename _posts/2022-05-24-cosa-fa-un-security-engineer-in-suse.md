@@ -2,7 +2,7 @@
 id: 496
 title: 'Cosa fa un security engineer in SUSE?'
 date: '2022-05-24T12:41:39+02:00'
-author: 'Paolo Perego'
+author: thesp0nge
 excerpt: 'Cosa vuol dire essere un product security engineer in SUSE? È facile lavorare completamente da remoto? Ecco com''è cambiata la mia vita da qualche mese...'
 layout: post
 guid: 'https://codiceinsicuro.it/?p=496'

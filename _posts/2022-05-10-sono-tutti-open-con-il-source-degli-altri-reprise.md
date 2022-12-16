@@ -2,7 +2,7 @@
 id: 489
 title: 'Sono tutti open con il source degli altri &#8211; reprise'
 date: '2022-05-10T15:39:02+02:00'
-author: 'Paolo Perego'
+author: thesp0nge
 excerpt: "La community deve essere una parte attiva nel ciclo di vita di un progetto opensource e tu che stai leggendo questo post, devi fare qualcosa nel tuo piccolo. \nInizia anche tu oggi. Scopri come."
 layout: post
 guid: 'https://codiceinsicuro.it/?p=489'
@@ -56,12 +56,12 @@ Il maintainer di solito ha un lavoro ed una vita personale. Cosa succede se gli 
 
 Ta-daan
 
-<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">> 1\. Buy expired NPM maintainer email domains.  
-> 2\. Re-create maintainer emails  
-> 3\. Take over packages  
-> 4\. Submit legitimate security patches that include package.json version bumps to malicious dependency you pushed  
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">> 1\. Buy expired NPM maintainer email domains.
+> 2\. Re-create maintainer emails
+> 3\. Take over packages
+> 4\. Submit legitimate security patches that include package.json version bumps to malicious dependency you pushed
 > 5\. Enjoy world domination.
-> 
+>
 > — Lance R. Vick ( @lrvick@mastodon.social ) (@lrvick) [May 9, 2022](https://twitter.com/lrvick/status/1523774962909298690?ref_src=twsrc%5Etfw)
 
 <script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script></div></figure>Fa paura, vero?

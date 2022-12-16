@@ -2,7 +2,7 @@
 id: 473
 title: 'Non mettete regole troppo complesse alle vostre password'
 date: '2022-04-16T11:51:07+02:00'
-author: 'Paolo Perego'
+author: thesp0nge
 excerpt: 'Perché non usare una frase al posto di una password? Lasciamoci alle spalle regole di complessità obsolete e abbracciamo l''usabilità con un occhio di riguardo alla sicurezza.'
 layout: post
 guid: 'https://codiceinsicuro.it/?p=473'
@@ -41,7 +41,7 @@ tags:
 Questa mattina, godendomi un sole caldo che ha sicuramente dato il buongiorno, ho letto questo tweet all’interno del mio feed.
 
 > 2022\. Sito di grandissima azienda privata che gestisce molti dati personali. [pic.twitter.com/i4Xy2H0XgI](https://t.co/i4Xy2H0XgI)
-> 
+>
 > — Federico Maggi (@phretor) [April 15, 2022](https://twitter.com/phretor/status/1514875162444931073?ref_src=twsrc%5Etfw)
 
  <script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>La form del cambio password di questo sito, lamenta un’eccessiva lunghezza della password scelta dall’utente. Fermiamoci un attimo e ripetiamolo **molto** lentamente: la password che l’utente ha scelto è troppo lunga.

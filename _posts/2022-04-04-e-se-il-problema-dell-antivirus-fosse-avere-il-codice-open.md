@@ -2,7 +2,7 @@
 id: 436
 title: 'E se la soluzione al problema dell&#8217;antivirus fosse avere il codice open?'
 date: '2022-04-04T12:57:20+02:00'
-author: 'Paolo Perego'
+author: thesp0nge
 excerpt: 'Il modello opensource, può rispondere all''esigenza di avere controllo da parte del governo e dei privati, per quanto riguarda una componente critica come l''antivirus? Secondo me sì. Leggi perché.'
 layout: post
 guid: 'https://codiceinsicuro.it/?p=436'
