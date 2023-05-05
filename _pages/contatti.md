@@ -7,20 +7,11 @@ modified: 2016-09-22 17:16
 share: true
 ---
 
-<ul class="navbar-nav ml-auto">
-<li class="nav-item">
-<a target="_blank" class="nav-link" href="https://www.facebook.com/paoloperegoofficial/"><i class="fab fa-facebook-f"></i></a>
-</li>
-<li class="nav-item">
-<a target="_blank"  class="nav-link" href="https://twitter.com/thesp0nge"><i class="fab fa-twitter"></i></a>
-</li>
-<li class="nav-item">
-<a target="_blank"  class="nav-link" href="https://linkedin.com/in/paolo-perego"><i class="fab fa-linkedin"></i></a>
-</li>
-<li class="nav-item">
-<a target="_blank"  class="nav-link" href="https://www.instagram.com/paoloperegoofficial/"><i class="fab fa-instagram"></i></a>
-</li>
-</ul>
+<a target="_blank" class="fa fa-facebook" href="https://www.facebook.com/paoloperegoofficial/"></a>
+<a target="_blank"  class="fa fa-twitter" href="https://twitter.com/thesp0nge"></a>
+<a target="_blank"  class="fa fa-linkedin" href="https://linkedin.com/in/paolo-perego"></a>
+<a target="_blank"  class="fa fa-youtube" href="https://www.youtube.com/@PaoloPerego"></a>
+<a target="_blank"  class="fa fa-instagram" href="https://www.instagram.com/paoloperegoofficial/"></a>
 
 Ciao, se sei arrivato qui è perché in qualche modo vuoi metterti in contatto
 con [me](mailto:paolo@codiceinsicuro.it). **Fantastico**.
