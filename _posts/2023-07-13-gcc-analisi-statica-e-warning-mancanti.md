@@ -40,10 +40,11 @@ Ecco: nulla di tutto questo. Il compilatore ha compilato il sorgente senza un wa
 
 A quel punto, ho provato a pensare:
 > <<Forse il passaggio ad una funzione, manda un po' in confusione il compilatore. Proviamo a rendergli le cose più semplici.>>
+
 ## Test
 Ho scritto quindi, questo codice sorgente, nella speranza di ricevere un warning, un singolo warning mentre veniva compilato.
 
-``` C
+``` c
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
