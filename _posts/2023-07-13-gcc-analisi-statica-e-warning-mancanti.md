@@ -72,7 +72,7 @@ Introdotto il controllo in riga 10, secondo voi ho ricevuto un warning sulla str
 > Attenzione, non state sovrascrivendo il vostro Instruction Pointer grazie ai numerosi meccanismi di protezione per gli exploit che sfruttano i buffer overflow. Questa parte, legata al mondo offensive, è out of scope per il momento.
 
 Ho provato quindi a non lasciare l'input dinamico ma a copiare una stringa hardcoded di grandi dimensioni.
-``` C
+``` c
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
