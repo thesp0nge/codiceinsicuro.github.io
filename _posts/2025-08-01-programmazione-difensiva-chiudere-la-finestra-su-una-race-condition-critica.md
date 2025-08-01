@@ -97,6 +97,14 @@ Un po' come nei migliori piani, la programmazione difensiva non lascia la
 sicurezza al caso. Invece di sperare in una umask sicura, la impone. Il codice
 prende il controllo e chiude la finestra di vulnerabilità.
 
+La prima versione, questa che lascio per riferimento contiene un grossolano
+errore. Ringrazio [Sandro "theguly"](https://www.linkedin.com/in/theguly/) per
+avermelo fatto notare.
+
+La race condition viene effettivamente limitata ma, nel caso resource_dir esista
+e sia un file, la successiva chiamata a `os.makedirs` fallisce in modo brusco,
+facendo terminare l'applicazione con un'eccezione.
+
 ```Python
 # Nel codice di setup del demone
 resource_dir = "/run/my-service"
@@ -118,9 +126,37 @@ if not os.path.isdir(resource_dir):
 # ...
 ```
 
+Il nuovo codice quindi, deve avere anche un controllo aggiuntivo per evitare di
+provare a creare una directory nel caso il file esista già.
+
+```Python
+if os.path.exists(resource_dir):
+    # Il percorso esiste, ci assicuriamo che sia una directory.
+    if not os.path.isdir(resource_dir):
+        log.error(
+            "Il percorso '%s' esiste già ma non è una directory. Impossibile avviare.",
+            resource_dir,
+        )
+        # Esci in maniera pulita dal flusso di esecuzione del programma
+else:
+    # Il percorso non esiste, quindi lo creiamo in modo sicuro.
+    original_umask = -1
+    try:
+        original_umask = os.umask(0o077)
+        os.makedirs(resource_dir, 0o700)
+    except OSError as exc:
+        log.error("Impossibile creare la directory '%s': %s", resource_dir, exc)
+        # Esci in maniera pulita dal flusso di esecuzione del programma
+    finally:
+        if original_umask != -1:
+            os.umask(original_umask)
+
+# La logica di chown per abbassare i privilegi va eseguita dopo questo blocc
+```
+
 Con questa modifica, il codice non si fida più dell'ambiente. Garantisce esso
 stesso che la risorsa sia creata in modo sicuro fin dal primo istante. La
-finestra è stata chiusa.
+finestra è stata chiusa e gli errori sono stati gestiti in maniera opportuna.
 
 Questo è il cuore della programmazione difensiva: non chiedere "il sistema è
 sicuro?", ma affermare "questa porzione di codice è sicura, a prescindere dal
