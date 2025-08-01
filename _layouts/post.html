@@ -47,13 +47,15 @@ post_class: post-template
 	    <!-- Post Featured Image  -->
             {% if page.image.feature %}
 
-		    {% if site.lazyimages == "enabled" %}
-			    <img class="featured-image img-fluid lazyimg mx-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images//{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
-		    {% else %}
-		      <img class="featured-image img-fluid mx-auto" src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images/{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
-		    {% endif %}
+              {% if site.lazyimages == "enabled" %}
+                <img class="featured-image img-fluid lazyimg mx-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images//{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
+              {% else %}
+                <img class="featured-image img-fluid mx-auto" src="{% if page.image.feature contains "://" %}{{ page.image }}{% else %}{{site.url}}/assets/images/{{ page.image.feature }}{% endif %}" alt="{{ page.title }}">
+              {% endif %}
 
-		    {% include unplash.html %}
+              {% if page.image.author_link %}
+                {% include unplash.html %}
+              {% endif %}
             {% endif %}
             <!-- End Featured Image -->
 

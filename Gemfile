@@ -8,16 +8,15 @@ source "https://rubygems.org"
 #
 
 # If you have any plugins, put them here!
-gem "jekyll"
+gem "jekyll", "~> 4.2"
 # gem "minimal-mistakes-jekyll"
 gem "webrick"
-gem "stringex"
+gem "base64"
+gem "bigdecimal"
 
 group :jekyll_plugins do
-  gem 'jekyll-admin'
   gem 'jekyll-tagging-related_posts'
   gem 'jekyll-tagging'
-  gem 'jekyll-assets'
   gem 'jekyll-video-tag'
   gem 'jekyll-seo-tag'
   gem 'jekyll-gist'
@@ -28,6 +27,5 @@ group :jekyll_plugins do
   gem 'jekyll-archives'
   gem 'jekyll-paginate'
   gem 'jekyll-last-modified-at'
-  gem 'stringex', '~> 2.8', '>= 2.8.5'
-  # gem 'jekyll-twitter-plugin'
+  gem 'stringex', '>= 2.8.5'
 end

@@ -206,7 +206,7 @@ namespace :blog do
       exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
     end
     puts "## Deploying website via Rsync"
-    system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{"--delete" unless rsync_delete == false} #{deploy_dir}/ #{ssh_user}:#{document_root}")
+    system("rsync -avz --delete ./_site/ thesp0nge@goliath:/var/www/codiceinsicuro/")
   end
 
   desc "Generate jekyll site"
