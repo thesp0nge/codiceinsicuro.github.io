@@ -3,7 +3,7 @@ layout: post
 title:
   "Programmazione Difensiva: Chiudere la Finestra su una Race Condition Critica"
 author: thesp0nge
-featured: false
+featured: true
 category: [post]
 tags:
   [
